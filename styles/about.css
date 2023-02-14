@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+
+
+
+
+/* Inicio - banner estilos */
+
+
+/*//////////ESCRIBE TUS ESTILOS CSS AQUI
+
+
+/* Fin - banner estilos */
+
+
+
+
+
+/* Inicio - valores estilos */
+
+
+/*//////////ESCRIBE TUS ESTILOS CSS AQUI
+
+
+/* Fin - valores estilos */
+
+
+
+
+/* Inicio - tarjeta estilos */
+
+
+/*//////////ESCRIBE TUS ESTILOS CSS AQUI
+
+
+/* Fin - tarjeta estilos */
+
+
+
+/* Inicio - Formulario estilos */
+
+section.aboutFormulario{
+color: #465c8d;
+}
+
+
+h1.aboutFormulario {
+font-family: 'Alata', sans-serif;
+text-align: center;
+}
+
+
+form.aboutFormulario{
+display: flex;
+justify-content: center;
+}
+
+
+ul.aboutFormulario{
+list-style: none;
+}
+
+
+input.aboutFormularioNombre{
+width: 100%;
+margin: 0px 0px 20px 0px;
+padding: 5px 20px 5px 20px;
+border-radius: 5px;
+color: #000;
+background-color: #dddddd;
+border: 0;
+}
+
+input.aboutFormularioTelefono{
+margin: 0px 0px 20px 0px;
+padding: 5px 20px 5px 20px;
+border-radius: 5px;
+color: #000;
+background-color: #dddddd;
+border: 0;
+}
+
+input.aboutFormularioCorreo{
+width: 100%;
+margin: 0px 0px 20px 0px;
+padding: 5px 20px 5px 20px;
+border-radius: 5px;
+color: #000;
+background-color: #dddddd;
+border: 0;
+}
+
+textarea.aboutFormularioMensaje{
+margin: 0px 0px 20px 0px;
+padding: 20px 20px 20px 20px;
+width: 100%;
+min-height: 150px;
+border-radius: 5px;
+color: #000;
+background-color: #dddddd;
+border: 0;
+margin: 0px 0px 20px 0px;
+}
+
+button.aboutFormulario{
+padding: 20px 20px 20px 20px;
+margin: 0px 0px 20px 0px;
+border-radius: 5px;
+color: #000;
+background-color: #dddddd;
+border: 0;
+}
+
+div.aboutFormularioTelefonoCorreo{
+display: flex;
+flex-direction: row;
+text-align: center;
+gap: 20px;
+}
+
+footer.aboutFooter {
+text-align: center;
+padding: 16px;
+margin:  0;
+background-color: #465c8d;
+
+}
+
+p.aboutFooter{
+color: #fff;
+margin: 0%;
+padding: 0%;
+font-family: 'Sora', sans-serif;
+font-size: smaller;
+}
+
+/* Fin - formulario estilos */
