@@ -1,14 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
-
-
-
+body {
+  margin: 0;
+  width: 100vw;
+}
 
 /* Inicio - banner estilos */
+header {
+  margin: 0;
+}
 
+.logo-container {
+  width: 100vw;
+  height: 80px;
+  background-color: red;
+}
+.nav-inicio {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1em;
+  color: #4483ce;
+  font-weight:500;
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-/*//////////ESCRIBE TUS ESTILOS CSS AQUI
+.nav-inicio li {
+  padding: 7px 25px;
+  border-radius: 7px;
+}
+
+.nav-inicio li:hover {
+  background-color: #4483ce;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 7px;
+}
 
 
 /* Fin - banner estilos */
