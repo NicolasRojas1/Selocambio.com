@@ -11,11 +11,21 @@ header {
   margin: 0;
 }
 
-.logo-container {
+.logo-container a {
   width: 100vw;
-  height: 80px;
-  background-color: red;
+  display: block;
+
+  display: flex;
+  justify-content: center;
+
 }
+
+.logo-container img {
+  width: 13em;
+  padding: 2em 0;
+
+}
+
 .nav-inicio {
   list-style: none;
   display: flex;
@@ -25,7 +35,7 @@ header {
   font-weight:500;
   font-family: 'Sora', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 0 2em 0;
 }
 
 .nav-inicio li {
@@ -38,6 +48,17 @@ header {
   color: #fff;
   padding: 7px 25px;
   border-radius: 7px;
+}
+
+.titulo-banner {
+  font-weight: 500;
+  color: #ffffffef;
+  text-shadow: 2px 2px 2px black;
+}
+
+.texto-banner {
+  color: #ffffffef;
+  text-shadow: 2px 2px 1px black;
 }
 
 
