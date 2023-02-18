@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Labrada:ital@1&family=Merienda+One&family=Montserrat&display=swap');
 
 body {
+  font-family: 'Sora', sans-serif;
   margin: 0;
   width: 100vw;
 }
@@ -298,6 +299,121 @@ text-align: center;
 gap: 20px;
 }
 
+/* Inicio tarjetas */
+
+.body-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:center;
+  min-height: 100%;
+  background: #E3E3D8;
+}
+
+.card {
+  display: flex;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  transition: .5s;
+  margin: 40px;
+  
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+  transform: translateY(-15px)
+}
+.card .content {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.card .content .img {
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.card .content .img img{
+  position:relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.card .content span{
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(to right, #3acfc0, #e6a91a);
+  transform: rotate(-35deg);
+  top: -50px;
+  left: -100px;
+}
+
+.card .content h2{
+ font-size: 20px; 
+ color:#e6a91a;
+ font-weight: bold;
+ margin-bottom: 5px;
+ z-index: 1;
+}
+
+.card .content h5{
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.card .links{
+  position: absolute;
+  z-index: 90;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  padding: 15px;
+  align-items: center;
+  right: 10px;
+  top: 8px;
+  transition: .5s;
+}
+
+.card:hover .links{
+right: -50px;
+border-radius: 0 10px 10px 0;
+}
+
+.card .links a {
+  font-size: 23px;
+  color: #646069;
+}
+
+.card .links a:nth-child(1):hover{ 
+  color: #ee2034; 
+}
+
+.card .links a:nth-child(2):hover{ 
+  color:  #0e76a8; 
+}
+
+.card .links a:nth-child(3):hover{ 
+  color: #8810a0; 
+}
+
 footer.aboutFooter {
 text-align: center;
 padding: 16px;
@@ -313,5 +429,6 @@ padding: 0%;
 font-family: 'Sora', sans-serif;
 font-size: smaller;
 }
-
+/* Fin Tarejtas */ 
 /* Fin - formulario estilos */
+
