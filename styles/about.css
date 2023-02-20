@@ -220,9 +220,9 @@ header {
   line-height: 1.5
 }
 
-/* Inicio - Formulario estilos */
+ /* Inicio - Formulario estilos */
 
-section.aboutFormulario {
+ section.aboutFormulario {
   color: #465c8d;
 }
 
@@ -230,76 +230,141 @@ section.aboutFormulario {
 h1.aboutFormulario {
   font-family: 'Alata', sans-serif;
   text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
 }
 
 
 form.aboutFormulario {
   display: flex;
   justify-content: center;
+  padding: 0%;
+  margin: 0%;
 }
 
 
 ul.aboutFormulario {
   list-style: none;
+  margin: 0%;
+  padding: 1rem;
 }
 
-
 input.aboutFormularioNombre {
-  width: 100%;
-  margin: 0px 0px 20px 0px;
-  padding: 5px 20px 5px 20px;
+  margin-bottom: 1rem;
+  align-items: center;
+  min-width: 700px;
   border-radius: 5px;
   color: #000;
   background-color: #dddddd;
   border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
 }
 
 input.aboutFormularioTelefono {
-  margin: 0px 0px 20px 0px;
-  padding: 5px 20px 5px 20px;
+  min-width: 100px;
   border-radius: 5px;
   color: #000;
   background-color: #dddddd;
   border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
 }
 
 input.aboutFormularioCorreo {
-  width: 100%;
-  margin: 0px 0px 20px 0px;
-  padding: 5px 20px 5px 20px;
+  margin-bottom: 1rem;
+  min-width: 500px;
   border-radius: 5px;
   color: #000;
   background-color: #dddddd;
   border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
 }
 
 textarea.aboutFormularioMensaje {
-  margin: 0px 0px 20px 0px;
-  padding: 20px 20px 20px 20px;
-  width: 100%;
+  margin-bottom: 1rem;
+  min-width: 700px;
   min-height: 150px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #dddddd;
   border: 0;
-  margin: 0px 0px 20px 0px;
+  border-radius: 5px;
+  background-color: #dddddd;
+  color: #000;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
 }
 
 button.aboutFormulario {
-  padding: 20px 20px 20px 20px;
-  margin: 0px 0px 20px 0px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #dddddd;
   border: 0;
+  border-radius: 5px;
+  background-color: #dddddd;
+  color: #000;
+  padding: 10px 20px 10px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+button.aboutFormulario:hover {
+  background-color: #465c8d;
+  color: #dddddd;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
 }
 
 div.aboutFormularioTelefonoCorreo {
   display: flex;
   flex-direction: row;
   text-align: center;
-  gap: 20px;
+  gap: 1rem;
 }
+
+@media (max-width: 768px) {
+
+  form.aboutFormulario {
+    min-width: 350px;
+  }
+  
+  ul.aboutFormulario {
+    min-width: 350px;
+  }
+
+  input.aboutFormularioNombre {
+    min-width: 350px;
+  }
+
+  input.aboutFormularioTelefono {
+    min-width: 350px
+  }
+
+  input.aboutFormularioCorreo {
+    min-width: 350px;
+  }
+
+  textarea.aboutFormularioMensaje {
+    min-width: 350px;
+  }
+
+  div.aboutFormularioTelefonoCorreo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  }
+
+  footer.aboutFooter {
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+    background-color: #465c8d;
+
+  }
+
+  p.aboutFooter {
+    color: #fff;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Sora', sans-serif;
+    font-size: smaller;
+  }
+
+/* FIN FORMULARIO */
 
 /* Inicio tarjetas */
 
@@ -417,21 +482,7 @@ div.aboutFormularioTelefonoCorreo {
   color: #8810a0;
 }
 
-footer.aboutFooter {
-  text-align: center;
-  padding: 16px;
-  margin: 0;
-  background-color: #465c8d;
 
-}
-
-p.aboutFooter {
-  color: #fff;
-  margin: 0%;
-  padding: 0%;
-  font-family: 'Sora', sans-serif;
-  font-size: smaller;
-}
 
 /*Responsive para tablet de 768 para arriba*/
 @media (min-width: 768px) and (max-width: 1024px) { 
