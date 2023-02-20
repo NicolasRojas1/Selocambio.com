@@ -21,7 +21,7 @@ header {
 }
 
 .logo-container img {
-  width: 13em;
+  width: 10em;
   padding: 2em 0;
 
 }
@@ -433,13 +433,29 @@ p.aboutFooter {
   font-size: smaller;
 }
 
-/*Responsive para tablet*/
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  /*de 768 para arriba*/
+/*Responsive para tablet de 768 para arriba*/
+@media (min-width: 768px) and (max-width: 1024px) { 
   /* Banner */
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+  }
+  
+  .logo-container a{
+    width: 100%;
+  }
+
+  .nav-inicio {
+    padding: 0;
+    margin: 0;
+  }
+
   .logo-container img {
-    width: 20em;
+    width: 9em;
   }
 
   .carousel-inner img {
@@ -474,21 +490,41 @@ p.aboutFooter {
 @media (min-width: 1025px) {
 
   /* Banner */
+
+  body {
+    padding: 0 20%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container a{
+    width: 100%;
+  }
+
+  .nav-inicio {
+    padding: 0;
+    margin: 0;
+
+  }
+
   .logo-container img {
-    width: 20em;
+    width: 9em;
   }
 
   .carousel-inner img {
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 1em;
-    height: 325px;
+    height: 450px;
   }
 
   .carousel-inner {
-    height: 400px;
-    padding: 0 3em 1em 3em;
-
+    padding-bottom: 1em;
   }
 
   /* Banner -------- fin */
