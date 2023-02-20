@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+
+body {
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  min-width: 100vw;
+}
+
+/* Inicio - banner estilos */
+header {
+  margin: 0;
+}
+
+.logo-container a {
+  width: 100vw;
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 10em;
+  padding: 2em 0;
+
+}
+
+.nav-inicio {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1em;
+  color: #4483ce;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  padding: 0 0 2em 0;
+}
+
+.nav-inicio li {
+  padding: 7px 25px;
+  border-radius: 7px;
+}
+
+.nav-inicio li:hover {
+  background-color: #4483ce;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 7px;
+}
+
+.titulo-banner {
+  font-weight: 500;
+  color: #ffffffef;
+  text-shadow: 2px 2px 2px black;
+}
+
+.texto-banner {
+  color: #ffffffef;
+  text-shadow: 2px 2px 1px black;
+}
+
+
+/* Fin - banner estilos */
+
+
+/* Inicio - valores estilos */
+
+.container {
+  background-color: rgb(241, 238, 238);
+  padding: 2em 0;
+  margin: 0;
+  min-width: 100%; /*Para que ocupe todo el ancho en las secciones*/
+}
+
+.Valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-auto-flow: dense;
+  place-items: center;
+  padding: 10em auto 0 auto;
+}
+
+.Valores img {
+  
+  width: 300px;
+  height: 280px;
+  box-shadow: 5px 5px 10px;
+  margin-top: 2em;
+}
+
+.Valores h6 {
+  margin: 1em auto .5em auto;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  background: linear-gradient(#147abe, #1c2aec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.Valores p {
+  font-size: 1em;
+  text-align: justify-all;
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+  line-height: 1.5
+}
+
+/*----- mision------*/
+
+.Mision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-auto-flow: dense;
+  place-items: center;
+  padding: 10em auto 0 auto;
+}
+
+.Mision img {
+  width: 300px;
+  height: 280px;
+  box-shadow: 5px 5px 10px;
+  margin-top: 2em;
+}
+
+.Mision h6 {
+  margin: 1em auto .5em auto;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  background: linear-gradient(#147abe, #1c2aec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.Mision p {
+  font-size: 1em;
+  text-align: justify-all;
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+  line-height: 1.5
+}
+
+/*------Vision---------*/
+
+.Vision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  grid-auto-flow: dense;
+  place-items: center;
+  padding: 10em auto 0 auto;
+}
+
+.Vision img {
+  width: 300px;
+  height: 280px;
+  box-shadow: 5px 5px 10px;
+  margin-top: 2em;
+}
+
+.Vision h6 {
+  margin: 1em auto .5em auto;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  background: linear-gradient(#147abe, #1c2aec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.Vision p {
+  font-size: 1em;
+  text-align: justify-all;
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+  line-height: 1.5
+}
+
+ /* Inicio - Formulario estilos */
+
+ section.aboutFormulario {
+  color: #465c8d;
+}
+
+
+h1.aboutFormulario {
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+
+form.aboutFormulario {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+ul.aboutFormulario {
+  list-style: none;
+  margin: 0%;
+  padding: 1rem;
+}
+
+input.aboutFormularioNombre {
+  margin-bottom: 1rem;
+  align-items: center;
+  min-width: 700px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #dddddd;
+  border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+input.aboutFormularioTelefono {
+  min-width: 100px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #dddddd;
+  border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+input.aboutFormularioCorreo {
+  margin-bottom: 1rem;
+  min-width: 500px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #dddddd;
+  border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+textarea.aboutFormularioMensaje {
+  margin-bottom: 1rem;
+  min-width: 700px;
+  min-height: 150px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #dddddd;
+  color: #000;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+button.aboutFormulario {
+  border: 0;
+  border-radius: 5px;
+  background-color: #dddddd;
+  color: #000;
+  padding: 10px 20px 10px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+button.aboutFormulario:hover {
+  background-color: #465c8d;
+  color: #dddddd;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+div.aboutFormularioTelefonoCorreo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+
+  form.aboutFormulario {
+    min-width: 350px;
+  }
+  
+  ul.aboutFormulario {
+    min-width: 350px;
+  }
+
+  input.aboutFormularioNombre {
+    min-width: 350px;
+  }
+
+  input.aboutFormularioTelefono {
+    min-width: 350px
+  }
+
+  input.aboutFormularioCorreo {
+    min-width: 350px;
+  }
+
+  textarea.aboutFormularioMensaje {
+    min-width: 350px;
+  }
+
+  div.aboutFormularioTelefonoCorreo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  }
+
+  footer.aboutFooter {
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+    background-color: #465c8d;
+
+  }
+
+  p.aboutFooter {
+    color: #fff;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Sora', sans-serif;
+    font-size: smaller;
+  }
+
+/* FIN FORMULARIO */
+
+/* Inicio tarjetas */
+
+.body-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background: #E3E3D8;
+}
+
+.card {
+  display: flex;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  transition: .5s;
+  margin: 40px;
+
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+  transform: translateY(-15px)
+}
+
+.card .content {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.card .content .img {
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.card .content .img img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.card .content span {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  background: linear-gradient(to right, #3acfc0, #e6a91a);
+  transform: rotate(-35deg);
+  top: -50px;
+  left: -100px;
+}
+
+.card .content h2 {
+  font-size: 20px;
+  color: #e6a91a;
+  font-weight: bold;
+  margin-bottom: 5px;
+  z-index: 1;
+}
+
+.card .content h5 {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.card .links {
+  position: absolute;
+  z-index: 90;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  padding: 15px;
+  align-items: center;
+  right: 10px;
+  top: 8px;
+  transition: .5s;
+}
+
+.card:hover .links {
+  right: -50px;
+  border-radius: 0 10px 10px 0;
+}
+
+.card .links a {
+  font-size: 23px;
+  color: #646069;
+}
+
+.card .links a:nth-child(1):hover {
+  color: #ee2034;
+}
+
+.card .links a:nth-child(2):hover {
+  color: #0e76a8;
+}
+
+.card .links a:nth-child(3):hover {
+  color: #8810a0;
+}
+
+
+
+/*Responsive para tablet de 768 para arriba*/
+@media (min-width: 768px) and (max-width: 1024px) { 
+  /* Banner */
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+  }
+  
+  .logo-container a{
+    width: 100%;
+  }
+
+  .nav-inicio {
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo-container img {
+    width: 9em;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+    height: 325px;
+  }
+
+  .carousel-inner {
+    height: 400px;
+    padding: 0 3em 1em 3em;
+
+  }
+
+  /* Banner -------- fin */
+
+  /* Valores, mision, vision */
+
+  /* Valores, mision, vision ------- fin */
+  /* cards */
+
+  /* cards -------- fin*/
+
+  /*formulario y footer*/
+
+  /*formulario y footer -------- fin*/
+
+}
+
+/*Responsive para pc*/
+@media (min-width: 1025px) {
+
+  /* Banner */
+
+  body {
+    padding: 0 20%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container a{
+    width: 100%;
+  }
+
+  .nav-inicio {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .logo-container img {
+    width: 9em;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    object-fit:cover;
+    border-radius: 1em;
+    height: 450px;
+  }
+
+  .carousel-inner {
+    padding-bottom: 1em;
+  }
+
+  /* Banner -------- fin */
+
+  /* Valores, mision, vision */
+
+  /* Valores, mision, vision ------- fin */
+  /* cards */
+
+  /* cards -------- fin*/
+
+  /*formulario y footer*/
+
+  /*formulario y footer -------- fin*/
+}
