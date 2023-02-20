@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Labrada:ital@1&family=Merienda+One&family=Montserrat&display=swap');
 
 body {
   font-family: 'Sora', sans-serif;
@@ -61,18 +59,89 @@ header {
   color: #ffffffef;
   text-shadow: 2px 2px 1px black;
 }
-  /* Inicio - valores estilos */
 
-  .container {
-    background-color: rgb(241, 238, 238);
-    margin: 0;
+/* Fin - banner estilos */
+
+
+/* Inicio - valores estilos */
+
+.container{
+  background-color: rgb(241, 238, 238);
+  margin: 0;
+}
+
+.Valores{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+  place-items: center;
+}
+
+.Valores h6{
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  background: linear-gradient(#147abe, #1c2aec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+}
+
+@keyframes text{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
   }
 
-  .container h6 {
+}
+
+.Valores div{
+  padding-top: 1em;
+  display: flex;
+  flex-direction:column;
+}
+
+.Valores p{
+  margin: 10px;
+  font-size: 1em;
+  text-align: justify-all;
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+  line-height: 1.5
+}
+
+  .Valores img {
+    width: 300px;
+    height: 280px;
+    margin: 20px;
+    box-shadow: 5px 5px 10px;
+  }
+
+  /*----- mision------*/
+
+  .Mision{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
     padding: 20px;
+    grid-auto-flow: dense;
+    place-items: center;
+  }
+  
+  .Mision h6{
+    padding: 10px;
     font-size: 30px;
     text-align: center;
-    font-family: 'Merienda One';
+    font-family: 'Alata', sans-serif;
     background: linear-gradient(#147abe, #1c2aec);
     color: transparent;
     background-clip: text;
@@ -80,74 +149,29 @@ header {
     -moz-background-clip: text;
     animation: text 5s linear infinite;
   }
-
-  @keyframes text {
-    0% {
+  
+  @keyframes text{
+    0%{
       filter: hue-rotate(0deg);
     }
-
-    100% {
+    100%{
       filter: hue-rotate(360deg);
     }
-
+  
   }
 
-  .Valores {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 20px;
-    padding: 20px;
-    grid-auto-flow: dense;
-  }
-
-  .Valores div {
-    padding-top: 3em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .Valores p {
-    margin: 10px;
-    font-size: 25px;
-    text-align: justify-all;
-    font-family: 'Labrada', serif;
-    text-align: left;
-    line-height: 1.5
-  }
-
-  .Valores img {
-    width: 300px;
-    height: 280px;
-    margin: 20px;
-    box-shadow: 5px 5px 40px;
-  }
-
-  /*----- mision------*/
-
-  .Mision {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 20px;
-    padding: 20px;
-    grid-auto-flow: dense;
-  }
-
-  .Mision div {
-    padding-top: 3em;
+  .Mision div{
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
-
-  .Mision p {
+  
+  .Mision p{
     margin: 10px;
-    font-size: 25px;
+    font-size: 1em;
     text-align: justify-all;
-    font-family: 'Labrada', serif;
-    text-align: left;
+    font-family: 'Sora', sans-serif;
+    text-align: center;
     line-height: 1.5
   }
 
@@ -156,7 +180,7 @@ header {
     width: 300px;
     height: 280px;
     margin: 20px;
-    box-shadow: 5px 5px 40px;
+    box-shadow: 5px 5px 10px;
   }
 
   /*------Vision---------*/
@@ -168,21 +192,44 @@ header {
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
+    place-items: center;
+  }
+
+  .Vision h6{
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    background: linear-gradient(#147abe, #1c2aec);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+  }
+  
+  @keyframes text{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  
   }
 
   .Vision div {
-    padding-top: 2em;
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .Vision p {
     margin: 10px;
-    font-size: 25px;
+    font-size: 1em;
     text-align: justify-all;
-    font-family: 'Labrada', serif;
-    text-align: left;
+    font-family: 'Sora', sans-serif;
+    text-align: center;
     line-height: 1.5
   }
 
@@ -190,7 +237,7 @@ header {
     width: 300px;
     height: 300px;
     margin: 20px;
-    box-shadow: 5px 5px 40px;
+    box-shadow: 5px 5px 10px;
   }
 
   /* Inicio - Formulario estilos */
