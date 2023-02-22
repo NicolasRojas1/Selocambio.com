@@ -9,7 +9,8 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Inicio - banner estilos */
+/* Banner */
+
 header {
   margin: 0;
   background-color: #f0f0f0;
@@ -25,7 +26,7 @@ header {
 .logo-container img {
   width: 10em;
   padding: 2em 0;
-
+  margin: 0px 2em
 }
 
 .nav-inicio {
@@ -36,7 +37,6 @@ header {
   color: #4483ce;
   font-weight: 500;
   font-family: 'Sora', sans-serif;
-  margin: 0;
   padding: 0 0 2em 0;
   background-color: #f0f0f0;
 }
@@ -66,17 +66,24 @@ header {
 }
 
 
-/* Fin - banner estilos */
+/* Banner -------- fin */
 
 
-/* Inicio - valores estilos */
+
+
+
+
+/* Valores, mision, vision */
 
 .container {
   background-color: #f0f0f0;
   padding: 2em 0;
   margin: 0;
-  min-width: 100%; /*Para que ocupe todo el ancho en las secciones*/
+  min-width: 100%;
+  /*Para que ocupe todo el ancho en las secciones*/
 }
+
+/*----- valores------*/
 
 .Valores {
   display: grid;
@@ -88,7 +95,7 @@ header {
 }
 
 .Valores img {
-  
+
   width: 300px;
   height: 280px;
   margin-top: 2em;
@@ -104,7 +111,7 @@ header {
 
 .Valores p {
   font-size: 1em;
-  margin-right:  2em;
+  margin-right: 2em;
   font-family: 'Sora', sans-serif;
   text-align: center;
   line-height: 1.5
@@ -143,7 +150,7 @@ header {
   line-height: 1.5
 }
 
-/*------Vision---------*/
+/*------vision---------*/
 
 .Vision {
   display: grid;
@@ -176,10 +183,20 @@ header {
   line-height: 1.5
 }
 
- /* Inicio - Formulario estilos */
+/* Valores, mision, vision -------- fin */
 
-  section.aboutFormulario {
-  color: #465c8d;
+
+
+
+
+
+
+/* Formulario y footer */
+
+
+
+section.aboutFormulario {
+  color: #0E34AB;
   background-color: #f0f0f0;
 }
 
@@ -187,7 +204,7 @@ header {
 h1.aboutFormulario {
   font-family: 'Alata', sans-serif;
   text-align: center;
-  font-size: 2rem;
+  font-size: 25px;
   padding-top: 2rem;
 }
 
@@ -197,6 +214,8 @@ form.aboutFormulario {
   justify-content: center;
   padding: 0%;
   margin: 0%;
+  min-width: 350px;
+  background-color: #f0f0f0;
 }
 
 
@@ -204,12 +223,13 @@ ul.aboutFormulario {
   list-style: none;
   margin: 0%;
   padding: 1rem;
+  width: auto;
 }
 
 input.aboutFormularioNombre {
   margin-bottom: 1rem;
   align-items: center;
-  min-width: 700px;
+  width: 350px;
   border-radius: 5px;
   color: #000;
   background-color: #dddddd;
@@ -218,7 +238,7 @@ input.aboutFormularioNombre {
 }
 
 input.aboutFormularioTelefono {
-  min-width: 100px;
+  width: 350px;
   border-radius: 5px;
   color: #000;
   background-color: #dddddd;
@@ -228,7 +248,7 @@ input.aboutFormularioTelefono {
 
 input.aboutFormularioCorreo {
   margin-bottom: 1rem;
-  min-width: 500px;
+  width: 350px;
   border-radius: 5px;
   color: #000;
   background-color: #dddddd;
@@ -238,7 +258,7 @@ input.aboutFormularioCorreo {
 
 textarea.aboutFormularioMensaje {
   margin-bottom: 1rem;
-  min-width: 700px;
+  width: 350px;
   min-height: 150px;
   border: 0;
   border-radius: 5px;
@@ -265,67 +285,37 @@ button.aboutFormulario:hover {
 
 div.aboutFormularioTelefonoCorreo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
   gap: 1rem;
 }
 
-@media (max-width: 768px) {
+footer.aboutFooter {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  background-color: #f0f0f0;
 
-  form.aboutFormulario {
-    min-width: 350px;
-    background-color: #f0f0f0;
-  }
-  
-  ul.aboutFormulario {
-    min-width: 350px;
-  }
+}
 
-  input.aboutFormularioNombre {
-    min-width: 350px;
-  }
+p.aboutFooter {
+  color: #000;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Sora', sans-serif;
+  font-size: smaller;
+}
 
-  input.aboutFormularioTelefono {
-    min-width: 350px
-  }
+/* Formulario y footer -------- fin */
 
-  input.aboutFormularioCorreo {
-    min-width: 350px;
-  }
 
-  textarea.aboutFormularioMensaje {
-    min-width: 350px;
-  }
 
-  div.aboutFormularioTelefonoCorreo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
 
-  }
 
-  footer.aboutFooter {
-    text-align: center;
-    padding: 16px;
-    margin: 0;
-    background-color: #465c8d;
 
-  }
 
-  p.aboutFooter {
-    color: #fff;
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Sora', sans-serif;
-    font-size: smaller;
-  }
 
-/* FIN FORMULARIO */
-
-/* Inicio tarjetas */
-
+/* Tarjetas */
 
 .div-tarjeta {
   display: flex;
@@ -340,15 +330,17 @@ div.aboutFormularioTelefonoCorreo {
   padding: 1em 8em;
 }
 
-.card-titulo{
+.card-titulo {
   padding: 1em;
   color: #e6a91a;
   background-color: #f0f0f0;
   margin: 0;
+  font-size: 25px;
+  text-align: center;
 }
 
-.card-titulo span{
-  color:#3acfc0;
+.card-titulo span {
+  color: #3acfc0;
 }
 
 .card {
@@ -425,7 +417,7 @@ div.aboutFormularioTelefonoCorreo {
   width: 50px;
   display: flex;
   flex-direction: column;
-  gap: 7px ;
+  gap: 7px;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
   padding: 15px;
@@ -443,7 +435,7 @@ div.aboutFormularioTelefonoCorreo {
 .card .links a {
   font-size: 25px;
   color: #646069;
-  margin:-2px;
+  margin: -2px;
 }
 
 .card .links a:nth-child(1):hover {
@@ -458,11 +450,21 @@ div.aboutFormularioTelefonoCorreo {
   color: #8810a0;
 }
 
+/* Tarjetas -------- fin */
 
 
-/*Responsive para tablet de 768 para arriba*/
-@media (min-width: 768px) and (max-width: 1024px) { 
-  /* Banner */
+
+
+
+
+/* RESPONSIVE */
+
+
+/* Responsive para Tablet de 768 para arriba */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+/* Banner */
 
   header {
     display: flex;
@@ -471,20 +473,21 @@ div.aboutFormularioTelefonoCorreo {
     align-items: center;
     padding: 0 3em;
   }
-  
-  .logo-container a{
+
+  .logo-container a {
     width: 100%;
   }
 
   .nav-inicio {
     padding: 0;
-    margin: 0;
+    margin: 0 1em;
   }
 
   .logo-container img {
     width: 9em;
   }
-  .carousel{
+
+  .carousel {
     background-color: #f0f0f0;
   }
 
@@ -501,25 +504,30 @@ div.aboutFormularioTelefonoCorreo {
 
   }
 
-  /* Banner -------- fin */
+/* Banner -------- fin */
 
-  /* Valores, mision, vision */
 
-  
-  .Valores{
+
+
+
+
+/* Valores, mision, vision */
+
+  .Valores {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-bottom: 2em;
   }
-  .Valores h6{
+
+  .Valores h6 {
     text-align: left;
   }
-  
-  .Valores p{
+
+  .Valores p {
     text-align: left;
     font-size: 15px;
   }
-  
+
   .Mision {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -527,55 +535,168 @@ div.aboutFormularioTelefonoCorreo {
     direction: rtl;
     margin-bottom: 2em;
   }
-  
-  .Mision h6{
+
+  .Mision h6 {
     text-align: right;
   }
-  
-  .Mision p{
+
+  .Mision p {
     text-align: right;
     margin-left: 2em;
     margin-right: 0;
     font-size: 15px;
   }
-  
-  .Vision{
+
+  .Vision {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
   }
-  
-  .Vision h6{
+
+  .Vision h6 {
     text-align: left;
   }
-  
-  .Vision p{
+
+  .Vision p {
     text-align: left;
     font-size: 15px;
   }
 
-  /* Valores, mision, vision ------- fin */
- /* cards */ 
+/* Valores, mision, vision ------- fin */
+
+
+
+
+
+
+/* Cards */
 
   .div-tarjeta {
     padding: 1em 6em;
   }
+
   .card {
     margin: 2.1em;
     width: 220px;
   }
 
-  /* cards -------- fin*/
+/* Cards -------- fin */
 
-  /*formulario y footer*/
 
-  /*formulario y footer -------- fin*/
+
+
+
+
+
+/* Formulario y footer */
+
+  section.aboutFormulario {
+    color: #0E34AB;
+    background-color: #f0f0f0;
+  }
+
+
+  h1.aboutFormulario {
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 2rem;
+  }
+
+
+  form.aboutFormulario {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+  }
+
+
+  ul.aboutFormulario {
+    list-style: none;
+    margin: 0%;
+    padding: 1rem;
+    min-width: auto;
+  }
+
+  input.aboutFormularioNombre {
+    margin-bottom: 1rem;
+    align-items: center;
+    width: 700px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #dddddd;
+    border: 0;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  }
+
+  input.aboutFormularioTelefono {
+    width: 150px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #dddddd;
+    border: 0;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  }
+
+  input.aboutFormularioCorreo {
+    margin-bottom: 1rem;
+    width: 535px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #dddddd;
+    border: 0;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  }
+
+  textarea.aboutFormularioMensaje {
+    margin-bottom: 1rem;
+    width: 700px;
+    min-height: 150px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #dddddd;
+    color: #000;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  }
+
+  button.aboutFormulario {
+    border: 0;
+    border-radius: 5px;
+    background-color: #dddddd;
+    color: #000;
+    padding: 10px 20px 10px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  }
+
+  button.aboutFormulario:hover {
+    background-color: #465c8d;
+    color: #dddddd;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+  }
+
+  div.aboutFormularioTelefonoCorreo {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1rem;
+  }
+
+/* Formulario y footer -------- fin*/
 
 }
 
-/*Responsive para pc*/
-@media (min-width: 1025px) {
 
-  /* Banner */
+
+
+
+
+
+/* Responsive para PC de 1024 para arriba */
+
+@media (min-width: 1024px) {
+
+/* Banner */
 
   body {
     padding: 0 20%;
@@ -587,15 +708,14 @@ div.aboutFormularioTelefonoCorreo {
     justify-content: space-between;
     align-items: center;
   }
-  
-  .logo-container a{
+
+  .logo-container a {
     width: 100%;
   }
 
   .nav-inicio {
     padding: 0;
-    margin: 0;
-
+    margin: 0 1em;
   }
 
   .logo-container img {
@@ -608,7 +728,7 @@ div.aboutFormularioTelefonoCorreo {
 
   .carousel-inner img {
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 1em;
     height: 450px;
   }
@@ -617,26 +737,32 @@ div.aboutFormularioTelefonoCorreo {
     padding-bottom: 1em;
   }
 
-  /* Banner -------- fin */
+/* Banner -------- fin */
 
-  /* Valores, mision, vision */
 
-  .Valores{
+
+
+
+
+
+/* Valores, mision, vision */
+
+  .Valores {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  .Valores img{
+  .Valores img {
     width: 250px;
     height: 250px;
   }
 
-  .Valores h6{
+  .Valores h6 {
     text-align: left;
     font-size: 1.5em;
   }
 
-  .Valores p{
+  .Valores p {
     text-align: left;
     font-size: 12px;
   }
@@ -648,56 +774,157 @@ div.aboutFormularioTelefonoCorreo {
     direction: rtl;
   }
 
-  .Mision img{
+  .Mision img {
     width: 300px;
     height: 250px;
   }
-  
-  .Mision h6{
+
+  .Mision h6 {
     text-align: right;
     font-size: 1.5em;
   }
-  
-  .Mision p{
+
+  .Mision p {
     text-align: right;
     margin-right: 0;
     margin-left: 2em;
     font-size: 12px;
   }
 
-  .Vision{
+  .Vision {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
-  .Vision img{
+  .Vision img {
     width: 250px;
     height: 250px;
   }
 
-  .Vision h6{
+  .Vision h6 {
     text-align: left;
     font-size: 1.5em;
   }
 
-  .Vision p{
+  .Vision p {
     text-align: left;
     font-size: 12px;
   }
 
-  /* Valores, mision, vision ------- fin */
+/* Valores, mision, vision ------- fin */
 
 
-  
-  /* cards -------- fin*/
+
+/* Cards */
+
   .div-tarjeta {
     padding: 1em 1em;
   }
+
   .card {
     margin: 2.1em;
     width: 220px;
   }
-  /*formulario y footer*/
 
-  /*formulario y footer -------- fin*/
+/* Cards -------- fin*/
+
+
+
+
+/* Formulario y footer*/
+
+section.aboutFormulario {
+  color: #0E34AB;
+  background-color: #f0f0f0;
+}
+
+
+h1.aboutFormulario {
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 2rem;
+}
+
+
+form.aboutFormulario {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+ul.aboutFormulario {
+  list-style: none;
+  margin: 0%;
+  padding: 1rem;
+  min-width: auto;
+}
+
+input.aboutFormularioNombre {
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 400px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #dddddd;
+  border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+input.aboutFormularioTelefono {
+  width: 100px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #dddddd;
+  border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+input.aboutFormularioCorreo {
+  margin-bottom: 1rem;
+  width: 285px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #dddddd;
+  border: 0;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+textarea.aboutFormularioMensaje {
+  margin-bottom: 1rem;
+  width: 400px;
+  min-height: 150px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #dddddd;
+  color: #000;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+button.aboutFormulario {
+  border: 0;
+  border-radius: 5px;
+  background-color: #dddddd;
+  color: #000;
+  padding: 10px 20px 10px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+button.aboutFormulario:hover {
+  background-color: #465c8d;
+  color: #dddddd;
+  box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+div.aboutFormularioTelefonoCorreo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 1rem;
+}
+/* Formulario y footer -------- fin*/
+
 }
