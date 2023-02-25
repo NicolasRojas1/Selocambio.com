@@ -68,6 +68,88 @@ header {
 
 /* Banner -------- fin */
 
+/*Estilo Categorias*/
+
+.container-post{
+  background-color: #4483ce;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.container-category{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.container-category label{
+  padding: 6px 40px;
+  margin: 10px;
+  font-size: 20px;
+  background: #e2e2e2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-category label:hover{
+  opacity: 0.8;
+}
+
+
+
+/* Estilo publicaciones*/
+.posts{
+  background-color: aqua;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  place-items: center;
+}
+
+.posts .post{
+  width: 350px;
+  box-shadow: 0 0 20px -20px black;
+  border-radius: 6px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.post h2{
+  font-size: 25px;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+.posts .post .ctn-img{
+  width: 100%;
+}
+
+.posts .post .ctn-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post h3{
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+
+/*sistema de filtrado*/
+[value="Tecnología"]:checked ~.posts .post:not([data-category~="Tecnología"]){
+  display: none;
+}
+
+
+
+
 
 
 
