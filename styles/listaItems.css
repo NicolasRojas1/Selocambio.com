@@ -129,6 +129,21 @@ header {
 }
 
 
+footer.aboutFooter {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  background-color: #f0f0f0;
+
+}
+
+p.aboutFooter {
+  color: #000;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Sora', sans-serif;
+  font-size: smaller;
+}
 
 
 
