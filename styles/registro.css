@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+body {
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+.registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: rgba(147, 206, 222, 1);
+  background: -moz-linear-gradient(left, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  background: -webkit-linear-gradient(left, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  background: -o-linear-gradient(left, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  background: linear-gradient(to right, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
+  width: 400px;
+  height: 630px;
+  padding: 30px 18px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+}
+
+.registro h2 {
+  color: #f0f0f0;
+  text-shadow: 1px 1px 1px black;
+}
+
+.formulario-registro {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+  align-items: center;
+}
+
+.titulo--parte-1 {
+  color: #e6a91a;
+}
+
+.titulo--parte-2 {
+  color: #3acfc0;
+}
+
+.formulario-registro input {
+  border-radius: 5px;
+  border: 0;
+  padding: 8px;
+  width: 220px;
+  outline: none;
+  /*para quitar el bordeado negro*/
+  margin-top: 5px;
+  -webkit-box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-registro button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  color: #000;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  -webkit-box-shadow: 8px 5px 17px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 8px 5px 17px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 5px 17px 0px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-registro button:hover {
+  transition: .8s ease;
+  background: rgb(0, 0, 0);
+  background: -moz-radial-gradient(circle, rgba(0, 0, 0, 0.165703781512605) 0%, rgba(58, 207, 192, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.165703781512605) 0%, rgba(58, 207, 192, 1) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.165703781512605) 0%, rgba(58, 207, 192, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#3acfc0", GradientType=1);
+  color: #f0f0f0;
+}
+
+a {
+  width: 90%;
+}
+
+i.fa-solid,
+a {
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+p {
+  color: #fff;
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0; /*no se vea el letrero*/
+}
+
+a:hover p {
+  opacity: 1;
+  transition: 1s ease;
+  color: #e6a91a;
+  text-shadow: 1px 1px 1px rgb(110, 109, 109);
+}
+
+i.fa-solid:hover {
+  color: #e6a91a;
+  transition: 1.5s ease;
+  text-shadow: 1px 1px 1px rgb(110, 109, 109);
+  width: 200px;
+}
+
+/*----------------- inicio de sesion --------------------*/
+.inicio-sesion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: rgba(147, 206, 222, 1);
+  background: -moz-linear-gradient(left, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  background: -webkit-linear-gradient(left, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  background: -o-linear-gradient(left, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  background: linear-gradient(to right, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
+  width: 400px;
+  height: 630px;
+  padding: 30px 18px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+}
+
+.inicio-sesion h2 {
+  color: #f0f0f0;
+  text-shadow: 1px 1px 1px black;
+  width: 50%;
+  padding-bottom: 2em;
+}
+
+.formulario-inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.formulario-inicio input{
+  border-radius: 5px;
+  border: 0;
+  padding: 12px;
+  width: 220px;
+  outline: none;/*para quitar el bordeado negro*/
+  margin-top: 10px;
+  -webkit-box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-inicio button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+  color: #000;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  -webkit-box-shadow: 8px 5px 17px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 8px 5px 17px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 5px 17px 0px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-inicio button:hover {
+  transition: .8s ease;
+  background: rgb(0, 0, 0);
+  background: -moz-radial-gradient(circle, rgba(0, 0, 0, 0.165703781512605) 0%, rgba(58, 207, 192, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.165703781512605) 0%, rgba(58, 207, 192, 1) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.165703781512605) 0%, rgba(58, 207, 192, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#3acfc0", GradientType=1);
+  color: #f0f0f0;
+}
+
+.formulario-inicio a {
+  display: flex;
+  justify-content: center;
+}
+.formulario-inicio a:hover {
+  color: #000000d3;
+  font-weight: bold;
+  transition: 1s;
+}
