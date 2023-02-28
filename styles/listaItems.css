@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+
+body {
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  min-width: 100vw;
+  background-color: #f0f0f0;
+}
+
+/* Banner */
+
+header {
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.logo-container a {
+  width: 100vw;
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-container img {
+  width: 10em;
+  padding: 2em 0;
+  margin: 0px 2em
+}
+
+.nav-inicio {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1em;
+  color: #4483ce;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  padding: 0 0 2em 0;
+  background-color: #f0f0f0;
+}
+
+.nav-inicio li {
+  padding: 7px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.nav-inicio li:hover {
+  background-color: #4483ce;
+  color: #fff;
+  padding: 7px 25px;
+  border-radius: 7px;
+}
+
+.titulo-banner {
+  font-weight: 500;
+  color: #ffffffef;
+  text-shadow: 2px 1.5px 1.5px black;
+}
+
+.texto-banner {
+  color: #ffffffef;
+  text-shadow: 2px 1.5px 1.5px black;
+}
+
+
+/* Banner -------- fin */
+
+/*Estilo Categorias*/
+
+/* Estilos para la columna de categorías */
+
+.categories {
+  float: left;
+  width: 100%;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-family: 'Sora', sans-serif;
+}
+
+.categories h2 {
+  margin-top: 0;
+}
+
+.categories ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories li {
+  margin-bottom: 5px;
+}
+
+.categories a {
+  display: block;
+  padding: 10px;
+  background-color: #ddd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.categories a:hover {
+  background-color: #bbb;
+}
+
+
+/* Estilos para la columna de resultados */
+
+.results {
+  float: right;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  animation-duration: 5ms;
+}
+
+.results h2 {
+  margin-top: 0;
+}
+
+#imagenes img {
+  max-width: 50%;
+  height: auto;
+}
+
+
+footer.aboutFooter {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  background-color: #f0f0f0;
+
+}
+
+p.aboutFooter {
+  color: #000;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Sora', sans-serif;
+  font-size: smaller;
+}
+
+
+/* RESPONSIVE */
+
+
+/* Responsive para Tablet de 768 para arriba */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+/* Banner */
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+  }
+
+  .logo-container a {
+    width: 100%;
+  }
+
+  .nav-inicio {
+    padding: 0;
+    margin: 0 1em;
+  }
+
+  .logo-container img {
+    width: 9em;
+  }
+
+  .carousel {
+    background-color: #f0f0f0;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+    height: 325px;
+  }
+
+  .carousel-inner {
+    height: 400px;
+    padding: 0 3em 1em 3em;
+
+  }
+}
+
+/* Banner -------- fin */
+
+
+.categories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.categorias ul{
+  width: 30px;
+}
+
+
+
+
+/* Responsive para PC de 1024 para arriba */
+
+@media (min-width: 1024px) {
+
+/* Banner */
+
+  body {
+    padding: 0 20%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-container a {
+    width: 100%;
+  }
+
+  .nav-inicio {
+    padding: 0;
+    margin: 0 1em;
+  }
+
+  .logo-container img {
+    width: 9em;
+  }
+
+  .carousel {
+    background-color: #f0f0f0;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+    height: 450px;
+  }
+
+  .carousel-inner {
+    padding-bottom: 1em;
+  }
+
+/* Banner -------- fin */
+
+}
