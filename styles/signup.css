@@ -119,8 +119,9 @@ header {
 
 /* Banner */
 
-  body {
-    padding: 0 20%;
+  body.borderpage {
+    padding: 0 10%;
+    background-color: #009cdf;
   }
 
   header {

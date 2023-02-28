@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
 
-body {
+body.productcard {
   font-family: 'Sora', sans-serif;
   margin: 0;
   min-width: 100vw;
@@ -108,6 +108,14 @@ header {
   background-color: #bbb;
 }
 
+body.categorias{
+  background-color: #fff;
+}
+
+h2.categorias{
+background-color: #fff;
+font-size: 1.5em;
+}
 
 /* Estilos para la columna de resultados */
 
@@ -215,9 +223,10 @@ p.aboutFooter {
 
 /* Banner */
 
-  body {
-    padding: 0 20%;
-  }
+body.borderpage {
+  padding: 0 10%;
+  background-color: #009cdf;
+}
 
   header {
     display: flex;
@@ -246,7 +255,7 @@ p.aboutFooter {
   .carousel-inner img {
     width: 100%;
     object-fit: cover;
-    border-radius: 1em;
+    border-radius: 0em;
     height: 450px;
   }
 
