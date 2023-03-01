@@ -1,0 +1,50 @@
+li {
+  list-style: none;
+}
+
+
+
+.categories {
+  float: left;
+  width: 100%;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  font-family: 'Sora', sans-serif;
+}
+
+.categories h2 {
+  margin-top: 0;
+  
+}
+
+.categories ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categories li {
+  margin-bottom: 5px;
+}
+
+.categories a {
+  display: block;
+  padding: 10px;
+  background-color: #ddd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.categories a:hover {
+  background-color: #bbb;
+}
+
+body.categorias{
+  background-color: #fff;
+}
+
+h2.categorias{
+background-color: #fff;
+font-size: 1.5em;
+}
