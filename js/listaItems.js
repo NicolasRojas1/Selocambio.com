@@ -6,8 +6,10 @@
           const imagenURL = event.target.getAttribute("data-imagen");
 
           // Crear un elemento "img" con la URL de la imagen
-          const imagen = document.createElement("img");
+          const imagen = document.createElement("iframe");
           imagen.src = imagenURL;
+          imagen.width = "100%"
+          imagen.height = "700px"
 
           // Mostrar la imagen en la columna de resultados
           const imagenesDiv = document.getElementById("imagenes");
@@ -20,35 +22,3 @@
       for (let i = 0; i < enlacesCategorias.length; i++) {
           enlacesCategorias[i].addEventListener("click", mostrarImagen);
       }
-
-
-
-
-
-
-
-/* section publicaciones */
-let preveiwContainer = document.querySelector('.products-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
-
-document.querySelectorAll('.products-container .product').forEach(product =>{
-  product.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
-    let name = product.getAttribute('data-name');
-    previewBox.forEach(preview =>{
-      let target = preview.getAttribute('data-target');
-      if(name == target){
-        preview.classList.add('active');
-      }
-    });
-  };
-});
-
-previewBox.forEach(close =>{
-  close.querySelector('.fa-times').onclick = () =>{
-    close.classList.remove('active');
-    preveiwContainer.style.display = 'none';
-  };
-});
-
-/* section publicaciones --------- fin*/
