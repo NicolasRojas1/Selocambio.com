@@ -26,7 +26,7 @@ body {
   width: 400px;
   height: 630px;
   padding: 30px 18px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .registro h2 {
@@ -103,6 +103,7 @@ a {
   color: #fff;
   text-transform: capitalize;
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -110,7 +111,8 @@ p {
   font-family: 'Sora', sans-serif;
   font-weight: 400;
   margin: 0;
-  opacity: 0; /*no se vea el letrero*/
+  opacity: 0;
+  /*no se vea el letrero*/
 }
 
 a:hover p {
@@ -144,7 +146,7 @@ i.fa-solid:hover {
   width: 400px;
   height: 630px;
   padding: 30px 18px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .inicio-sesion h2 {
@@ -162,12 +164,13 @@ i.fa-solid:hover {
   align-items: center;
 }
 
-.formulario-inicio input{
+.formulario-inicio input {
   border-radius: 5px;
   border: 0;
   padding: 12px;
   width: 220px;
-  outline: none;/*para quitar el bordeado negro*/
+  outline: none;
+  /*para quitar el bordeado negro*/
   margin-top: 10px;
   -webkit-box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.5);
@@ -204,8 +207,24 @@ i.fa-solid:hover {
   display: flex;
   justify-content: center;
 }
+
 .formulario-inicio a:hover {
   color: #000000d3;
   font-weight: bold;
   transition: 1s;
+}
+
+.rotated {
+  transform: rotate3d(0, 1, 0, 60deg);
+  background-color: pink;
+}
+.inner {
+          animation: animate 2s linear;
+}
+
+
+@keyframes animate {
+  to {
+      -webkit-transform: rotateY(180deg);
+  }
 }
