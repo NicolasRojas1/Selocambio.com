@@ -7,7 +7,7 @@ function abrirTarjetaLogin() {
   document.getElementById("tarjeta-registro").classList.add("inner");
   const pause = (time) => new Promise(resolve => setTimeout(resolve,time))
   async function start() {
-    await pause(1110)
+    await pause(700)
     navegarALogin()
   }
   start()
