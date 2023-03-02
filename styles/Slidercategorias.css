@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+
+
 li {
   list-style: none;
 }
@@ -10,10 +15,12 @@ li {
   font-family: 'Sora', sans-serif;
 }
 
-.categories h2 {
+h2 {
   margin-top: 0;
-  
+  font-family: 'Alata', sans-serif;
+  color: #4483ce !important;
 }
+
 
 .categories ul {
   margin: 0;
@@ -40,9 +47,4 @@ li {
 
 body.categorias{
   background-color: #fff;
-}
-
-h2.categorias{
-background-color: #fff;
-font-size: 1.5em;
 }
