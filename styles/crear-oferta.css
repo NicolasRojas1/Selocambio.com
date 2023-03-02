@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+
+
+/* Formulario y footer */
+
+
+li {
+  color: #fff;
+}
+
+div.crearOfera {
+  color: #fff;
+  background-color: #55bbb5;
+  width: 750px;
+  min-height: 500px;
+  border-radius: 2%;
+margin: auto auto;
+}
+
+
+h1.crearOfera {
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
+form.crearOfera {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+  min-width: 350px;
+
+}
+
+
+ul.crearOfera {
+  list-style: none;
+  margin: 0%;
+  padding: 1rem;
+  width: auto;
+}
+
+input.crearOferaNombre {
+  margin-bottom: 0rem;
+  align-items: center;
+  width: 350px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+textarea.crearOferaMensaje {
+  margin-bottom: 1rem;
+  width: 350px;
+  min-height: 150px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+button.boton {
+  border: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 10px 20px 10px;
+  margin-bottom: 0rem;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+button.boton:hover {
+  background-color: #4483ce;
+  color: #f0f0f0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+div.crearOferaTelefonoCorreo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+footer.aboutFooter {
+  text-align: center;
+  padding: 16px;
+  margin: 0;
+  background-color: #fff;
+
+}
+
+p.aboutFooter {
+  color: #000;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Sora', sans-serif;
+  font-size: smaller;
+}
+
+/* RESPONSIVE */
+
+
+/* Responsive para Tablet de 768 para arriba */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+/* Formulario y footer */
+
+section.crearOfera {
+  color: #4483ce;
+  background-color: #fff;
+}
+
+
+h1.crearOfera {
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 2rem;
+}
+
+
+form.crearOfera {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+ul.crearOfera {
+  list-style: none;
+  margin: 0%;
+  padding: 1rem;
+  min-width: auto;
+}
+
+input.crearOferaNombre {
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+input.crearOferaTelefono {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+input.crearOferaCorreo {
+  margin-bottom: 1rem;
+  width: 285px;
+  height: 40px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+textarea.crearOferaMensaje {
+  margin-bottom: 1rem;
+  width: 400px;
+  min-height: 150px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+button.crearOfera {
+  border: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 10px 20px 10px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+button.crearOfera:hover {
+  background-color: #4483ce;
+  color: #f0f0f0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+div.crearOferaTelefonoCorreo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 1rem;
+}
+/* Formulario y footer -------- fin*/
+
+
+
+
+}
+
+
+
+
+
+
+
+/* Responsive para PC de 1024 para arriba */
+
+@media (min-width: 1024px) {
+
+
+/* Formulario y footer */
+
+section.crearOfera {
+  color: #4483ce;
+  background-color: #fff;
+}
+
+
+h1.crearOfera {
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 2rem;
+}
+
+
+form.crearOfera {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+ul.crearOfera {
+  list-style: none;
+  margin: 0%;
+  padding: 1rem;
+  min-width: auto;
+}
+
+input.crearOferaNombre {
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 700px;
+  height: 40px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+input.crearOferaTelefono {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+input.crearOferaCorreo {
+  margin-bottom: 1rem;
+  width: 535px;
+  height: 40px;
+  border-radius: 5px;
+  color: #000;
+  background-color: #f0f0f0;
+  border: 0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+textarea.crearOferaMensaje {
+  margin-bottom: 1rem;
+  width: 700px;
+  min-height: 150px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #000;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+button.crearOfera {
+  border: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 10px 20px 10px;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+button.crearOfera:hover {
+  background-color: #4483ce;
+  color: #f0f0f0;
+  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
+}
+
+div.crearOferaTelefonoCorreo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 1rem;
+}
+
+/* Formulario y footer -------- fin*/
+
+
+}
