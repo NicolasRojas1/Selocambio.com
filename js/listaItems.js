@@ -9,7 +9,7 @@
           const imagen = document.createElement("iframe");
           imagen.src = imagenURL;
           imagen.width = "100%"
-          imagen.height = "700px"
+          imagen.height = "900px"
 
           // Mostrar la imagen en la columna de resultados
           const imagenesDiv = document.getElementById("imagenes");
