@@ -243,6 +243,16 @@ html{
   color:#fff;
 }
 
+.productmas{
+  width: 270px;
+  height: 300px;
+  background-color: red;
+}
+
+img.productmas{
+object-fit: cover;
+}
+
 
 /* Productos --------- fin */
 
