@@ -312,7 +312,12 @@ p.aboutFooter {
 }
 
 
+iframe {
+  border: none;
+}
+
 iframe.redondo{
+  border: none;
   border-bottom-left-radius: 40px 40px;
   border-bottom-right-radius: 40px 40px;
 }
