@@ -198,6 +198,9 @@ header {
 section.aboutFormulario {
   color: #4483ce;
   background-color: #fff;
+  border-bottom-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
+
 }
 
 
@@ -216,7 +219,10 @@ form.aboutFormulario {
   margin: 0%;
   min-width: 350px;
   background-color: #fff;
+  border-bottom-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
 }
+
 
 
 ul.aboutFormulario {
@@ -293,18 +299,29 @@ div.aboutFormularioTelefonoCorreo {
 footer.aboutFooter {
   text-align: center;
   padding: 16px;
-  margin: 0;
-  background-color: #fff;
-
+  margin: 2.5% 0;
+  background-color: #029cdf;
 }
 
 p.aboutFooter {
-  color: #000;
+  color: #fff;
   margin: 0%;
   padding: 0%;
   font-family: 'Sora', sans-serif;
   font-size: smaller;
 }
+
+
+iframe {
+  border: none;
+}
+
+iframe.redondo{
+  border: none;
+  border-bottom-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
+}
+
 
 /* Formulario y footer -------- fin */
 
@@ -681,13 +698,10 @@ div.aboutFormularioTelefonoCorreo {
   text-align: center;
   gap: 1rem;
 }
-/* Formulario y footer -------- fin*/
-
-
-
 
 }
 
+/* Formulario y footer -------- fin*/
 
 
 
