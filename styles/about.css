@@ -28,6 +28,10 @@ header {
   margin: 0px 2em
 }
 
+.logo-container:hover {
+background-color: #f0f0f0;
+}
+
 .nav-inicio {
   list-style: none;
   display: flex;
