@@ -1,2 +1,2 @@
 # Selocambio.com
-Plataforma de trueques y donaciones
+Plataforma de trueques y donaciones.
