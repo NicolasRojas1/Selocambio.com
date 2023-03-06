@@ -72,7 +72,16 @@ header {
     height: 250px;
     object-fit: cover;
 }
+
 /* Banner -------- fin */
+
+.titulo {
+
+  text-align: center;
+  padding-top: 10px;
+  color: #fff;
+  text-shadow: 2px 1.5px 1.5px black;
+}
 
 footer.aboutFooter {
   text-align: center;
@@ -88,6 +97,57 @@ p.aboutFooter {
   font-family: 'Sora', sans-serif;
   font-size: smaller;
 }
+
+/*product cards*/
+.shop-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  font-family: arial;
+  margin: 10px;
+  border-radius: 5px !important;
+}
+
+.card:hover {
+  border: 3px solid #29251c;
+  transition: .4s;
+  transform: scale(1.05);
+}
+
+.card > img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: scale-down;
+  padding-top: 10px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #e6b04d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.card button:hover {
+  transition: .5s;
+  color: #4483ce;
+}
+
 
 /* RESPONSIVE */
 /* Responsive para Tablet de 768 para arriba */
@@ -173,12 +233,6 @@ p.aboutFooter {
 
     .carousel {
       background-color: #fff;
-    }
-
-    
-
-    .carousel-inner {
-      padding-bottom: 1em;
     }
 
     .carousel-item img{
