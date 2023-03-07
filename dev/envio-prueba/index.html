@@ -15,13 +15,6 @@
 
 <body>
 
-  <nav class="navbar navbar-light bg-light " style="color: #fff !important; background-color: #563d7c !important;">
-    <a class="navbar-brand" href="https://blogangular-c7858.web.app/">
-      Canal WebDeveloper
-    </a>
-    <h5 class="form-inline">Urian Viera</h5>
-  </nav>
-
 
 
   <div class="container mt-5">
@@ -32,22 +25,23 @@
     </h3>
 
 
-    <form method="post" action="sendemail.php" enctype="multipart/form-data">
+    <form method="post" action="/dev/envio-prueba/sendemail.php" enctype="multipart/form-data">
+
       <label for="name">Nombre:</label>
       <input type="text" name="name" required>
-    
+      <br><br>
       <label for="email">Correo electrónico:</label>
       <input type="email" name="email" required>
-    
+      <br><br>
       <label for="subject">Asunto:</label>
       <input type="text" name="subject" required>
-    
+      <br><br>
       <label for="message">Mensaje:</label>
       <textarea name="message" required></textarea>
-    
+      <br><br>
       <label for="attachment">Adjuntar archivo:</label>
       <input type="file" name="attachment">
-    
+      <br><br>
       <input type="submit" value="Enviar">
     </form>
     
