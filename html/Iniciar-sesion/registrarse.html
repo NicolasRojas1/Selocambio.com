@@ -2,16 +2,16 @@
   <h2>Registro a <span class="titulo--parte-1">Selocambio</span><span
       class="titulo--parte-2">.com</span></h2>
 
-  <form action="" class="formulario-registro">
-    <input type="text" placeholder="Nombre" required autocapitalize="word" autofocus>
-    <input type="text" placeholder="Apellido" required autocapitalize="word">
-    <input type="number" placeholder="N° Identificación" required>
-    <input type="number" placeholder="Edad" required>
-    <input type="number" placeholder="Teléfono" required>
-    <input type="email" placeholder="Correo" required>
-    <input type="password" placeholder="Contraseña" required>
-    <input type="password" placeholder="Confirme contraseña" required>
-    <button>Registrar</button>
+  <form onsubmit="singUp()" class="formulario-registro">
+    <input type="text" id="fname" placeholder="Nombre" autocapitalize="word" autofocus>
+    <input type="text" id="lname"placeholder="Apellido" autocapitalize="word">
+    <input type="number" id="id" placeholder="N° Identificación">
+    <input type="number" id="age" placeholder="Edad" >
+    <input type="number" id="phone" placeholder="Teléfono" >
+    <input type="email" id="email" placeholder="Correo" >
+    <input type="password" id="password" placeholder="Contraseña" >
+    <input type="password" id="confirm-password" placeholder="Confirme contraseña">
+    <button type="submit">Registrar</button>
   </form>
   <a onclick="abrirTarjetaRegistro()">
     <i class="fa-solid fa-arrow-right">
