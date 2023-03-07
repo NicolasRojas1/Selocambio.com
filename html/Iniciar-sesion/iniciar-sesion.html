@@ -1,10 +1,11 @@
 <section class="inicio-sesion" id="iniciar-sesion">
   <h2>Inicio de Sesión <span class="titulo--parte-1">Selocambio</span><span
       class="titulo--parte-2">.com</span></h2>
-  <form action="" class="formulario-inicio">
-    <input type="email" placeholder="Correo" required>
-    <input type="password" placeholder="Contraseña" required>
-    <button>Ingresar</button>
+  <form onsubmit="loginFunc()" class="formulario-inicio">
+    <input type="email" id="email" placeholder="Correo" required>
+    <input type="password" id="password" placeholder="Contraseña">
+    <p id="result">Bienvenido a Selocambio</p>
+    <button type="submit">Ingresar</button>
     <a href="../../dev/publicar-nicolas/publicaciones-n.html">¿Olvidó su contraseña?</a>
   </form>
   <a onclick="abrirTarjetaLogin()">

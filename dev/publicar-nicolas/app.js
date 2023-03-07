@@ -15,8 +15,9 @@ products.forEach((products) => {
   let seLoCambio = document.createElement("button");
   seLoCambio.innerHTML = "Selocambio!";
   content.append(seLoCambio); 
-
 });
+
+
 
 
 
