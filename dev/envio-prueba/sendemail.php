@@ -1,7 +1,7 @@
 <?php
 if($_SERVER["REQUEST_METHOD"] == "POST"){
   // Información del correo electrónico
-  $to_email = "destinatario@example.com";
+  $to_email = "sanchezlopezadolfo@gmail.com";
   $subject = $_POST['subject'];
   $message = $_POST['message'];
   $from_name = $_POST['name'];
