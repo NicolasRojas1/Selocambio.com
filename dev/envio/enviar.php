@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $content .= "--boundary--";
 
-    mail($to, $subject, $content, $headers);
+    mail($to, $nombre, $titulo, $header);
 
     // Redireccionar a una página de confirmación
     header('Location: ../../html/procesando.html');
