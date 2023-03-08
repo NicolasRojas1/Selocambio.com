@@ -11,7 +11,7 @@ function singUp(e) {
   };
 
   let json = JSON.stringify(user);
-  localStorage.setItem(user, json);
+  localStorage.setItem(email, json);
   console.log('user added');
 
 }
