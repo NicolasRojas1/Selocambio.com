@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
 body {
   font-family: 'Sora', sans-serif;
   margin: 0;
   min-width: 100vw;
 }
-
-
-
-
-
-
-
 
 /* Banner */
 
@@ -75,11 +73,12 @@ background-color: #f0f0f0;
   text-shadow: 2px 1.5px 1.5px black;
 }
 
+.d-block img:active{
+    height: 200px !important;
+    object-fit: cover;
+}
 
 /* Banner -------- fin */
-
-
-
 
 
 
