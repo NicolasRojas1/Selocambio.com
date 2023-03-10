@@ -1,36 +1,36 @@
 
 function validateFormS() {
-    var name = document.getElementById("fname").value;
-    var lastname = document.getElementById("lname").value;
-    var idnumber = document.getElementById("id").value;
-    var age = document.getElementById("age").value;
-    var phone = document.getElementById("phone").value;
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var cpassword = document.getElementById("confirm-password").value;
+    let name = document.getElementById("fname").value;
+    let lastname = document.getElementById("lname").value;
+    let idnumber = document.getElementById("id").value;
+    let age = document.getElementById("age").value;
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let cpassword = document.getElementById("confirm-password").value;
 
 
-    var nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}$/;
-    var lastnameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}(?: [a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}){0,1}$/;
-    var idnumberRegex = /^\d{6,10}$/;
-    var ageRegex = /^(1[89]|[2-9][0-9]|100)$/;
-    var phoneRegex = /^\d{10}$/;
-    var emailRegex = /^\S+@\S+\.\S+$/;
-    var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    let nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}$/;
+    let lastnameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}(?: [a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}){0,1}$/;
+    let idnumberRegex = /^\d{6,10}$/;
+    let ageRegex = /^(1[89]|[2-9][0-9]|100)$/;
+    let phoneRegex = /^\d{10}$/;
+    let emailRegex = /^\S+@\S+\.\S+$/;
+    let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
 
     if (!nameRegex.test(name)) {
-        alert("Ingrese un nombre válido.");
+        alert("Ingresa un nombre válido.");
         return false;
     }
 
     if (!lastnameRegex.test(lastname)) {
-        alert("Ingrese un apellido válido.");
+        alert("Ingresa un apellido válido.");
         return false;
     }
 
     if (!idnumberRegex.test(idnumber)) {
-        alert("Ingrese un número de identificación válido.");
+        alert("Ingresa un número de identificación válido.");
         return false;
     }
 
@@ -41,12 +41,12 @@ function validateFormS() {
 
 
     if (!phoneRegex.test(phone)) {
-        alert("Ingrese un número de teléfono válido.");
+        alert("Ingresa un número de teléfono válido.");
         return false;
     }
 
     if (!emailRegex.test(email)) {
-        alert("Ingrese una dirección de e-mail válida.");
+        alert("Ingresa una dirección de e-mail válida.");
         return false;
     }
     if (!passwordRegex.test(password)) {
@@ -54,7 +54,7 @@ function validateFormS() {
         return false;
     }
 
-    if (!passwordRegex.test(cpassword)) {
+    if (cpassword != password) {
         alert("Las contraseñas ingresadas no coinciden.");
         return false;
     }
@@ -66,7 +66,7 @@ function validateFormS() {
 
 function signUp() {
     console.log("Cuenta creada!");
-    alert("Has creado tu cuenta satisfactoriamente, te vamos a direccionar a nuestra pagina de inicio.")
+    alert("¡Has creado tu cuenta satisfactoriamente!")
     window.location.href='../../dev/publicar-nicolas/publicaciones-n.html';
 }
 function limpiarFormulario() {
