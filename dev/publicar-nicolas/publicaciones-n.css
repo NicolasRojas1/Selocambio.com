@@ -100,27 +100,28 @@ p.aboutFooter {
 
 /*product cards*/
 .shop-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+  display: flex !important;
+  justify-content: space-around !important;
+  flex-wrap: wrap !important;
+  margin-top: 30px !important;
+  margin-left: 60px !important;
+  margin-right: 60px !important;
 }
 .card{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 350px;
-  text-align: center;
-  font-family: arial;
-  margin: 10px;
-  border-radius: 5px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+  width: 350px !important;
+  text-align: center !important;
+  font-family: arial !important;
+  margin: 10px !important;
+  border-radius: 15px !important;
 }
 
+/*
 .card:hover {
   border: 3px solid #29251c;
   transition: .4s;
-  transform: scale(1.05);
-}
+  transform: scale(1.05);button
+}*/
 
 .card > img {
   width: 100%;
@@ -129,23 +130,27 @@ p.aboutFooter {
   padding-top: 10px;
 }
 
-.card button {
+.card a {
+  text-decoration: none;
   border: none;
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #e6b04d;
+  background-color: #4483ce;
   text-align: center;
   cursor: pointer;
   width: 100%;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 15px;
   font-weight: bold;
+  box-shadow: 0px 0px 0px 2px #4483ce;
 }
 
-.card button:hover {
+.card a:hover {
   transition: .5s;
-  color: #4483ce;
+  color: black;
+  background-color: #e6b04d;
+  box-shadow: 0px 0px 0px 2px #e6b04d;
 }
 
 

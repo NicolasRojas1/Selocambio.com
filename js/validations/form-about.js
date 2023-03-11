@@ -1,12 +1,13 @@
-function validateForm() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var message = document.getElementById("message").value;
-    var nameRegex = /^[a-zA-Z ]{2,30}$/;
-    var emailRegex = /^\S+@\S+\.\S+$/;
-    var phoneRegex = /^\d{10}$/;
-    var messageRegex = /^.{1,50}$/;
+function validateForm() 
+{
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let message = document.getElementById("message").value;
+    let nameRegex = /^[a-zA-Z ]{2,30}$/;
+    let emailRegex = /^\S+@\S+\.\S+$/;
+    let phoneRegex = /^\d{10}$/;
+    let messageRegex = /^.{1,50}$/;
 
     if (!nameRegex.test(name)) {
         alert("Ingrese nombres y apellidos validos.");
@@ -25,13 +26,8 @@ function validateForm() {
         return false;
     }
     sendEmail();
-    limpiarFormulario();
-    return false;
 }
 
 function sendEmail() {
     console.log("Correo electronico enviado!");
-}
-function limpiarFormulario() {
-    document.getElementById("name").value = ""
 }

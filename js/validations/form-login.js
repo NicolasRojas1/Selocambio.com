@@ -1,4 +1,4 @@
-alert("Solo los administradores pueden registrarse e iniciar sesión, si eres usuario dale clik al boton Home.");
+alert("Solo los administradores pueden registrarse e iniciar sesión, si eres usuario dale click al boton Home.");
 
 function validateForm() {
     var email = document.getElementById("email").value;

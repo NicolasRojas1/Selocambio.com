@@ -33,15 +33,9 @@ function validateForm() {
         alert("Ingrese una dirección de e-mail válida.");
         return false;
     }
-
     sendEmail();
-    limpiarFormulario();
-    return false;
 }
 
 function sendEmail() {
     console.log("Correo electronico enviado!")
-}
-function limpiarFormulario() {
-    document.getElementById("name").value = ""
 }
