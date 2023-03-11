@@ -42,20 +42,17 @@
 <body class="borderpage">
   <header>
     <div class="logo-container">
-      <a href="../../dev/publicar-nicolas/publicaciones-n.html">
+      <a>
         <img src="/img/logo-horizontal-01.png" alt="logo-selocambio">
       </a>
     </div>
     <nav>
       <ul class="nav-inicio">
-        <a href="../../html/about.html" style="text-decoration:none">
-          <li>Nosotros</li>
+        <a href="https://dashboard.stripe.com/test/products?active=true" target="_blank" style="text-decoration:none">
+          <li>Gestionar</li>
         </a>
-        <a href="../../html/publica.html" style="text-decoration:none">
-          <li>Publica</li>
-        </a>
-        <a href="../../html/Iniciar-sesion/registro.html" style="text-decoration:none">
-          <li>Iniciar sesión</li>
+        <a onclick = "ventana()" style="text-decoration:none">
+          <li>Cerrar sesión</li>
         </a>
       </ul>
       <!--<i class="fa-solid fa-circle-user"></i>-->
@@ -109,9 +106,7 @@
       </button>
     </div>
   </div>
-
   <h1 class="titulo">Nuestros Productos</h1>
-  
   <div id="shopContent" class="shop-content"></div>
 
   <footer class="aboutFooter">
@@ -125,6 +120,9 @@
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="products.js"></script>
   <script src="app.js"></script>
+
+
+  <script src="/js/validations/cpmfirm-sign-off.js"></script>
 </body>
 
 </html>

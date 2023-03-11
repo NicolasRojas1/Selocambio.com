@@ -75,19 +75,18 @@
     <h6 class="publica">Publica tu oferta</h6>
 
     <article class="Valores">
-      <img src="../img/publica/interrogacion.png" alt="">
+     </div><img src="../img/publica/interrogacion.png" alt=""></div>
       <div>
         <h6>¿Como funciona?</h6>
-        <p>Llenaras un formulario, el cual nosotros recibiremos en nuestro correo electronico con
-          la informacion de tu oferta y algunos datos personales basicos, con el fin de facilitar
+        <p>Puedes contactarnos a traves del formulario o via whatsApp con la información de tu oferta y algunos datos personales basicos, con el fin de facilitar
           la gestion de las ofertas de intercambio publicadas en Selocambio.com</p>
       </div>
     </article>
 
     <article class="Mision">
-      <img src="../img/publica/seguridad.png" alt="">
+      <div><img src="../img/publica/seguridad.png" alt=""></div>
       <div>
-        <h6>?Porque hacemos esto¿</h6>
+        <h6>¿Porque hacemos esto?</h6>
         <p>Al poder gestionar las ofertas de esta manera, podemos determinar que ofertas cumplen con
           nuestras politicas y cuales no, esto con el motivo de evitar estafas en la plataforma,
           al tener datos de contacto basicos, podemos contactarte
@@ -99,7 +98,7 @@
 
 
     <article class="Vision">
-      <img src="../img/publica/despertador.png" alt="">
+      <div><img src="../img/publica/despertador.png" alt=""></div>
       <div>
         <h6>¿Cuanto tardaran mis ofertas en subirse a la pagina?</h6>
         <p>Recibiras una respuesta rapida en menos de 12 horas en caso de que tu oferta no cumpla con los requisitos,
@@ -121,7 +120,7 @@
 
 
 
-    <form class="aboutFormulario" action="https://formspree.io/f/xqkoqqaj" method="POST" enctype="multipart/form-data" target="_blank">
+    <form class="aboutFormulario" action="https://formspree.io/f/xeqwzobg" method="POST" enctype="multipart/form-data" target="_blank">
 
       <ul class="aboutFormulario">
 
@@ -132,13 +131,15 @@
             <input class="aboutFormularioNombre" placeholder="Titulo de la oferta" type="text" id="postname" required>
           </li>
 
+
+          <!-- COMENTARIO
           <center>
             <label class="custom-file-upload">
               <input type="file" accept="image/png, image/jpeg, image/webp," id="postphoto"/>
               Sube tu imagen
             </label>
           </center>
-
+        -->
 
         </div>
 
@@ -177,8 +178,7 @@
           </div>
 
           <br>
-          <button class="aboutFormulario" type="submit" required onclick="return validateForm()">PUBLICA TU
-            OFERTA</button>
+          <button class="aboutFormulario" type="submit" required onclick="return validateForm()">ENVIAR OFERTA</button>
           <br>
           <br>
           <br>
@@ -212,7 +212,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="/js/validations/valid-sendoffer.js" defer></script>
+  <script src="../js/validations/form-publica.js" defer></script>
+
+
+  <script src="/js/whatsapp.js" defer ></script>
 
 
 </body>
