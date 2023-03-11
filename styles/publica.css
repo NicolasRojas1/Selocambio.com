@@ -101,12 +101,13 @@ background-color: #f0f0f0;
   grid-auto-flow: dense;
   place-items: center;
   padding: 10em auto 0 auto;
+   width: 100%;
+  height: 100%;
 }
 
 .Valores img {
-
-  width: 300px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
   margin-top: 2em;
 }
 
@@ -116,6 +117,8 @@ background-color: #f0f0f0;
   text-align: center;
   font-family: 'Alata', sans-serif;
   color: #4483ce;
+  width: 100%;
+  height: 100%;
 }
 
 .Valores p {
@@ -123,7 +126,9 @@ background-color: #f0f0f0;
   margin-right: 2em;
   font-family: 'Sora', sans-serif;
   text-align: center;
-  line-height: 1.5
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
 }
 
 /*----- mision------*/
@@ -397,7 +402,7 @@ input[type="file"] {
 
 
 /* Responsive para Tablet de 768 para arriba */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1023px) and (max-width: 1024px) {
 
 
 /* Banner */
@@ -451,17 +456,15 @@ input[type="file"] {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-flow: dense;
-    direction: rtl;
     margin-bottom: 2em;
   }
 
   .Mision h6 {
-    text-align: right;
+    text-align: left;
   }
 
   .Mision p {
-    text-align: right;
-    margin-left: 2em;
+    text-align: left;
     margin-right: 0;
     font-size: 15px;
   }
@@ -512,13 +515,13 @@ ul.aboutFormulario {
   list-style: none;
   margin: 0%;
   padding: 1rem;
-  min-width: auto;
+  width: auto;
 }
 
 input.aboutFormularioNombre {
   margin-bottom: 1rem;
   align-items: center;
-  width: 400px;
+  width: 100%;
   height: 40px;
   border-radius: 5px;
   color: #000;
@@ -528,7 +531,7 @@ input.aboutFormularioNombre {
 }
 
 input.aboutFormularioTelefono {
-  width: 100px;
+  width: 100%;
   height: 40px;
   border-radius: 5px;
   color: #000;
@@ -539,7 +542,7 @@ input.aboutFormularioTelefono {
 
 input.aboutFormularioCorreo {
   margin-bottom: 1rem;
-  width: 285px;
+  width: 100%;
   height: 40px;
   border-radius: 5px;
   color: #000;
@@ -550,7 +553,7 @@ input.aboutFormularioCorreo {
 
 textarea.aboutFormularioMensaje {
   margin-bottom: 1rem;
-  width: 400px;
+  width: 100%;
   min-height: 150px;
   border: 0;
   border-radius: 5px;
@@ -654,14 +657,20 @@ div.aboutFormularioTelefonoCorreo {
 
   .Valores p {
     text-align: left;
+    margin-right: 40px;
     font-size: 12px;
+
   }
+
+
+
+
+
 
   .Mision {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-flow: dense;
-    direction: rtl;
   }
 
   .Mision img {
@@ -670,17 +679,19 @@ div.aboutFormularioTelefonoCorreo {
   }
 
   .Mision h6 {
-    text-align: right;
+    text-align: left;
     font-size: 1.5em;
   }
 
   .Mision p {
-    text-align: right;
-    margin-right: 0;
-    margin-left: 2em;
+    text-align: left;
+    margin-right: 40px;
     font-size: 12px;
   }
 
+
+
+  
   .Vision {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -698,7 +709,9 @@ div.aboutFormularioTelefonoCorreo {
 
   .Vision p {
     text-align: left;
+    margin-right: 40px;
     font-size: 12px;
+   
   }
 
 /* Valores, mision, vision ------- fin */
@@ -710,6 +723,7 @@ div.aboutFormularioTelefonoCorreo {
 section.aboutFormulario {
   color: #4483ce;
   background-color: #fff;
+  width: 100%;
 }
 
 
@@ -800,6 +814,7 @@ div.aboutFormularioTelefonoCorreo {
   flex-direction: row;
   text-align: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .custom-file-upload {
