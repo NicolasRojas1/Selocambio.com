@@ -11,11 +11,16 @@
     <input type="email" id="email" placeholder="Correo" required>
     <input type="password" id="password" name="password" placeholder="Contraseña" required>
     <input type="password" id="confirm-password" placeholder="Confirme contraseña">
+    <input type="password" id="code" placeholder="Codigo Selocambio">
     <button type="submit" onclick="validateFormS()">Registrar</button>
   </form>
-  <a onclick="abrirTarjetaRegistro()">
-    <i class="fa-solid fa-arrow-right">
-      <p>iniciar sesión</p>
-    </i>
-  </a>
+  <div class="links">
+    <a href="/dev/publicar-nicolas/publicaciones-n.html">
+      <i onclick="abrirTarjetaRegistro()" id="iniciar-sesion" class="fa-solid fa-arrow-right">
+        <p>iniciar sesión</p>
+      </i>
+      <i id="home" class="fa-solid fa-house"></i>
+    </a>
+  </div>
+ 
 </section>
