@@ -4,23 +4,24 @@
 
   <form onsubmit="singUp()" class="formulario-registro">
     <input type="text" id="fname" placeholder="Nombre" autocapitalize="word" autofocus>
-    <input type="text" id="lname"placeholder="Apellido" autocapitalize="word">
+    <input type="text" id="lname" placeholder="Apellido" autocapitalize="word">
     <input type="number" id="id" placeholder="N° Identificación">
-    <input type="number" id="age" placeholder="Edad" >
-    <input type="number" id="phone" placeholder="Teléfono" >
+    <input type="number" id="age" placeholder="Edad">
+    <input type="number" id="phone" placeholder="Teléfono">
     <input type="email" id="email" placeholder="Correo" required>
     <input type="password" id="password" name="password" placeholder="Contraseña" required>
     <input type="password" id="confirm-password" placeholder="Confirme contraseña">
     <input type="password" id="code" placeholder="Codigo Selocambio">
     <button type="submit" onclick="validateFormS()">Registrar</button>
   </form>
-  <div class="links">
+  <div class="links-registro">
     <a href="/dev/publicar-nicolas/publicaciones-n.html">
-      <i onclick="abrirTarjetaRegistro()" id="iniciar-sesion" class="fa-solid fa-arrow-right">
-        <p>iniciar sesión</p>
-      </i>
       <i id="home" class="fa-solid fa-house"></i>
     </a>
+    <a onclick="abrirTarjetaRegistro()" class="Alogin-giro">
+      <i id="girar-Alogin" class="fa-solid fa-arrow-right"></i>
+      <p id="texto-inicio">iniciar sesión</p>
+    </a>
   </div>
- 
+
 </section>

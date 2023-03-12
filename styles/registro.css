@@ -172,31 +172,11 @@ body {
   color: #f0f0f0;
 }
 
-.links {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-top: 10px;
-  gap: 90px;
-}
 
-a {
-  width: 90%;
-}
-
-i.fa-solid,
-a {
-  gap: 5px;
+#girar-aregistro{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  color: #343434;
-  text-transform: capitalize;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 14px;
+  gap: 5px;
 }
 
 p {
@@ -228,6 +208,18 @@ p {
 #home:hover {
   color: #ffd675;
   transition: .5s ease;
+}
+
+#girar-aregistro:hover {
+  opacity: 1;
+  transition: .5s ease;
+  color: #ffd675;
+}
+
+#girar-aregistro>p:hover {
+  opacity: 1;
+  transition: .5s ease;
+  color: #ffd675;
 }
 
 /*----------------- inicio de sesion --------------------*/
@@ -325,18 +317,66 @@ form>a {
   gap: 90px;
 }
 
-#girar-aregistro:hover {
+.links-inicio-sesion>fa-solid,
+a {
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #343434;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.links-registro {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 10px;
+  gap: 90px;
+}
+
+
+.links-registro>fa-solid,
+a {
+  gap: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  color: #343434;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.girar-Alogin{
+  display: flex;
+  gap: 5px;
+}
+
+.Alogin-giro:hover{
   opacity: 1;
   transition: .5s ease;
   color: #ffd675;
 }
 
-#girar-aregistro>p:hover {
+.Alogin-giro>p:hover{
   opacity: 1;
   transition: .5s ease;
   color: #ffd675;
 }
 
+#texto-inicio{
+  white-space: nowrap;
+}
 
 .rotated {
   transform: rotate3d(0, 1, 0, 60deg);
