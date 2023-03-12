@@ -13,7 +13,7 @@ products.forEach((products) => {
   <h2>${products.nombre}</h2>
   <h4>${products.vendedor}</h4>
   <p>${products.descripcion}</p>
-  <a href="http://wa.me/57${products.telefono}?text=Bienvenido Selocambio.com" target="_blank"> Selocambio
+  <a href="http://wa.me/57${products.telefono}?text=Hola ${products.vendedor}, vi tu oferta de ${products.nombre} en la pagina de Selocambio.com. ¿En qué estás interesado para poder hacerte el cambio?" target="_blank"> Selocambio
   `;
 
   shopContent.append(content);
