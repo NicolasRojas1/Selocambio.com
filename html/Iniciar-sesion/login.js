@@ -13,7 +13,6 @@ function singUp(e) {
   let json = JSON.stringify(user);
   localStorage.setItem(email, json);
   console.log('user added');
-
 }
 
 function loginFunc(e) {
@@ -35,4 +34,5 @@ function loginFunc(e) {
   } else {
     result.innerHTML = "Usuario o clave incorrectas";
   }
+
 }
