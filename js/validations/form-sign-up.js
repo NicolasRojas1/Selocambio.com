@@ -66,8 +66,8 @@ function validateFormS() {
 
 function signUp() {
     console.log("Cuenta creada!");
-    alert("¡Has creado tu cuenta satisfactoriamente!")
-    window.location.href='../../dev/publicar-nicolas/publicaciones-n.html';
+    alert("¡Has creado tu cuenta satisfactoriamente! vuelve a iniciar sesion.")
+    window.location.href='../../html/inicio/inicio.html';
 }
 function limpiarFormulario() {
     document.getElementById("email").value = ""

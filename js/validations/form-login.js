@@ -1,4 +1,4 @@
-alert("Solo los administradores pueden registrarse e iniciar sesión, si eres usuario dale click al boton Home.");
+alert("Solo los administradores pueden registrarse e iniciar sesión, si eres usuario dale click al boton 🏠︎");
 
 function validateForm() {
     var email = document.getElementById("email").value;
@@ -22,7 +22,7 @@ function validateForm() {
 
 function login() {
     console.log("Cuenta iniciada!");
-    window.location.href='../../dev/publicar-nicolas/publicaciones-a.html';
+    window.location.href='../../html/inicio/inicio-a.html';
 }
 function limpiarFormulario() {
     document.getElementById("email").value = ""

@@ -726,7 +726,7 @@ div.aboutFormularioTelefonoCorreo {
 
   body.borderpage {
     padding: 0 10%;
-    background-color: #009cdf;
+    background: linear-gradient(90deg, rgba(0,147,216,1) 0%, rgba(3,173,238,1) 100%);
   }
 
   header {
