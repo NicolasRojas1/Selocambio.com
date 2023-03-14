@@ -21,10 +21,25 @@ function validateForm() {
 }
 
 function login() {
+
+    if(localStorage.getItem(email)){
+        var objetoUsuario = JSON.parse(localStorage.getItem(email))
+        if(objetoUsuario.password==password){
+            alert("existe usuario y coincide password")
+            window.location.href='../../html/inicio/inicio-a.html';
+        } else {
+            alert("existe correo pero password no coincide");
+        }
+
+    }
+    else{
+        alert("email no coincide")
+    }
+
     console.log("Cuenta iniciada!");
-    window.location.href='../../html/inicio/inicio-a.html';
+
 }
 function limpiarFormulario() {
-    document.getElementById("email").value = ""
-    document.getElementById("password").value = ""
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
 }
