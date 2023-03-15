@@ -1,12 +1,12 @@
 alert("Solo los administradores pueden registrarse e iniciar sesión, si eres usuario dale click al boton 🏠︎");
 
 function validateForm() {
-    var email = document.getElementById("email").value;
+    var emails = document.getElementById("email").value;
     var password = document.getElementById("password").value;
     var emailRegex = /^\S+@\S+\.\S+$/;
     var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
-    if (!emailRegex.test(email)) {
+    if (!emailRegex.test(emails)) {
         alert("Ingrese una dirección de e-mail válida.");
         return false;
     }
@@ -22,18 +22,19 @@ function validateForm() {
 
 function login() {
 
+    //VALIDACION INICIO DE CUENTA (INICIA SESION SOLO SI LA CUENTA ESTA REGISTRADA)
     if(localStorage.getItem(email)){
-        var objetoUsuario = JSON.parse(localStorage.getItem(email))
-        if(objetoUsuario.password==password){
-            alert("existe usuario y coincide password")
+        let json = JSON.parse(localStorage.getItem(email))
+        if(json.password==password){
+            alert("Has iniciado sesion satisfactoriamente!")
             window.location.href='../../html/inicio/inicio-a.html';
         } else {
-            alert("existe correo pero password no coincide");
+            alert("La cuenta existe pero la contraseña es incorrecta!");
         }
 
     }
     else{
-        alert("email no coincide")
+        alert("Esta cuenta no existe!")
     }
 
     console.log("Cuenta iniciada!");

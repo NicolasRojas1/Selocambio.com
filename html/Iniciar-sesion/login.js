@@ -1,4 +1,4 @@
-function singUp(e) {
+function singUp(event) {
   event.preventDefault();
   //console.log("working");
 
@@ -15,7 +15,7 @@ function singUp(e) {
   console.log('user added');
 }
 
-function loginFunc(e) {
+function loginFunc(event) {
   event.preventDefault();
   //console.log(123);
 
