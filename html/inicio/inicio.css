@@ -55,6 +55,7 @@ header {
   color: #fff;
   padding: 7px 25px;
   border-radius: 7px;
+  transition: .5s;
 }
 
 .titulo-banner {
@@ -98,6 +99,10 @@ p.aboutFooter {
   font-size: smaller;
 }
 
+p.description{
+  min-height: 50px;
+}
+
 /*product cards*/
 .shop-content {
   display: flex !important;
@@ -107,7 +112,7 @@ p.aboutFooter {
   margin-left: 60px !important;
   margin-right: 60px !important;
 }
-.card{
+.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
   width: 350px !important;
   text-align: center !important;
