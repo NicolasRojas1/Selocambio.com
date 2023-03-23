@@ -60,6 +60,7 @@ background-color: #f0f0f0;
   color: #fff;
   padding: 7px 25px;
   border-radius: 7px;
+  transition: .5s;
 }
 
 .titulo-banner {
@@ -246,6 +247,7 @@ input.aboutFormularioNombre {
   margin-bottom: 1rem;
   align-items: center;
   width: 350px;
+  min-height: 40px;
   border-radius: 5px;
   color: #000;
   background-color: #f0f0f0;
@@ -255,6 +257,7 @@ input.aboutFormularioNombre {
 
 input.aboutFormularioTelefono {
   width: 350px;
+  min-height: 40px;
   border-radius: 5px;
   color: #000;
   background-color: #f0f0f0;
@@ -265,6 +268,7 @@ input.aboutFormularioTelefono {
 input.aboutFormularioCorreo {
   margin-bottom: 1rem;
   width: 350px;
+  min-height: 40px;
   border-radius: 5px;
   color: #000;
   background-color: #f0f0f0;
