@@ -52,6 +52,7 @@ header {
   color: #fff;
   padding: 7px 25px;
   border-radius: 7px;
+  transition: .5s;
 }
 
 .titulo-banner {

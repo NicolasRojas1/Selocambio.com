@@ -1,4 +1,4 @@
-function singUp(e) {
+function singUp(event) {
   event.preventDefault();
   //console.log("working");
 
@@ -13,10 +13,9 @@ function singUp(e) {
   let json = JSON.stringify(user);
   localStorage.setItem(email, json);
   console.log('user added');
-
 }
 
-function loginFunc(e) {
+function loginFunc(event) {
   event.preventDefault();
   //console.log(123);
 
@@ -35,4 +34,5 @@ function loginFunc(e) {
   } else {
     result.innerHTML = "Usuario o clave incorrectas";
   }
+
 }

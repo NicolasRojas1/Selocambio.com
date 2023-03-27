@@ -75,7 +75,7 @@ const products = [
     id: 9,
     nombre: "Laptop",
     img: "https://http2.mlstatic.com/D_NQ_NP_825200-MCO48213888172_112021-O.webp",
-    descripcion: "              uso de 2 años                                               ",
+    descripcion: "uso de 2 años",
     vendedor: "Pepito Perez",
     telefono: 3002001020,
     email: "pepito@gmail.com",
