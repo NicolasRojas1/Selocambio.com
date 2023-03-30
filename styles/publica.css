@@ -113,13 +113,11 @@ background-color: #f0f0f0;
 }
 
 .Valores h6 {
-  margin: 1em auto .5em auto;
+  margin: 1em auto 0.5em;
   font-size: 25px;
   text-align: center;
-  font-family: 'Alata', sans-serif;
-  color: #4483ce;
-  width: 100%;
-  height: 100%;
+  font-family: Alata, sans-serif;
+  color: rgb(68, 131, 206);
 }
 
 .Valores p {
@@ -129,7 +127,7 @@ background-color: #f0f0f0;
   text-align: center;
   line-height: 1.5;
   width: 100%;
-  height: 100%;
+  width: 25em; 
 }
 
 /*----- mision------*/
@@ -163,7 +161,8 @@ background-color: #f0f0f0;
   margin-right: 2em;
   font-family: 'Sora', sans-serif;
   text-align: center;
-  line-height: 1.5
+  line-height: 1.5;
+  width: 25em; 
 }
 
 /*------vision---------*/
@@ -189,6 +188,7 @@ background-color: #f0f0f0;
   text-align: center;
   font-family: 'Alata', sans-serif;
   color: #4483ce;
+  width: 14em; 
 }
 
 .Vision p {
@@ -196,7 +196,8 @@ background-color: #f0f0f0;
   margin-right: 2em;
   font-family: 'Sora', sans-serif;
   text-align: center;
-  line-height: 1.5
+  line-height: 1.5;
+  width: 25em; 
 }
 
 
