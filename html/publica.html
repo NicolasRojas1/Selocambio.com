@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -49,13 +49,13 @@
     </div>
     <nav>
       <ul class="nav-inicio">
-        <a href="../../html/about.html" style="text-decoration:none">
+        <a href="./about.html" style="text-decoration:none">
           <li>Nosotros</li>
         </a>
-        <a href="../../html/publica.html" style="text-decoration:none">
+        <a href="./publica.html" style="text-decoration:none">
           <li>Publica</li>
         </a>
-        <a href="../../html/Iniciar-sesion/registro.html" style="text-decoration:none">
+        <a href="./Iniciar-sesion/registro.html" style="text-decoration:none">
           <li>Iniciar sesión</li>
         </a>
       </ul>
@@ -75,7 +75,7 @@
     <h6 class="publica">Publica tu oferta</h6>
 
     <article class="Valores">
-     </div><img src="../img/publica/interrogacion.png" alt=""></div>
+     <div><img src="../img/publica/interrogacion.png" alt=""></div>
       <div>
         <h6>¿Como funciona?</h6>
         <p>Puedes contactarnos a traves del formulario o via whatsApp con la información de tu oferta y algunos datos personales basicos, con el fin de facilitar
@@ -107,6 +107,7 @@
         </p>
       </div>
     </article>
+
   </section>
 
 
@@ -128,7 +129,7 @@
 
           <li>
 
-            <input class="aboutFormularioNombre" placeholder="Titulo de la oferta" type="text" id="postname" required>
+            <input class="aboutFormularioNombre" placeholder="Titulo de la oferta" name="OFERTA: Titulo de la oferta" type="text" id="postname" required>
           </li>
 
 
@@ -147,7 +148,7 @@
 
           <li>
 
-            <textarea class="aboutFormularioMensaje" placeholder="Descripcion de la oferta" id="postdescrip" required></textarea>
+            <textarea class="aboutFormularioMensaje" placeholder="Descripcion de la oferta" name="OFERTA: Descripcion de la oferta" id="postdescrip" required></textarea>
           </li>
 
           <br>
@@ -158,7 +159,7 @@
 
 
             <li>
-              <input class="aboutFormularioNombre" placeholder="Nombre y apellidos" type="text" id="name" required>
+              <input class="aboutFormularioNombre" placeholder="Nombre y apellidos" name="CLIENTE: Nombre y apellidos" type="text" id="name" required>
             </li>
 
           </div>
@@ -167,11 +168,11 @@
 
             <li>
 
-              <input class="aboutFormularioTelefono" placeholder="Telefono" type="tel" id="phone" required>
+              <input class="aboutFormularioTelefono" placeholder="Telefono" name="CLIENTE: Telefono"  type="tel" id="phone" required>
             </li>
             <li>
 
-              <input class="aboutFormularioCorreo" placeholder="E-mail" type="email" id="mail" required>
+              <input class="aboutFormularioCorreo" placeholder="E-mail" name="CLIENTE: E-mail" type="email" id="mail" required>
             </li>
 
           </div>
@@ -201,9 +202,31 @@
   <!-- COMPONENTE - FOOTER -->
 
   <footer class="aboutFooter">
-    <p class="aboutFooter">Pagina web desarrollada por Los Inquebrantables</p>
-    <p class="aboutFooter">Todos los derechos reservados (C) Copyright "selocambio.com" a partir del
-      2023</p>
+
+
+    <div style="display: flex; flex-wrap: wrap; nth-child(3) {
+      text-align: center;
+      }">
+      
+        <div style="width: 33.33%; justify-content: flex-start;">
+          <img src="/img/footer/logo-generation.svg" style="margin: 20px; width: 33%; height: auto;" alt="">
+          <img src="/img/footer/logo-bit.png" style="margin: 20px; width: 33%; height: auto;" alt="">
+        </div>
+      
+        <div style="width: 33.33%; margin: auto auto;  ">
+          <p class="aboutFooter">Sitio web desarrollado</p>
+          <p class="aboutFooter">por Los Inquebrantables.</p>
+        </div>
+      
+        <div style="width: 33.33%; text-align: justify;">
+          <p class="aboutFooter">© 2023 Los Inquebrantables. </p>
+          <p class="aboutFooter">Todos los derechos reservados.</p>
+          <p class="aboutFooter">"Selocambio.com" es una marca registrada.</p>
+        </div>
+      
+      </div>
+
+
   </footer>
 
 
