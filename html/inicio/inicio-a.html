@@ -109,32 +109,104 @@
   <h1 class="titulo">Nuestros Productos</h1>
   <div id="shopContent" class="shop-content"></div>
 
-  <footer class="aboutFooter">
 
-    
-<div style="display: flex; flex-wrap: wrap; nth-child(3) {
-text-align: center;
-}">
+  
+<!-- COMPONENTE - FOOTER -->
 
-  <div style="width: 33.33%; justify-content: flex-start;">
-    <img src="/img/footer/logo-generation.svg" style="margin: 20px; width: 33%; height: auto;" alt="">
-    <img src="/img/footer/logo-bit.png" style="margin: 20px; width: 33%; height: auto;" alt="">
-  </div>
+<footer class="aboutFooter">
 
-  <div style="width: 33.33%; margin: auto auto;  ">
-    <p class="aboutFooter">Sitio web desarrollado</p>
-    <p class="aboutFooter">por Los Inquebrantables.</p>
-  </div>
-
-  <div style="width: 33.33%; text-align: justify;">
-    <p class="aboutFooter">© 2023 Los Inquebrantables. </p>
-    <p class="aboutFooter">Todos los derechos reservados.</p>
-    <p class="aboutFooter">"Selocambio.com" es una marca registrada.</p>
-  </div>
-
-</div>
-
-
+  <style>
+  
+  
+  .aboutFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .footerImages {
+    width: 33.33%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .footerImages img {
+    margin: 20px;
+    width: 33%;
+    height: auto;
+  }
+  
+  .footerContent {
+    width: 66.67%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  
+  .footerContent div {
+    margin-right: 50px;
+    margin: auto auto;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutFooter {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .footerImages, .footerContent {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footerImages {
+      justify-content: center;
+    }
+  
+    .footerImages img {
+      margin: 20px 10px;
+      width: 50%;
+    }
+  
+    .footerContent {
+      display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    }
+  
+    .footerContent div {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: auto;
+    }
+  
+    .aboutFooter {
+    text-align: left;  
+    }
+  }
+  
+  
+  
+  </style>
+  
+    <div class="footerImages">
+      <img src="/img/footer/logo-generation.svg" alt="">
+      <img src="/img/footer/logo-bit.png" alt="">
+    </div>
+  
+    <div class="footerContent">
+      <div>
+        <p class="aboutFooter">Sitio web desarrollado por Los Inquebrantables.</p>
+      </div>
+        
+      <div>
+        <p class="aboutFooter">© 2023 Los Inquebrantables.</p>
+        <p class="aboutFooter">Todos los derechos reservados.</p>
+        <p class="aboutFooter">"Selocambio.com" es una marca registrada.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="https://kit.fontawesome.com/6e9b5c8142.js" crossorigin="anonymous"></script>
