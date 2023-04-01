@@ -7,7 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publica</title>
 
-  <link rel="stylesheet" href="../styles/publica.css">
+  <link rel="stylesheet" href="../styles/about.css">
+  <link rel="stylesheet" href="../../styles/componentes/footer.css">
+  <link rel="stylesheet" href="../../styles/componentes/header.css">
+
+
+  <link rel="stylesheet" href="../../styles/componentes/form-contact.css">
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -83,7 +89,7 @@
       </div>
     </article>
 
-    <article class="Mision">
+    <article class="Valores">
       <div><img src="../img/publica/seguridad.png" alt=""></div>
       <div>
         <h6>¿Porque hacemos esto?</h6>
@@ -97,10 +103,10 @@
     </article>
 
 
-    <article class="Vision">
+    <article class="Valores">
       <div><img src="../img/publica/despertador.png" alt=""></div>
-      <div>
-        <h6>¿Cuanto tardaran mis ofertas en subirse a la pagina?</h6>
+
+      <div><h6>¿Cuanto tardaran mis ofertas en subirse a la pagina?</h6>
         <p>Recibiras una respuesta rapida en menos de 12 horas en caso de que tu oferta no cumpla con los requisitos,
           para que puedas crear otra oferta, tu oferta se visualizara en la pagina pasados entre 2 y 3 dias habiles
           laborales.
@@ -202,94 +208,18 @@
 <!-- COMPONENTE - FOOTER -->
 
 <footer class="aboutFooter">
-
-<style>
-
-
-.aboutFooter {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #f2f2f2;
-}
-
-.footerImages {
-  width: 33.33%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.footerImages img {
-  margin: 20px;
-  width: 33%;
-  height: auto;
-}
-
-.footerContent {
-  width: 66.67%;
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-}
-
-.footerContent div {
-  margin-right: 50px;
-  margin: auto auto;
-}
-
-@media (max-width: 768px) {
-  .aboutFooter {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .footerImages, .footerContent {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .footerImages {
-    justify-content: center;
-  }
-
-  .footerImages img {
-    margin: 20px 10px;
-    width: 50%;
-  }
-
-  .footerContent {
-    display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  }
-
-  .footerContent div {
-    margin-right: 0;
-    margin-bottom: 20px;
-    width: auto;
-  }
-
-  .aboutFooter {
-  text-align: left;  
-  }
-}
-
-
-
-</style>
-
+  
   <div class="footerImages">
     <img src="/img/footer/logo-generation.svg" alt="">
     <img src="/img/footer/logo-bit.png" alt="">
   </div>
 
   <div class="footerContent">
-    <div>
+    <div class="copyrights">
       <p class="aboutFooter">Sitio web desarrollado por Los Inquebrantables.</p>
     </div>
       
-    <div>
+    <div class="copyrights">
       <p class="aboutFooter">© 2023 Los Inquebrantables.</p>
       <p class="aboutFooter">Todos los derechos reservados.</p>
       <p class="aboutFooter">"Selocambio.com" es una marca registrada.</p>
@@ -307,6 +237,82 @@
   <script src="/js/whatsapp.js" defer ></script>
 
 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>

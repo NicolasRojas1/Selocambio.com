@@ -7,7 +7,6 @@ products.forEach((products) => {
   let content = document.createElement('div');
 
   content.className = 'card';
-
   content.innerHTML = `
   <style>
   img.img_prod" {

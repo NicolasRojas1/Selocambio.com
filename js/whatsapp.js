@@ -1,6 +1,7 @@
 const fgp_wa = document.createElement('fgp_wa');
 
-fgp_wa.innerHTML = `
+fgp_wa.innerHTML = 
+    `
     <Style>
       fgp_wa img{
         width: 4.8rem;
