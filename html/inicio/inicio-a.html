@@ -5,7 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="inicio.css">
+
+  <link rel="stylesheet" href="../../styles/componentes/header.css">
+
+  <link rel="stylesheet" href="../../styles/componentes/productos.css">
+
+  <link rel="stylesheet" href="../../styles/componentes/footer.css">
+
   <title>Admins</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -107,6 +113,7 @@
     </div>
   </div>
   <h1 class="titulo">Nuestros Productos</h1>
+
   <div id="shopContent" class="shop-content"></div>
 
 
@@ -114,100 +121,24 @@
 <!-- COMPONENTE - FOOTER -->
 
 <footer class="aboutFooter">
+  
+  <div class="footerImages">
+    <img src="/img/footer/logo-generation.svg" alt="">
+    <img src="/img/footer/logo-bit.png" alt="">
+  </div>
 
-  <style>
-  
-  
-  .aboutFooter {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
-  .footerImages {
-    width: 33.33%;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .footerImages img {
-    margin: 20px;
-    width: 33%;
-    height: auto;
-  }
-  
-  .footerContent {
-    width: 66.67%;
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
-  }
-  
-  .footerContent div {
-    margin-right: 50px;
-    margin: auto auto;
-  }
-  
-  @media (max-width: 768px) {
-    .aboutFooter {
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    .footerImages, .footerContent {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .footerImages {
-      justify-content: center;
-    }
-  
-    .footerImages img {
-      margin: 20px 10px;
-      width: 50%;
-    }
-  
-    .footerContent {
-      display: flex;
-    justify-content: flex-start;
-    text-align: left;
-    }
-  
-    .footerContent div {
-      margin-right: 0;
-      margin-bottom: 20px;
-      width: auto;
-    }
-  
-    .aboutFooter {
-    text-align: left;  
-    }
-  }
-  
-  
-  
-  </style>
-  
-    <div class="footerImages">
-      <img src="/img/footer/logo-generation.svg" alt="">
-      <img src="/img/footer/logo-bit.png" alt="">
+  <div class="footerContent">
+    <div class="copyrights">
+      <p class="aboutFooter">Sitio web desarrollado por Los Inquebrantables.</p>
     </div>
-  
-    <div class="footerContent">
-      <div>
-        <p class="aboutFooter">Sitio web desarrollado por Los Inquebrantables.</p>
-      </div>
-        
-      <div>
-        <p class="aboutFooter">© 2023 Los Inquebrantables.</p>
-        <p class="aboutFooter">Todos los derechos reservados.</p>
-        <p class="aboutFooter">"Selocambio.com" es una marca registrada.</p>
-      </div>
+      
+    <div class="copyrights">
+      <p class="aboutFooter">© 2023 Los Inquebrantables.</p>
+      <p class="aboutFooter">Todos los derechos reservados.</p>
+      <p class="aboutFooter">"Selocambio.com" es una marca registrada.</p>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <script src="https://kit.fontawesome.com/6e9b5c8142.js" crossorigin="anonymous"></script>
   <script

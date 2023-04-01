@@ -13,73 +13,7 @@ body {
   min-width: 100vw;
 }
 
-/* Banner */
 
-header {
-  margin: 0;
-  background-color: #fff;
-}
-
-.logo-container a {
-  width: 100vw;
-  display: block;
-  display: flex;
-  justify-content: center;
-}
-
-.logo-container img {
-  width: 10em;
-  padding: 2em 0;
-  margin: 0px 2em
-}
-
-.logo-container:hover {
-background-color: #f0f0f0;
-}
-
-.nav-inicio {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 1em;
-  color: #4483ce;
-  font-weight: 500;
-  font-family: 'Sora', sans-serif;
-  padding: 0 0 2em 0;
-  background-color: #fff;
-}
-
-.nav-inicio li {
-  padding: 7px 25px;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.nav-inicio li:hover {
-  background-color: #4483ce;
-  color: #fff;
-  padding: 7px 25px;
-  border-radius: 7px;
-  transition: .5s;
-}
-
-.titulo-banner {
-  font-weight: 500;
-  color: #ffffffef;
-  text-shadow: 2px 1.5px 1.5px black;
-}
-
-.texto-banner {
-  color: #ffffffef;
-  text-shadow: 2px 1.5px 1.5px black;
-}
-
-.d-block img:active{
-    height: 200px !important;
-    object-fit: cover;
-}
-
-/* Banner -------- fin */
 
 
 
@@ -102,13 +36,12 @@ background-color: #f0f0f0;
   grid-auto-flow: dense;
   place-items: center;
   padding: 10em auto 0 auto;
-   width: 100%;
-  height: 100%;
 }
 
 .Valores img {
-  width: 350px;
-  height: 350px;
+
+  width: 300px;
+  height: 280px;
   margin-top: 2em;
 }
 
@@ -118,8 +51,6 @@ background-color: #f0f0f0;
   text-align: center;
   font-family: 'Alata', sans-serif;
   color: #4483ce;
-  width: 100%;
-  height: 100%;
 }
 
 .Valores p {
@@ -128,8 +59,7 @@ background-color: #f0f0f0;
   font-family: 'Sora', sans-serif;
   text-align: center;
   line-height: 1.5;
-  width: 100%;
-  height: 100%;
+  width: 25em; 
 }
 
 /*----- mision------*/
@@ -145,7 +75,7 @@ background-color: #f0f0f0;
 
 .Mision img {
   width: 350px;
-  height: 350px;
+  height: 200px;
   margin-top: 2em;
   object-fit: fill;
 }
@@ -163,7 +93,8 @@ background-color: #f0f0f0;
   margin-right: 2em;
   font-family: 'Sora', sans-serif;
   text-align: center;
-  line-height: 1.5
+  line-height: 1.5;
+  width: 25em; 
 }
 
 /*------vision---------*/
@@ -189,6 +120,7 @@ background-color: #f0f0f0;
   text-align: center;
   font-family: 'Alata', sans-serif;
   color: #4483ce;
+  word-wrap: break-word;
 }
 
 .Vision p {
@@ -196,9 +128,11 @@ background-color: #f0f0f0;
   margin-right: 2em;
   font-family: 'Sora', sans-serif;
   text-align: center;
-  line-height: 1.5
+  line-height: 1.5;
+  width: 25em;
 }
 
+/* Valores, mision, vision -------- fin */
 
 
 /* PUBLICA TU OFERTA */
@@ -220,183 +154,6 @@ background-color: #f0f0f0;
 
 
 
-/* Formulario y footer */
-
-
-
-
-
-
-section.aboutFormulario {
-  color: #4483ce;
-  background-color: #fff;
-  border-bottom-left-radius: 40px 40px;
-  border-bottom-right-radius: 40px 40px;
-
-}
-
-
-h1.aboutFormulario {
-  font-family: 'Alata', sans-serif;
-  text-align: center;
-  font-size: 25px;
-}
-
-
-
-
-form.aboutFormulario {
-  display: flex;
-  justify-content: center;
-  padding: 0%;
-  margin: 0%;
-  min-width: 350px;
-  background-color: #fff;
-  border-bottom-left-radius: 40px 40px;
-  border-bottom-right-radius: 40px 40px;
-}
-
-
-li {
-text-align: center;
-}
-ul.aboutFormulario {
-  list-style: none;
-  margin: 0%;
-  padding: 1rem;
-  width: auto;
-}
-
-input.aboutFormularioNombre {
-  margin-bottom: 1rem;
-  align-items: center;
-  width: 350px;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-input.aboutFormularioTelefono {
-  width: 350px;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-input.aboutFormularioCorreo {
-  margin-bottom: 1rem;
-  width: 350px;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-textarea.aboutFormularioMensaje {
-  margin-bottom: 1rem;
-  width: 350px;
-  min-height: 150px;
-  border: 0;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  color: #000;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-button.aboutFormulario {
-  border: 0;
-  border-radius: 5px;
-  background-color: #4483ce;
-  color: #f0f0f0;
-  padding: 10px 20px 10px;
-  margin-bottom: 2rem;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-  width: 100%;
-}
-
-button.aboutFormulario:hover {
-  background-color: #f0f0f0;
-  color: #000;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-  width: 100%;
-}
-
-div.aboutFormularioTelefonoCorreo {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
-}
-
-footer.aboutFooter {
-  text-align: center;
-  padding: 16px;
-  margin: 2.5% 0;
-  background-color: #029cdf;
-}
-
-p.aboutFooter {
-  color: #fff;
-  background-color: #029cdf;
-  margin: 0%;
-  padding: 0%;
-  font-family: 'Sora', sans-serif;
-  font-size: smaller;
-}
-
-
-iframe {
-  border: none;
-}
-
-iframe.redondo{
-  border: none;
-  border-bottom-left-radius: 40px 40px;
-  border-bottom-right-radius: 40px 40px;
-}
-
-
-input[type="file"] {
-  display: none;
-}
-
-.input.archivo[type="file"] {
-  display: none;
-}
-
-.custom-file-upload {
-  width: 350px;
-
-  min-height: 250px;
-
-  cursor: pointer;
-
-  color: #029cdf;
-
-  background-color: #f0f0f0;
-
-  border-radius: 5px;
-  border: 2px solid #ccc;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-  margin-bottom: 1rem;
-}
-
-
-
-/* Formulario y footer -------- fin */
-
-
-
-
-
 
 
 
@@ -407,30 +164,7 @@ input[type="file"] {
 @media (min-width: 1023px) and (max-width: 1024px) {
 
 
-/* Banner */
 
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3em;
-  }
-
-  .logo-container a {
-    width: 100%;
-  }
-
-  .nav-inicio {
-    padding: 0;
-    margin: 0 1em;
-  }
-
-  .logo-container img {
-    width: 9em;
-  }
-
-/* Banner -------- fin */
 
 
 
@@ -492,104 +226,7 @@ input[type="file"] {
 
 /* Formulario y footer */
 
-section.aboutFormulario {
-  color: #4483ce;
-  background-color: #fff;
-}
 
-
-h1.aboutFormulario {
-  font-family: 'Alata', sans-serif;
-  text-align: center;
-  font-size: 25px;
-}
-
-
-form.aboutFormulario {
-  display: flex;
-  justify-content: center;
-  padding: 0%;
-  margin: 0%;
-}
-
-
-ul.aboutFormulario {
-  list-style: none;
-  margin: 0%;
-  padding: 1rem;
-  width: auto;
-}
-
-input.aboutFormularioNombre {
-  margin-bottom: 1rem;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-input.aboutFormularioTelefono {
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-input.aboutFormularioCorreo {
-  margin-bottom: 1rem;
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-textarea.aboutFormularioMensaje {
-  margin-bottom: 1rem;
-  width: 100%;
-  min-height: 150px;
-  border: 0;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  color: #000;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-button.aboutFormulario {
-  border: 0;
-  border-radius: 5px;
-  background-color: #4483ce;
-  color: #f0f0f0;
-  padding: 10px 20px 10px;
-  margin-bottom: 2rem;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-button.aboutFormulario:hover {
-  background-color: #f0f0f0;
-  color: #000;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-div.aboutFormularioTelefonoCorreo {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  gap: 1rem;
-}
-
-.custom-file-upload {
-  width: 350px;
-}
 
 }
 
@@ -605,34 +242,6 @@ div.aboutFormularioTelefonoCorreo {
 
 @media (min-width: 1024px) {
 
-/* Banner */
-
-  body.borderpage {
-    padding: 0 10%;
-    background-color: #009cdf;
-  }
-
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo-container a {
-    width: 100%;
-  }
-
-  .nav-inicio {
-    padding: 0;
-    margin: 0 1em;
-  }
-
-  .logo-container img {
-    width: 9em;
-  }
-
-/* Banner -------- fin */
 
 
 
@@ -721,110 +330,6 @@ div.aboutFormularioTelefonoCorreo {
 
 
 /* Formulario y footer */
-
-section.aboutFormulario {
-  color: #4483ce;
-  background-color: #fff;
-  width: 100%;
-}
-
-
-h1.aboutFormulario {
-  font-family: 'Alata', sans-serif;
-  text-align: center;
-  font-size: 25px;
-}
-
-
-form.aboutFormulario {
-  display: flex;
-  justify-content: center;
-  padding: 0%;
-  margin: 0%;
-}
-
-
-ul.aboutFormulario {
-  list-style: none;
-  margin: 0%;
-  padding: 1rem;
-  min-width: auto;
-}
-
-input.aboutFormularioNombre {
-  margin-bottom: 1rem;
-  align-items: center;
-  width: 700px;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-input.aboutFormularioTelefono {
-  width: 150px;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-input.aboutFormularioCorreo {
-  margin-bottom: 1rem;
-  width: 535px;
-  height: 40px;
-  border-radius: 5px;
-  color: #000;
-  background-color: #f0f0f0;
-  border: 0;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-textarea.aboutFormularioMensaje {
-  margin-bottom: 1rem;
-  width: 700px;
-  min-height: 150px;
-  border: 0;
-  border-radius: 5px;
-  background-color: #f0f0f0;
-  color: #000;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-button.aboutFormulario {
-  border: 0;
-  border-radius: 5px;
-  background-color: #4483ce;
-  color: #f0f0f0;
-  padding: 10px 20px 10px;
-  margin-bottom: 2rem;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-button.aboutFormulario:hover {
-  background-color: #f0f0f0;
-  color: #000;
-  box-shadow: 2px 2px 2px rgba(73, 69, 52, 1);
-}
-
-div.aboutFormularioTelefonoCorreo {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  gap: 1rem;
-  width: 100%;
-}
-
-.custom-file-upload {
-  width: 100%;
-}
-
-/* Formulario y footer -------- fin*/
-
 
 
 

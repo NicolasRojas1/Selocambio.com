@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
+
 body {
   font-family: 'Sora', sans-serif;
-  margin: 0;
+  padding: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,8 +110,8 @@ body {
   background: linear-gradient(to right, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
   width: 220px;
-  height: 450px;
-  padding: 30px 18px 10px 18px;
+  height: 420px;
+  padding: 30px 18px 30px 18px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -244,8 +245,8 @@ p {
   background: linear-gradient(to right, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
   width: 220px;
-  height: 450px;
-  padding: 30px 18px 10px 18px;
+  height: 420px;
+  padding: 30px 18px 30px 18px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -383,7 +384,7 @@ a {
   background-color: pink;
 }
 .inner {
-          animation: animate 1.2s linear;
+          animation: animate 1.25s linear;
 }
 
 @keyframes animate {
