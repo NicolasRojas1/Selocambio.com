@@ -3,7 +3,7 @@
 
 
 body {
-  font-family: 'Sora', sans-serif;
+  /* font-family: 'Sora', sans-serif; */
   margin: 0;
   min-width: 100vw;
 }
@@ -13,17 +13,29 @@ body {
 .titulo {
   font-family: 'Sora', sans-serif;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 600;
   color: #e5a723;
   background-color: #fff;
   margin: 0;
   padding: 2em 0px;
-  text-shadow: 0.5px 0.5px 2px #54bab4;
+}
+
+h2{
+  font-family: Arial, sans-serif;
+  font-size: 1.5em !important;
+  margin-bottom: .1rem;
+}
+
+h4{
+  font-family: sans-serif;
+  font-size: 1.2em !important;
 }
 
 p.description{
-  min-height: 50px;
+  font-family: sans-serif;
+  min-height: 70px;
+  font-size: 1em;
 }
 
 /*product cards*/
@@ -31,7 +43,7 @@ p.description{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0px;
+  margin: auto;
   background-color: #fff;
   padding-bottom: 30px;
   border-bottom-left-radius: 40px;
@@ -39,10 +51,11 @@ p.description{
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
-  width: 350px !important;
+  width: 280px !important;
+  min-height: 380px !important;
   text-align: center !important;
-  font-family: arial !important;
-  margin: 10px !important;
+  font-family: Sora, Arial !important;
+  margin: 30px !important;
   border-radius: 15px !important;
 }
 
@@ -54,8 +67,9 @@ p.description{
 }*/
 
 .card > img {
-  width: 100%;
-  max-height: 200px;
+  width: 70%;
+  margin: auto;
+  max-height: 150px;
   object-fit: scale-down;
   padding-top: 10px;
 }
@@ -64,13 +78,12 @@ p.description{
   text-decoration: none;
   border: none;
   outline: 0;
-  padding: 12px;
+  padding: 10px;
   color: white;
   background-color: #4483ce;
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
   border-radius: 15px;
   font-weight: bold;
   box-shadow: 0px 0px 0px 2px #4483ce;

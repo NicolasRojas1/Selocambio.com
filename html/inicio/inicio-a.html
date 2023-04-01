@@ -54,7 +54,11 @@
     </div>
     <nav>
       <ul class="nav-inicio">
-        <a href="https://dashboard.stripe.com/test/products?active=true" target="_blank" style="text-decoration:none">
+        
+        <a href="../../dev/perfil-admin/perfil-admin.html" target="_blank" style="text-decoration:none">
+
+        <!-- <a href="https://dashboard.stripe.com/test/products?active=true" target="_blank" style="text-decoration:none"> -->
+
           <li>Gestionar</li>
         </a>
         <a onclick = "ventana()" style="text-decoration:none">
@@ -65,7 +69,7 @@
     </nav>
   </header>
   <div class="carrusel">
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
           class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -76,8 +80,8 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/img/carrousel/chica-con-celular.jpg" class="d-block w-100"
-            class="img-carrousel" alt="personas-con-celular">
+          <img src="/img/carrousel/chica-con-celular.jpg" class="d-block w-100" class="img-carrousel"
+            alt="personas-con-celular">
           <div class="carousel-caption d-md-block">
             <h5 class="titulo-banner">En Cualquier Lugar</h5>
             <p class="texto-banner">Accesos desde diversos dispositivo a nuestra plataforma</p>
@@ -112,6 +116,15 @@
       </button>
     </div>
   </div>
+  
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 50
+      })
+    })
+  </script>
+
   <h1 class="titulo">Nuestros Productos</h1>
 
   <div id="shopContent" class="shop-content"></div>
@@ -123,7 +136,7 @@
 <footer class="aboutFooter">
   
   <div class="footerImages">
-    <img src="/img/footer/logo-generation.svg" alt="">
+    <img src="/img/footer/logo-generation.png" alt="">
     <img src="/img/footer/logo-bit.png" alt="">
   </div>
 

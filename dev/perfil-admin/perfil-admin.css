@@ -16,7 +16,7 @@ body {
 }
 .search-box input {
 	height: 34px;
-	border-radius: 20px;
+	border-radius: 15px;
 	padding-left: 35px;
 	border-color: #ddd;
 	box-shadow: none;
@@ -40,18 +40,17 @@ body {
 	background: #fff;
 	margin: 20px 0;
 	border-radius: 3px;
-	min-width: 1500px;
+	min-width: 100%;
 	box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
-.table-title {   
-	   
-	padding-bottom: 15px;
-	background: #435d7d;
-	color: #fff;
-	padding: 16px 30px;
-	min-width: 100%;
-	margin: -20px -25px 10px;
-	border-radius: 3px 3px 0 0;
+.table-title {
+	   padding-bottom: 15px;
+	   background: #435d7d;
+	   color: #fff;
+	   padding: 10px 30px;
+	   min-width: 100%;
+	   margin: -20px -25px 10px;
+	   border-radius: 3px 3px 0 0;
 }
 .table-title h2 {
 	margin: 5px 13px ;
