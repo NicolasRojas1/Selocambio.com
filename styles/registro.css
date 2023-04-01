@@ -110,14 +110,14 @@ body {
   background: linear-gradient(to right, rgba(147, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
   width: 220px;
-  height: 420px;
-  padding: 30px 18px 30px 18px;
+  height: 405px;
+  padding: 50px 18px 50px 18px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .registro h2 {
   color: #f0f0f0;
-  text-shadow: .5px .5px 2px black;
+  text-shadow: 1.5px 0.5px 0.5px black;
   font-size: 18px;
   text-align: center;
   margin: 0;
@@ -127,8 +127,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: .5em;
-  margin-top: 1.2em;
   align-items: center;
+  margin-top: 0.5em;
 }
 
 .titulo--parte-1 {
@@ -140,12 +140,13 @@ body {
 }
 
 .formulario-registro input {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 0;
   padding: 3px;
   outline: none;
   /*para quitar el bordeado negro*/
-  margin-top: 5px;
+  margin-top: 0px;
+  height: 30px;
 }
 
 .formulario-registro button {
@@ -252,7 +253,7 @@ p {
 
 .inicio-sesion h2 {
   color: #f0f0f0;
-  text-shadow: .5px .5px 2px black;
+  text-shadow: 1.5px 0.5px 0.5px black;
   font-size: 20px;
   text-align: center;
 }
@@ -261,17 +262,17 @@ p {
   display: flex;
   flex-direction: column;
   gap: .8em;
-  margin-top: 1.2em;
   align-items: center;
 }
 
 .formulario-inicio input {
-  border-radius: 5px;
+  border-radius: 10px;
   border: 0;
   padding: 5px;
   outline: none;
   /*para quitar el bordeado negro*/
   margin-top: 5px;
+  height: 35px;
 }
 
 #result {
@@ -339,7 +340,6 @@ a {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-  padding-top: 10px;
   gap: 90px;
 }
 
