@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
 /* HEADER */
 
 /* Responsive telefonos */
@@ -56,7 +59,7 @@ header {
   object-fit: cover;
 }
 
-/* Responsive Tabletas */
+/* Responsive tabletas */
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
       display: flex;
@@ -93,12 +96,12 @@ header {
  }
 }
 
-/* Responsive Escritorio */
+/* Responsive escritorio */
 @media (min-width: 1024px) {
   body.borderpage {
       padding: 0 10%;
       background: linear-gradient(90deg, rgba(0,147,216,1) 0%, rgba(3,173,238,1) 100%);
- }
+   }
   header {
       display: flex;
       flex-direction: row;
