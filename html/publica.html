@@ -5,26 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Titulo de pestaña -->
   <title>Publica</title>
-
-  <link rel="stylesheet" href="../styles/about.css">
-  <link rel="stylesheet" href="../../styles/componentes/footer.css">
-  <link rel="stylesheet" href="../../styles/componentes/header.css">
-
-
-  <link rel="stylesheet" href="../../styles/componentes/form-contact.css">
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-
-  <!-- favicon -->
-
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
@@ -42,11 +26,26 @@
   <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- favicon ------- fin -->
+  <!-- Estilos de web por componentes -->
+  <link rel="stylesheet" href="../../styles/componentes/header.css">
+  <link rel="stylesheet" href="../../styles/componentes/articles.css">
+  <link rel="stylesheet" href="../../styles/componentes/form.css">
+  <link rel="stylesheet" href="../../styles/componentes/footer.css">
+
+  <!-- Estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/assets/css/docs.css">
+
+  <!-- Estilos de Font Awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+  ntegrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body class="borderpage">
+
+  <!-- Componente header -->  
   <header>
     <div class="logo-container">
       <a href="../../html/inicio/inicio.html">
@@ -69,27 +68,18 @@
     </nav>
   </header>
 
-
-
-
-  <!-- section valores, mision, vision -->
-
-
-
+  <!-- Seccion de informacion sobre como publicar ofertas -->
   <section class="container">
-
     <h6 class="publica">Publica tu oferta</h6>
-
-    <article class="Valores">
-     <div><img src="../img/publica/interrogacion.png" alt=""></div>
+    <article class="Articulo">
+     <div><img src="../../img/publica/interrogacion.png" alt=""></div>
       <div>
         <h6>¿Como funciona?</h6>
         <p>Puedes contactarnos a traves del formulario o via whatsApp con la información de tu oferta y algunos datos personales basicos, con el fin de facilitar
           la gestion de las ofertas de intercambio publicadas en Selocambio.com</p>
       </div>
     </article>
-
-    <article class="Valores">
+    <article class="Articulo">
       <div><img src="../img/publica/seguridad.png" alt=""></div>
       <div>
         <h6>¿Porque hacemos esto?</h6>
@@ -101,11 +91,8 @@
         </p>
       </div>
     </article>
-
-
-    <article class="Valores">
+    <article class="Articulo">
       <div><img src="../img/publica/despertador.png" alt=""></div>
-
       <div><h6>¿Cuanto tardaran mis ofertas en subirse a la pagina?</h6>
         <p>Recibiras una respuesta rapida en menos de 12 horas en caso de que tu oferta no cumpla con los requisitos,
           para que puedas crear otra oferta, tu oferta se visualizara en la pagina pasados entre 2 y 3 dias habiles
@@ -113,112 +100,62 @@
         </p>
       </div>
     </article>
-
   </section>
 
-
-  <!-- COMPONENTE - FORMULARIO -->
-
-
+  <!-- Componente formulario -->
   <section class="aboutFormulario">
-
     <h1 class="aboutFormulario">1. Envianos tus datos de oferta</h1>
     <br>
-
-
-
     <form class="aboutFormulario" action="https://formspree.io/f/xeqwzobg" method="POST" target="_blank">
-
       <ul class="aboutFormulario">
-
         <div>
-
           <li>
-
             <input class="aboutFormularioNombre" placeholder="Titulo de la oferta" name="OFERTA: Titulo de la oferta" type="text" id="postname" required>
           </li>
-
-
-          <!-- COMENTARIO
+          <!-- Campo para imagenes
           <center>
             <label class="custom-file-upload">
               <input type="file" accept="image/png, image/jpeg, image/webp," id="postphoto"/>
               Sube tu imagen
             </label>
-          </center>
-        -->
-
+          </center>-->
         </div>
-
         <div class="aboutFormularioMensaje">
-
           <li>
-
             <textarea class="aboutFormularioMensaje" placeholder="Descripcion de la oferta" name="OFERTA: Descripcion de la oferta" id="postdescrip" required></textarea>
-          </li>
-
-          <br>
-          <h1 class="aboutFormulario">2. Envianos tus datos de contacto</h1>
-          <br>
+          </li><br>
+          <h1 class="aboutFormulario">2. Envianos tus datos de contacto</h1><br>
           <div>
-
-
-
             <li>
               <input class="aboutFormularioNombre" placeholder="Nombre y apellidos" name="CLIENTE: Nombre y apellidos" type="text" id="name" required>
             </li>
-
           </div>
-
           <div class="aboutFormularioTelefonoCorreo">
-
             <li>
-
               <input class="aboutFormularioTelefono" placeholder="Telefono" name="CLIENTE: Telefono"  type="tel" id="phone" required>
             </li>
             <li>
-
               <input class="aboutFormularioCorreo" placeholder="E-mail" name="CLIENTE: E-mail" type="email" id="mail" required>
             </li>
-
-          </div>
-
-          <br>
+          </div><br>
           <button class="aboutFormulario" type="submit" required onclick="return validateForm()">ENVIAR OFERTA</button>
-          <br>
-          <br>
-          <br>
+          <br><br><br>
           </li>
         </div>
-
-
-
-
       </ul>
     </form>
-
-
-
-
-
   </section>
 
-
-
-<!-- COMPONENTE - FOOTER -->
-
+<!-- Componente footer -->
 <footer class="aboutFooter">
-  
   <div class="footerImages">
     <img src="/img/footer/logo-generation.png" alt="">
     <img src="/img/footer/logo-bit.png" alt="">
   </div>
-
   <div class="footerContent">
     <div class="copyrights">
       <p class="aboutFooter">Sitio web desarrollado por Los Inquebrantables.</p>
     </div>
-      
     <div class="copyrights">
       <p class="aboutFooter">© 2023 Los Inquebrantables.</p>
       <p class="aboutFooter">Todos los derechos reservados.</p>
@@ -227,92 +164,15 @@
   </div>
 </footer>
   
-  <script src="https://kit.fontawesome.com/6e9b5c8142.js" crossorigin="anonymous"></script>
+<!-- Script para boton de whatsapp -->
+<script src="/js/whatsapp.js"></script>
+<!-- Script para validacion de formulario -->
+<script src="/js/validations/form-publica.js"></script>
+<!-- Script de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script de Font Awsome -->
+<script src="https://kit.fontawesome.com/6e9b5c8142.js" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script src="../js/validations/form-publica.js" defer></script>
-
-
-  <script src="/js/whatsapp.js" defer ></script>
-
-
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </body>
 
 </html>

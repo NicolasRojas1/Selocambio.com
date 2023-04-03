@@ -1,5 +1,6 @@
 /* FOOTER */
 
+/* Responsive telefonos */
 .aboutFooter {
   display: flex;
   justify-content: space-between;
@@ -37,7 +38,7 @@
   width: 100%;
 }
 
-/* Responsive para telefonos */
+/* Responsive tabletas y escritorio */
 @media (max-width: 768px) {
   .div copyrights {
     width: 100%;
