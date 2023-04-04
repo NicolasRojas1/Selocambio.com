@@ -42,6 +42,9 @@
   ntegrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  
 </head>
 
 <body class="borderpage">
@@ -122,7 +125,8 @@
   <!-- Seccion de informacion valores, mision, vision -->
   <section class="container">
     <h6 class="publica">Nosotros</h6>
-    <article class="Articulo">
+
+    <article data-aos="zoom-out-down" class="Articulo">
       <img src="../img/about/Valores.png" alt="">
       <div>
         <h6>Valores</h6>
@@ -132,7 +136,7 @@
           es nuestra bandera.</p>
       </div>
     </article>
-    <article class="Articulo">
+    <article data-aos="fade-down" class="Articulo">
       <img src="../img/about/Mision.png" alt="">
       <div>
         <h6>Misión</h6>
@@ -142,7 +146,9 @@
           ciudad de Bogotá y sus alrededores.</p>
       </div>
     </article>
-    <article class="Articulo">
+
+    
+    <article data-aos="flip-right" class="Articulo">
       <img src="../img/about/Vision.png" alt="">
       <div>
         <h6>Visión</h6>
@@ -296,6 +302,10 @@
   <!-- Script de Font Awsome -->
   <script src="https://kit.fontawesome.com/6e9b5c8142.js" crossorigin="anonymous"></script>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+ AOS.init();
+ </script>
 </body>
 
 </html>
