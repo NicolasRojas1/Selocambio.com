@@ -29,12 +29,12 @@ function login() {
             alert("Has iniciado sesion satisfactoriamente!")
             window.location.href='../../html/inicio/inicio-a.html';
         } else {
-            alert("La cuenta existe pero la contraseña es incorrecta!");
+            alert("La contraseña es incorrecta!");
         }
 
     }
     else{
-        alert("Esta cuenta no existe!")
+        alert("Esta cuenta no esta registrada!")
     }
 
     console.log("Cuenta iniciada!");
