@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: #029cdf;
+  background-color: (rgba(3,173,238,1) 100%);
 }
 .footerImages {
   width: 50ox;
@@ -23,14 +23,16 @@
   display: flex;
   justify-content: flex-start;
   text-align: left;
+  
 }
 .footerContent div {
   margin-right: 50px;
   margin: auto auto;
+  
 }
 .aboutFooter p {
   color: #fff;
-  background-color: #029cdf;
+  background: (rgba(3,173,238,1) 100%);
   margin: 0%;
   padding: 0 10px 0 10px;
   font-family: 'Sora', sans-serif;

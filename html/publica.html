@@ -41,6 +41,11 @@
   ntegrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+
+
+
 </head>
 
 <body class="borderpage">
@@ -117,11 +122,11 @@
       </button>
     </div>
   </div>
-  
+
   <!-- Seccion de informacion sobre como publicar ofertas -->
   <section class="container">
     <h6 class="publica">Publica tu oferta</h6>
-    <article class="Articulo">
+    <article data-aos="fade-down-left" class="Articulo">
      <div><img src="../../img/publica/interrogacion.png" alt=""></div>
       <div>
         <h6>¿Como funciona?</h6>
@@ -129,7 +134,7 @@
           la gestion de las ofertas de intercambio publicadas en Selocambio.com</p>
       </div>
     </article>
-    <article class="Articulo">
+    <article data-aos="flip-down" class="Articulo">
       <div><img src="../img/publica/seguridad.png" alt=""></div>
       <div>
         <h6>¿Porque hacemos esto?</h6>
@@ -141,7 +146,7 @@
         </p>
       </div>
     </article>
-    <article class="Articulo">
+    <article data-aos="zoom-out" class="Articulo">
       <div><img src="../img/publica/despertador.png" alt=""></div>
       <div><h6>¿Cuanto tardaran mis ofertas en subirse a la pagina?</h6>
         <p>Recibiras una respuesta rapida en menos de 12 horas en caso de que tu oferta no cumpla con los requisitos,
@@ -226,6 +231,11 @@
   <script src="/js/validations/form-publica.js"></script>
   <!-- Script para boton de whatsapp -->
   <script src="/js/whatsapp.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+ AOS.init();
+ </script>
 
 </body>
 
