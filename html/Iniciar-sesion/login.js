@@ -11,8 +11,13 @@ function singUp(event) {
   };
 
   let json = JSON.stringify(user);
+
   localStorage.setItem(email, json);
-  console.log('user added');
+  localStorage.setItem(password, json);
+
+  console.log("Cuenta creada!");
+  alert("¡Has creado tu cuenta satisfactoriamente! vuelve a iniciar sesion.");
+  window.location.href='../../html/inicio/inicio.html';
 }
 
 function loginFunc(event) {
