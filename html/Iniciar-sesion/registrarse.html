@@ -3,15 +3,15 @@
       class="titulo--parte-2">.com</span></h2>
 
   <form onsubmit="singUp()" class="formulario-registro">
-    <input type="text" id="fname" placeholder="Nombre" autocapitalize="word" autofocus>
-    <input type="text" id="lname" placeholder="Apellido" autocapitalize="word">
-    <input type="number" id="id" placeholder="N° Identificación">
-    <input type="number" id="age" placeholder="Edad">
-    <input type="number" id="phone" placeholder="Teléfono">
+    <input type="text" id="fname" placeholder="Nombre" required autocapitalize="word" autofocus>
+    <input type="text" id="lname" placeholder="Apellido" required autocapitalize="word">
+    <input type="number" id="id" placeholder="N° Identificación" required>
+    <input type="number" id="age" placeholder="Edad" required>
+    <input type="number" id="phone" placeholder="Teléfono" required>
     <input type="email" id="email" placeholder="Correo" required>
     <input type="password" id="password" name="password" placeholder="Contraseña" required>
-    <input type="password" id="confirm-password" placeholder="Confirme contraseña">
-    <input type="password" id="code" placeholder="Codigo Selocambio">
+    <input type="password" id="confirm-password" placeholder="Confirme contraseña" required>
+    <input type="password" id="code" placeholder="Codigo Selocambio" required>
     <button type="submit" onclick="validateFormS()">Registrar</button>
   </form>
   <div class="links-registro">

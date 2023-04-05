@@ -8,7 +8,7 @@ function validateFormS() {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     let cpassword = document.getElementById("confirm-password").value;
-
+    let code = document.getElementById("code").value;
 
     let nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}$/;
     let lastnameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}(?: [a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}){0,1}$/;
@@ -17,7 +17,7 @@ function validateFormS() {
     let phoneRegex = /^\d{10}$/;
     let emailRegex = /^\S+@\S+\.\S+$/;
     let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-
+    let codeRegex = 0000;
 
     if (!nameRegex.test(name)) {
         alert("Ingresa un nombre válido.");
@@ -59,17 +59,21 @@ function validateFormS() {
         return false;
     }
 
-    signUp();
+    if (code != codeRegex) {
+        alert("El codigo selocambio es 0000.");
+        return false;
+    }
+
+    signUpV();
     limpiarFormulario();
     return false;
 }
 
-function signUp() {
-    console.log("Cuenta creada!");
-    alert("¡Has creado tu cuenta satisfactoriamente! vuelve a iniciar sesion.")
-    window.location.href='../../html/inicio/inicio.html';
+function signUpV() {
+    //alert("¡Has creado tu cuenta satisfactoriamente! vuelve a iniciar sesion.");
+    //window.location.href='../../html/inicio/inicio.html';
 }
-function limpiarFormulario() {
+function limpiarFormulario() { /*
     document.getElementById("email").value = ""
-    document.getElementById("password").value = ""
+    document.getElementById("password").value = "" */
 }

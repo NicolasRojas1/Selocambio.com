@@ -23,7 +23,7 @@ function validateForm() {
 function login() {
 
     //VALIDACION INICIO DE CUENTA (INICIA SESION SOLO SI LA CUENTA ESTA REGISTRADA)
-    if(localStorage.getItem(email)){
+    /*if(localStorage.getItem(email)){
         let json = JSON.parse(localStorage.getItem(email))
         if(json.password==password){
             alert("Has iniciado sesion satisfactoriamente!")
@@ -35,12 +35,16 @@ function login() {
     }
     else{
         alert("Esta cuenta no esta registrada!")
-    }
+    }*/
 
+    alert("Has iniciado sesion satisfactoriamente!")
+    window.location.href='../../html/inicio/inicio-a.html';
+    
     console.log("Cuenta iniciada!");
 
 }
-function limpiarFormulario() {
+
+function limpiarFormulario() { /*
     document.getElementById("email").value = "";
-    document.getElementById("password").value = "";
+    document.getElementById("password").value = ""; */
 }
