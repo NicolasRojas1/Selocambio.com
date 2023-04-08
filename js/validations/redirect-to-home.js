@@ -1,1 +1,1 @@
-window.location.href='../../html/inicio/inicio.html';
+window.location.href='../html/inicio.html';
