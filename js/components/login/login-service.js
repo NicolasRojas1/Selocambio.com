@@ -27,7 +27,7 @@ function signUpFunc() {
   // Expresiones regulares para validar los datos
   const nombreRegEx = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+$/;
   const dniRegEx = /^\d{6,10}$/;
-  const telefonoRegEx = /^\d{9}$/;
+  const telefonoRegEx = /^\d{10}$/;
   const correoRegEx = /^\S+@\S+\.\S+$/;
   const contraseñaRegEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
