@@ -1,5 +1,5 @@
 # Selocambio.com
-Plataforma de trueques y donaciones Colombiano.
+Plataforma de trueques y donaciones Colombiana.
 
 Equipo:
 
