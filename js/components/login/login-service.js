@@ -49,7 +49,7 @@ function signUpFunc() {
   console.log("Cuenta registrada!");
   cleanForm();
 
-  alert("¡Has registrado tu cuenta correctamente!, se ha limpiado el formulario, ahora puedes iniciar sesion");
+  alert("¡Has registrado tu cuenta correctamente!, ahora puedes iniciar sesion");
 }
 
 function loginFunc() {

@@ -1,43 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title> </title>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo de pestaña -->
+    <title>Gestionar</title>
+  <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../assets/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../assets/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../assets/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../assets/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../assets/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../assets/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../assets/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../assets/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../../assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../../assets/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="../../../assets/img/favicon/ms-icon-144x144.png">
+
+<!-- Estilos -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
 integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
 crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/6e9b5c8142.js" crossorigin="anonymous"></script>
-
+<!-- Archivos locales -->
 <link rel="stylesheet" href="/css/components/admin/dashboard.css">
 <link rel="stylesheet" href="/css/components/header-carrousel.css">
-
 <script src="/js/components/admin/dashboard.js"></script>
-
+<script src="/html/componentes/componentes.js"></script>
+<script src="/js/validations/admin.js"></script> 
 <!-- Cargar componentes HTML -->
 <script src="/html/componentes/componentes.js"></script>
-  <!-- Admin -->
-  <script src="/js/validations/admin.js"></script>
+<!-- Lista de productos y productos -->
+<script src="/js/apis/request-adm-products.js"></script>
 
-  <body class="borderpage"></body>
+</head>
+
+<body class="borderpage">
 	<div id="encabezadoadm"></div>
-	<body>
 
 <div class="search-box">
   <i class="material-icons">&#xE8B6;</i>
   <input type="text" class="form-control" placeholder="Buscar&hellip;">
 </div>
 
-<div class="container-xl">
+<div>
 	<div class="table-responsive">
 		<div class="table-wrapper">
 			<div class="table-title">
@@ -46,8 +66,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 						<h2>Perfil <b>Administrativo</b></h2>
 					</div>
 					<div class="col-sm-6">
-						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Agrega nuevo producto</span></a>
-												
+						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
+								class="material-icons">&#xE147;</i> <span>Agregar nuevo producto</span></a>
 					</div>
 				</div>
 			</div>
@@ -59,160 +79,62 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 								<input type="checkbox" id="selectAll">
 								<label for="selectAll"></label>
 							</span>
-						</th>La cuenta
-            <th>Imagen del producto</th>
+						</th>
+						<th>Imagen del producto</th>
 						<th>Nombre del Producto</th>
 						<th>Descripción del producto</th>
 						<th>Nombre</th>
 						<th>Teléfono</th>
 						<th>Correo</th>
-            <th>Intereses</th>
-            <th>Acciones</th>
+						<th>Intereses</th>
+						<th>Acciones</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox1" name="options[]" value="1">
-								<label for="checkbox1"></label>
-							</span>
-						</td>
-            <td><img src="/assets/img/admin/Play5.jpg" class="avatar" alt="Avatar"></td>
-						<td>Thomas Hardy</td>
-						<td>thomashardy@mail.com</td>
-						<td>89 Chiaroscuro Rd, Portland, USA</td>
-						<td>(171) 555-2222</td>
-            <td>correeo</td>
-            <td><select name="categoriasCambio" id="lang">
-              <option value="vehiculos">Vehiculos</option>
-              <option value="tecnologia">Tecnologia</option>
-              <option value="hogar-muebles">Hogar y Muebles</option>
-              <option value="deportes-fitness">Deportes y Fitness</option>
-              <option value="belleza">Belleza </option>
-              <option value="herramientas">Herramientas</option>
-              <option value="moda">Moda</option>
-              <option value="juegos">Juegos y Juguetes</option>
-            </select></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox2" name="options[]" value="1">
-								<label for="checkbox2"></label>
-							</span>
-						</td>
-            <td><img src="/assets/img/admin/Play5.jpg" class="avatar" alt="Avatar"></td>
-						<td>Dominique Perrier</td>
-						<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eos quia eius, perferendis cupiditate aperiam rerum suscipit nihil consequatur molestias, nobis officiis dolore obcaecati laboriosam! Quod, porro? Rem, quibusdam eum?</td>
-						<td>Obere Str. 57, Berlin, Germany</td>
-						<td>(313) 555-5735</td>
-            <td>correeo@correeo.com</td>
-            <td><select name="categoriasCambio" id="lang">
-              <option value="vehiculos">Vehiculos</option>
-              <option value="tecnologia">Tecnologia</option>
-              <option value="hogar-muebles">Hogar y Muebles</option>
-              <option value="deportes-fitness">Deportes y Fitness</option>
-              <option value="belleza">Belleza </option>
-              <option value="herramientas">Herramientas</option>
-              <option value="moda">Moda</option>
-              <option value="juegos">Juegos y Juguetes</option>
-            </select></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox3" name="options[]" value="1">
-								<label for="checkbox3"></label>
-							</span>
-						</td>
-            <td><img src="/assets/img/admin/Play5.jpg" class="avatar" alt="Avatar"></td>
-						<td>Maria Anders</td>
-						<td>mariaanders@mail.com</td>
-						<td>25, rue Lauriston, Paris, France</td>
-						<td>(503) 555-9931</td>
-            <td>correeo</td>
-            <td><select name="categoriasCambio" id="lang">
-              <option value="vehiculos">Vehiculos</option>
-              <option value="tecnologia">Tecnologia</option>
-              <option value="hogar-muebles">Hogar y Muebles</option>
-              <option value="deportes-fitness">Deportes y Fitness</option>
-              <option value="belleza">Belleza </option>
-              <option value="herramientas">Herramientas</option>
-              <option value="moda">Moda</option>
-              <option value="juegos">Juegos y Juguetes</option>
-            </select></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox4" name="options[]" value="1">
-								<label for="checkbox4"></label>
-							</span>
-						</td>
-            <td><img src="/assets/img/admin/Play5.jpg" class="avatar" alt="Avatar"></td>
-						<td>Fran Wilson</td>
-						<td>franwilson@mail.com</td>
-						<td>C/ Araquil, 67, Madrid, Spain</td>
-						<td>(204) 619-5731</td>
-            <td>correeo</td>
-            <td><select name="categoriasCambio" id="lang">
-              <option value="vehiculos">Vehiculos</option>
-              <option value="tecnologia">Tecnologia</option>
-              <option value="hogar-muebles">Hogar y Muebles</option>
-              <option value="deportes-fitness">Deportes y Fitness</option>
-              <option value="belleza">Belleza </option>
-              <option value="herramientas">Herramientas</option>
-              <option value="moda">Moda</option>
-              <option value="juegos">Juegos y Juguetes</option>
-            </select></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
-						</td>
-					</tr>					
-					<tr>
-						<td>
-							<span class="custom-checkbox">
-								<input type="checkbox" id="checkbox5" name="options[]" value="1">
-								<label for="checkbox5"></label>
-							</span>
-						</td>
-            <td><img src="/assets/img/admin/Play5.jpg" class="avatar" alt="Avatar"></td>
-						<td>Martin Blank</td>
-						<td>martinblank@mail.com</td>
-						<td>Via Monte Bianco 34, Turin, Italy</td>
-						<td>(480) 631-2097</td>
-            <td>correeo</td>
-            <td><select name="categoriasCambio" id="lang">
-              <option value="vehiculos">Vehiculos</option>
-              <option value="tecnologia">Tecnologia</option>
-              <option value="hogar-muebles">Hogar y Muebles</option>
-              <option value="deportes-fitness">Deportes y Fitness</option>
-              <option value="belleza">Belleza </option>
-              <option value="herramientas">Herramientas</option>
-              <option value="moda">Moda</option>
-              <option value="juegos">Juegos y Juguetes</option>
-            </select></td>
-						<td>
-							<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
-							<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
-						</td>
-					</tr> 
+
+				<div id="productosadm"></div>
+
+					<!-- 
+
+						<tr>
+  <td>
+    <span class="custom-checkbox">
+      <input type="checkbox" id="checkbox1" name="options[]" value="1">
+      <label for="checkbox1"></label>
+    </span>
+  </td>
+  <td><img src="/assets/img/admin/Play5.jpg" class="avatar" alt="Avatar"></td>
+  <td>Nombre del producto</td>
+  <td>Descripción del producto</td>
+  <td>Nombre</td>
+  <td>Teléfono</td>
+  <td>Correo</td>
+  <td>
+    <select name="categoriasCambio" id="lang">
+      <option value="seleccion">Selección</option>
+      <option value="vehiculos">Vehiculos</option>
+      <option value="tecnologia">Tecnologia</option>
+      <option value="hogar-muebles">Hogar y Muebles</option>
+      <option value="deportes-fitness">Deportes y Fitness</option>
+      <option value="belleza">Belleza</option>
+      <option value="herramientas">Herramientas</option>
+      <option value="moda">Moda</option>
+      <option value="juegos">Juegos y Juguetes</option>
+    </select>
+  </td>
+  <td>
+    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+        data-toggle="tooltip" title="Editar">&#xE254;</i></a>
+    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
+        data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
+  </td>
+</tr>
+
+					 -->
+
 				</tbody>
 			</table>
+			<!--
 			<div class="clearfix">
 				<div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
 				<ul class="pagination">
@@ -224,37 +146,38 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 					<li class="page-item"><a href="#" class="page-link">5</a></li>
 					<li class="page-item"><a href="#" class="page-link">Next</a></li>
 				</ul>
-			</div>
+			</div>-->
 		</div>
-	</div>        
+	</div>
 </div>
+
 <!-- Edit Modal HTML -->
 <div id="addEmployeeModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<form>
-				<div class="modal-header">						
+				<div class="modal-header">
 					<h4 class="modal-title">Agregar Producto</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
-				<div class="modal-body">					
+				<div class="modal-body">
 					<div class="form-group">
 						<label>Imagen del producto</label>
 						<input type="file" class="form-control" required>
 					</div>
-          <div class="form-group">
+					<div class="form-group">
 						<label>Nombre del producto</label>
 						<input type="text" class="form-control" required>
 					</div>
-          <div class="form-group">
+					<div class="form-group">
 						<label>Descripción del producto</label>
 						<input type="text" class="form-control" required>
 					</div>
-          <div class="form-group">
+					<div class="form-group">
 						<label>Nombre</label>
 						<input type="text" class="form-control" required>
 					</div>
-          <div class="form-group">
+					<div class="form-group">
 						<label>Teléfono</label>
 						<input type="text" class="form-control" required>
 					</div>
@@ -264,19 +187,17 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 					</div>
 					<div class="form-group">
 						<label>Intereses</label>
-            <select class="categorias-form">
-              <option value="vehiculos">Vehiculos</option>
-              <option value="tecnologia">Tecnologia</option>
-              <option value="hogar-muebles">Hogar y Muebles</option>
-              <option value="deportes-fitness">Deportes y Fitness</option>
-              <option value="belleza">Belleza </option>
-              <option value="herramientas">Herramientas</option>
-              <option value="moda">Moda</option>
-              <option value="juegos">Juegos y Juguetes</option>
-            </select>
-						
+						<select class="categorias-form">
+							<option value="vehiculos">Vehiculos</option>
+							<option value="tecnologia">Tecnologia</option>
+							<option value="hogar-muebles">Hogar y Muebles</option>
+							<option value="deportes-fitness">Deportes y Fitness</option>
+							<option value="belleza">Belleza </option>
+							<option value="herramientas">Herramientas</option>
+							<option value="moda">Moda</option>
+							<option value="juegos">Juegos y Juguetes</option>
+						</select>
 					</div>
-									
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
@@ -286,33 +207,34 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 		</div>
 	</div>
 </div>
+
 <!-- Edit Modal HTML -->
 <div id="editEmployeeModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<form>
-				<div class="modal-header">						
+				<div class="modal-header">
 					<h4 class="modal-title">Editar Producto</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
-				<div class="modal-body">					
+				<div class="modal-body">
 					<div class="form-group">
 						<label>Imagen del producto</label>
 						<input type="file" class="form-control" required>
 					</div>
-          <div class="form-group">
+					<div class="form-group">
 						<label>Nombre del producto</label>
 						<input type="text" class="form-control" required>
 					</div>
-          <div class="form-group">
+					<div class="form-group">
 						<label>Descripción del producto</label>
 						<input type="text" class="form-control" required>
 					</div>
-          <div class="form-group">
+					<div class="form-group">
 						<label>Nombre</label>
 						<input type="text" class="form-control" required>
 					</div>
-          <div class="form-group">
+					<div class="form-group">
 						<label>Teléfono</label>
 						<input type="text" class="form-control" required>
 					</div>
@@ -322,19 +244,19 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 					</div>
 					<div class="form-group">
 						<label>Intereses</label>
-            <select class="categorias-form">
-              <option value="vehiculos">Vehiculos</option>
-              <option value="tecnologia">Tecnologia</option>
-              <option value="hogar-muebles">Hogar y Muebles</option>
-              <option value="deportes-fitness">Deportes y Fitness</option>
-              <option value="belleza">Belleza </option>
-              <option value="herramientas">Herramientas</option>
-              <option value="moda">Moda</option>
-              <option value="juegos">Juegos y Juguetes</option>
-            </select>
-						
+						<select class="categorias-form">
+							<option value="vehiculos">Vehiculos</option>
+							<option value="tecnologia">Tecnologia</option>
+							<option value="hogar-muebles">Hogar y Muebles</option>
+							<option value="deportes-fitness">Deportes y Fitness</option>
+							<option value="belleza">Belleza </option>
+							<option value="herramientas">Herramientas</option>
+							<option value="moda">Moda</option>
+							<option value="juegos">Juegos y Juguetes</option>
+						</select>
+
 					</div>
-									
+
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
@@ -344,16 +266,17 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 		</div>
 	</div>
 </div>
+
 <!-- Delete Modal HTML -->
 <div id="deleteEmployeeModal" class="modal fade">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<form>
-				<div class="modal-header">						
+				<div class="modal-header">
 					<h4 class="modal-title">Eliminar Publicación</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
-				<div class="modal-body">					
+				<div class="modal-body">
 					<p>¿Estás seguro de que quieres eliminar este poducto?</p>
 					<p class="text-warning"><small>Esta accion no se podra revertir.</small></p>
 				</div>
@@ -365,3 +288,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 		</div>
 	</div>
 </div>
+
+</body>
+
+</html>

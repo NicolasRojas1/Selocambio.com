@@ -3,6 +3,7 @@ body {
 	background: #f5f5f5;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 13px;
+	overflow-y: scroll;
 }
 
 .categorias-form{
@@ -34,31 +35,21 @@ body {
 
 
 .table-responsive {
-    margin: 20px 0;
-    overflow-x: hidden !important;
+    overflow-x: auto;
 }
 .table-wrapper {
 	background: #fff;
 	margin: 20px 0;
 	border-radius: 3px;
-	min-width: 100%;
 	box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .table-title {
-	   
-padding-bottom: 15px;
-	   
-background: #435d7d;
-	   
-color: #fff;
-	   
-padding: 10px 30px;
-	   
-min-width: 100%;
-	   
-margin: -20px -25px 10px;
-	   
-border-radius: 3px 3px 0 0;
+	   padding-bottom: 15px;
+	   background: #435d7d;
+	   color: #fff;
+	   padding: 20px 20px;
+	   min-width: 100%;
+	   border-radius: 3px 3px 0 0;
 }
 .table-title h2 {
 	margin: 5px 13px ;
@@ -88,10 +79,11 @@ border-radius: 3px 3px 0 0;
 	margin-top: 2px;
 }
 table.table tr th, table.table tr td {
-	border-color: #ffffff;
-	padding: 12px 15px;
+	border-color: #c0c0c0;
+	/* padding: 12px 15px; */
 	vertical-align: middle;
 	text-align: center;
+	background-color: #fff;
 }
 table.table tr th:first-child {
 	width: 60px;
