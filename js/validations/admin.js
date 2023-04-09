@@ -13,7 +13,7 @@ function cuenta() {
     let usuario = JSON.parse(localStorage.getItem(registro));
     const alerta = `
 Cuenta de ${usuario.nombre} ${usuario.apellido}
-\n📨 Correo: ${usuario.correo}\n📱 Teléfono: ${usuario.telefono}\n🆔 DNI: ${usuario.dni}\n🔞 Edad: ${usuario.edad}\n`;
+\n📞 ${usuario.telefono}\n📧 ${usuario.correo}\n`;
     alert(alerta);
   } else {localStorage.removeItem("ultimaSesion");}
 }
