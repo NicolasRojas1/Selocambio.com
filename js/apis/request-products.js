@@ -21,8 +21,12 @@ function manejoDePeticiones(datos) {
   <h2>${oferta.nombreProd}</h2>
   <h4>Por: ${oferta.nombreCli}</h4>
   <p class="description">Descripción: ${oferta.descripcionProd}</p>
+
   <p class="interes">Interes por articulos de ${oferta.categoriaProd}</p>
-  <a href="http://wa.me/${oferta.telefonoCli}?text=Hola ${oferta.nombreCli}, vi tu oferta de ${oferta.nombreProd} en la pagina de Selocambio.com. ¿En qué estás interesado para poder hacerte el cambio?" target="_blank">Selocambio</a>
+
+
+  <a href="http://wa.me/${oferta.telefonoCli}?text=¡Hola ${oferta.nombreCli}! Tengo interes en la oferta que publicaste que se llama ''${oferta.nombreProd}'' en la página de Selocambio, me preguntaba si podrias hacer un intercambio, me gustaria ofrecerte algo a cambio de lo que ofreces ¡Espero tu respuesta!
+  " target="_blank">Selocambio</a>
   
   </div>
   </div>
