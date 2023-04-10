@@ -19,9 +19,10 @@ function manejoDePeticiones(datos) {
   
   <img class="img_prod" src="${oferta.imagenProd}" alt="Imagen de ${oferta.nombreProd}" height="200" width="200"></img>
   <h2>${oferta.nombreProd}</h2>
-  <h4>${oferta.nombreCli}</h4>
-  <p class="description">${oferta.descripcionProd}</p>
-  <a href="http://wa.me/57${oferta.telefonoCli}?text=Hola ${oferta.nombreCli}, vi tu oferta de ${oferta.nombreProd} en la pagina de Selocambio.com. ¿En qué estás interesado para poder hacerte el cambio?" target="_blank">Selocambio</a>
+  <h4>Por: ${oferta.nombreCli}</h4>
+  <p class="description">Descripción: ${oferta.descripcionProd}</p>
+  <p class="interes">Interes por articulos de ${oferta.categoriaProd}</p>
+  <a href="http://wa.me/${oferta.telefonoCli}?text=Hola ${oferta.nombreCli}, vi tu oferta de ${oferta.nombreProd} en la pagina de Selocambio.com. ¿En qué estás interesado para poder hacerte el cambio?" target="_blank">Selocambio</a>
   
   </div>
   </div>
@@ -45,3 +46,4 @@ fetch(`${API_URL}/oferta/obtener`)
     const generarHTML = document.querySelector("#productos");
     generarHTML.innerHTML = `<p>No se pudo obtener la información de la API.</p>`;
   });
+  

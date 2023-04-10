@@ -80,10 +80,10 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 								<label for="selectAll"></label>
 							</span>
 						</th>
-						<th>Imagen del producto</th>
+						<th>Imagen</th>
 						<th>Nombre del Producto</th>
-						<th>Descripción del producto</th>
-						<th>Nombre</th>
+						<th>Descripción</th>
+						<th>Nombre del Cliente</th>
 						<th>Teléfono</th>
 						<th>Correo</th>
 						<th>Intereses</th>
@@ -161,45 +161,77 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 					<h4 class="modal-title">Agregar Producto</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
+
+
+
+<!-- ADD Modal HTML -->
+
 				<div class="modal-body">
 					<div class="form-group">
+
+						<div class="form-group">
+							<label>Nombre del cliente</label>
+							<input id="nombreCli" type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Teléfono del cliente</label>
+							<input id="telefonoCli"  type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Correo del cliente</label>
+							<input id="correoCli"  type="email" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Intereses del cliente</label>
+							<select id="interesCli" class="categorias-form">
+								<option value="vehiculos">Vehiculos</option>
+								<option value="tecnologia">Tecnologia</option>
+								<option value="hogar-muebles">Hogar y Muebles</option>
+								<option value="deportes-fitness">Deportes y Fitness</option>
+								<option value="belleza">Belleza </option>
+								<option value="herramientas">Herramientas</option>
+								<option value="moda">Moda</option>
+								<option value="juegos">Juegos y Juguetes</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Nombre del producto</label>
+							<input id="nombreProd" type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label>Categoria del producto</label>
+							<select id="categoriaProd"  class="categorias-form">
+								<option value="vehiculos">Vehiculos</option>
+								<option value="tecnologia">Tecnologia</option>
+								<option value="hogar-muebles">Hogar y Muebles</option>
+								<option value="deportes-fitness">Deportes y Fitness</option>
+								<option value="belleza">Belleza </option>
+								<option value="herramientas">Herramientas</option>
+								<option value="moda">Moda</option>
+								<option value="juegos">Juegos y Juguetes</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Descripción del producto</label>
+							<input id="descripcionProd"  type="text" class="form-control" required>
+						</div>
 						<label>Imagen del producto</label>
-						<input type="file" class="form-control" required>
+						<input id="imagenProd"  type="file" class="form-control" required>
 					</div>
-					<div class="form-group">
-						<label>Nombre del producto</label>
-						<input type="text" class="form-control" required>
-					</div>
-					<div class="form-group">
-						<label>Descripción del producto</label>
-						<input type="text" class="form-control" required>
-					</div>
-					<div class="form-group">
-						<label>Nombre</label>
-						<input type="text" class="form-control" required>
-					</div>
-					<div class="form-group">
-						<label>Teléfono</label>
-						<input type="text" class="form-control" required>
-					</div>
-					<div class="form-group">
-						<label>Correo</label>
-						<input type="email" class="form-control" required>
-					</div>
-					<div class="form-group">
-						<label>Intereses</label>
-						<select class="categorias-form">
-							<option value="vehiculos">Vehiculos</option>
-							<option value="tecnologia">Tecnologia</option>
-							<option value="hogar-muebles">Hogar y Muebles</option>
-							<option value="deportes-fitness">Deportes y Fitness</option>
-							<option value="belleza">Belleza </option>
-							<option value="herramientas">Herramientas</option>
-							<option value="moda">Moda</option>
-							<option value="juegos">Juegos y Juguetes</option>
-						</select>
-					</div>
+
+
+
+
+
+
 				</div>
+
+
+
+
+
+
+
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
 					<input type="submit" class="btn btn-success" value="Agregar">

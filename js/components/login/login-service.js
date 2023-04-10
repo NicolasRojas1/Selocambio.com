@@ -109,3 +109,4 @@ if (dniAnterior !== dni) {
   window.location.href = "/html/admin.html";
 
 }
+

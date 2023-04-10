@@ -17,19 +17,7 @@ function manejoDePeticiones(datos) {
   <td>${oferta.nombreCli}</td>
   <td>${oferta.telefonoCli}</td>
   <td>${oferta.correoCli}</td>
-  <td>
-    <select name="${oferta.categoriaProd}" id="lang">
-      <option value="seleccion">Selección</option>
-      <option value="vehiculos">Vehiculos</option>
-      <option value="tecnologia">Tecnologia</option>
-      <option value="hogar-muebles">Hogar y Muebles</option>
-      <option value="deportes-fitness">Deportes y Fitness</option>
-      <option value="belleza">Belleza</option>
-      <option value="herramientas">Herramientas</option>
-      <option value="moda">Moda</option>
-      <option value="juegos">Juegos y Juguetes</option>
-    </select>
-  </td>
+  <td>${oferta.categoriaProd}</td>
   <td>
     <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
         data-toggle="tooltip" title="Editar">&#xE254;</i></a>
