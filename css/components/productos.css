@@ -33,7 +33,7 @@ p.description{
 .shop-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin: auto;
   background-color: #fff;
   padding-bottom: 30px;
