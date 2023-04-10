@@ -1,7 +1,7 @@
-const API_URL = " ";
+const API_URL = "https://backend-selocambio-production.up.railway.app";
 
 function manejoDePeticiones(datos) {
-  const generarHTML = document.querySelectorAll("#productosadm");
+  const generarHTML = document.querySelector("#productosadm");
 
   const componenteHTML = datos.map(oferta => `
   <tr>
@@ -11,8 +11,8 @@ function manejoDePeticiones(datos) {
       <label for="checkbox1"></label>
     </span>
   </td>
-  <td><img src="${oferta.imagenProd}" class="avatar" alt="Avatar"></td>
-  <td>${oferta.nombreProd}/td>
+  <td><img src="${oferta.imagenProd}" class="avatar" alt="Avatar" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px;"></td>
+  <td>${oferta.nombreProd}</td>
   <td>${oferta.descripcionProd}</td>
   <td>${oferta.nombreCli}</td>
   <td>${oferta.telefonoCli}</td>
@@ -35,11 +35,12 @@ function manejoDePeticiones(datos) {
         data-toggle="tooltip" title="Editar">&#xE254;</i></a>
     <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
         data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
-  </td>
-  </tr>
+        </td> 
+        </tr>
 `);
 
-  generarHTML.innerHTML = `<div>${componenteHTML}</div>`;
+  generarHTML.innerHTML = `<div class="item">${componenteHTML}<div>`;
+
 }
 
 fetch(`${API_URL}/oferta/obtener`)
