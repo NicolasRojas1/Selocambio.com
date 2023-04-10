@@ -33,7 +33,7 @@ p.description{
 .shop-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin: auto;
   background-color: #fff;
   padding-bottom: 30px;
@@ -42,8 +42,8 @@ p.description{
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
-  width: 280px !important;
-  min-height: 380px !important;
+  max-width: 280px !important;
+  min-height: 420px !important;
   text-align: center !important;
   font-family: Sora, Arial !important;
   margin: 30px !important;
