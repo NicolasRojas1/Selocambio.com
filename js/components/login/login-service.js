@@ -45,7 +45,20 @@ function signUpFunc() {
 
   // Almacenamiento de los datos en el LocalStorage
   const usuario = {nombre,apellido,dni,edad,telefono,correo,contraseña};
-  localStorage.setItem(dni, JSON.stringify(usuario));
+  //localStorage.setItem(dni, JSON.stringify(usuario));
+
+  const API_URL = "https://backend-selocambio-production.up.railway.app";
+
+  fetch (API_URL+"/admin/guardar-admin", {
+    method:"POST",
+    body: JSON.stringify(usuario),
+  })
+
+  .then(response => {
+    //handle response            
+    console.log(response);
+  })
+
   console.log("Cuenta registrada!");
   cleanForm();
 
