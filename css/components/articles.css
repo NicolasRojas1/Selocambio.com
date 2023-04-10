@@ -30,11 +30,15 @@
     text-align: center;
     font-family: Alata, sans-serif;
     color: rgb(68, 131, 206);
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .Articulo p {
     font-size: 1em;
     font-family: Sora, sans-serif;
     text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* Responsive tabletas */
