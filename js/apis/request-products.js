@@ -1,4 +1,4 @@
-const API_URL = "localhost:8080";
+const API_URL = "https://backend-selocambio-production.up.railway.app";
 
 function manejoDePeticiones(datos) {
   const generarHTML = document.querySelector("#productos");
