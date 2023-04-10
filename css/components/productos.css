@@ -42,7 +42,7 @@ p.description{
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
-  width: 280px !important;
+  max-width: 280px !important;
   min-height: 380px !important;
   text-align: center !important;
   font-family: Sora, Arial !important;
