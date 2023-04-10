@@ -7,7 +7,7 @@ function validateForm()
     let nameRegex = /^[a-zA-Z ]{2,30}$/;
     let emailRegex = /^\S+@\S+\.\S+$/;
     let phoneRegex = /^\d{10}$/;
-    let messageRegex = /^.{1,50}$/;
+    let messageRegex = /^.{50,}$/; //cambiamos la cantidad mínima de caracteres a 50
 
     if (!nameRegex.test(name)) {
         alert("Ingrese nombres y apellidos validos.");
@@ -21,7 +21,7 @@ function validateForm()
         alert("Ingrese una dirección de e-mail válida.");
         return false;
     }
-    if (message=="") {
+    if (!messageRegex.test(message)) { //cambiamos la expresión regular a messageRegex
         alert("Ingrese un mensaje mayor a 50 caracteres");
         return false;
     }

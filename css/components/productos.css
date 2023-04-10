@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+/* PRODUCTOS */
+
+/* Responsive */
+
+.titulo {
+  font-family: 'Sora', sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #e5a723;
+  background-color: #fff;
+  margin: 0;
+  padding: 2em 0px;
+}
+h2{
+  font-family: Arial, sans-serif;
+  font-size: 1.5em !important;
+  margin-bottom: .1rem;
+}
+h4{
+  font-family: sans-serif;
+  font-size: 1.2em !important;
+}
+p.description{
+  font-family: sans-serif;
+  min-height: 70px;
+  font-size: 1em;
+}
+/*product cards*/
+.shop-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  background-color: #fff;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
+  width: 280px !important;
+  min-height: 380px !important;
+  text-align: center !important;
+  font-family: Sora, Arial !important;
+  margin: 30px !important;
+  border-radius: 15px !important;
+}
+/*
+.card:hover {
+  border: 3px solid #29251c;
+  transition: .4s;
+  transform: scale(1.05);button
+}*/
+.card > img {
+  width: 70%;
+  margin: auto;
+  max-height: 150px;
+  object-fit: scale-down;
+  padding-top: 10px;
+}
+.card a {
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #4483ce;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px 2px #4483ce;
+}
+.card a:hover {
+  transition: .5s;
+  color: black;
+  background-color: #e6b04d;
+  box-shadow: 0px 0px 0px 2px #e6b04d;
+}
+
+/* Responsive tableta */
+@media (min-width: 768px) and (max-width: 1024px) {
+/*Sin uso*/
+}
+
+/* Responsive escritorio */
+@media (min-width: 1024px) {
+/*Sin uso*/
+}
