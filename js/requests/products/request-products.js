@@ -10,11 +10,12 @@ function manejoDePeticiones(datos) {
   
 
   <style>
-  img.img_prod" {
+  img.img_prod {
     min-height: 200px;
     min-weight: 200px;
     object-fit: cover;
   }
+ 
   </style>
 
   <div class="shopContent">
@@ -32,9 +33,7 @@ function manejoDePeticiones(datos) {
   " target="_blank">Selocambio</a>
   
   </div>
-  </div>
-
-  `);
+  </div>`);
 
   generarHTML.innerHTML = `${componenteHTML}`;
 

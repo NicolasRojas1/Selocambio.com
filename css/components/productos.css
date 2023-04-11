@@ -19,6 +19,7 @@ h2{
   font-family: Arial, sans-serif;
   font-size: 1.5em !important;
   margin-bottom: .1rem;
+  margin-top: .9rem;
 }
 h4{
   font-family: sans-serif;
@@ -28,7 +29,17 @@ p.description{
   font-family: sans-serif;
   min-height: 70px;
   font-size: 1em;
+  margin-bottom: .1rem;
+  padding: 10px;
 }
+
+p{
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
+
 /*product cards*/
 .shop-content {
   display: flex;
@@ -43,7 +54,7 @@ p.description{
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
   max-width: 280px !important;
-  min-height: 420px !important;
+  min-height: 500px !important;
   text-align: center !important;
   font-family: Sora, Arial !important;
   margin: 30px !important;
@@ -92,3 +103,4 @@ p.description{
 @media (min-width: 1024px) {
 /*Sin uso*/
 }
+
