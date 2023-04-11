@@ -45,6 +45,7 @@ function signUpFunc() {
 
   // Almacenamiento de los datos en la Base de datos
   const usuario = { idAdministrador, nombre, apellido, dni, edad, telefono, correo, password, codigo };
+
   //localStorage.setItem(dni, JSON.stringify(usuario));
 
   console.log("Petición para registrar Admin");
@@ -72,19 +73,7 @@ function loginFunc() {
   const correoRegEx = /^\S+@\S+\.\S+$/;
   const contraseñaRegEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
-  // Validación del correo electrónico
-  if (!localStorage.getItem(dni)) {
-    alert("La cuenta ingresada no está registrada");
-    return;
-  }
-  if (!contraseñaRegEx.test(password)) {
-    alert("La contraseña ingresada no es válida. Debe tener al menos \n 8 caracteres \n una letra mayúscula \n una letra minúscula \n un número \n \n Ejemplo: ProbarContraseña1");
-    return;
-  }
-  if (codigo !== "ahimiramos23") {
-    alert("Necesitas un código Selocambio para valido iniciar sesion");
-    return;
-  }
+
 
 
   // Obtener el valor actual de ultimaSesion del localStorage
@@ -115,7 +104,41 @@ function loginFunc() {
     }
   }
 
-  console.log("Cuenta logueada!");
+  // Almacenamiento de los datos en la Base de datos
+  const usuario = { dni, password, codigo };
+  
+  const API_URL = "https://backend-selocambio-production.up.railway.app";
+  let adminLogin = fetch(`${API_URL}/admin/login`, {
+    method: "POST",
+    body: JSON.stringify(usuario),
+    headers: { "Content-type": "application/json; charset=UTF-8" }
+  })
+
+
+
+
+
+  // Validación del correo electrónico
+  if (!usuario.dni) {
+    alert("La cuenta ingresada no está registrada");
+    return;
+  }
+  if (!contraseñaRegEx.test(usuario.password)) {
+    alert("La contraseña ingresada no es válida. Debe tener al menos \n 8 caracteres \n una letra mayúscula \n una letra minúscula \n un número \n \n Ejemplo: ProbarContraseña1");
+    return;
+  }
+  if (usuario.codigo !== "ahimiramos23") {
+    alert("Necesitas un código Selocambio para valido iniciar sesion");
+    return;
+  }
+
+
+
+
+
+
+
+  console.log(usuario);
   window.location.href = "/html/admin.html";
 
 }
