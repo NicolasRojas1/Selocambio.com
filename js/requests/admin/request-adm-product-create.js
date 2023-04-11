@@ -20,7 +20,7 @@ function crearOferta() {
     console.log("Petición para crear una oferta");
   
     const API_URL = "https://backend-selocambio-production.up.railway.app";
-    let crearOferta = fetch(`${API_URL}/oferta/editar/{id}`, {
+    let crearOferta = fetch(`${API_URL}/oferta/crear`, {
       method: "POST",
       body: JSON.stringify(oferta),
       headers: { "Content-type": "application/json; charset=UTF-8" }
