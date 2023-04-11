@@ -20,14 +20,17 @@ function manejoDePeticiones(datos) {
   <td>${oferta.categoriaProd}</td>
   <td>
 
-  <p>${oferta.idOferta}
-    <a id="identi" href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-        data-toggle="tooltip" title="Editar">&#xE254;</i></a></p>
+  <p data-id-oferta=${oferta.idOferta} id="editarELpepe">${oferta.idOferta}</p>
+
+    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+        data-toggle="tooltip" title="Editar">&#xE254;</i></a>
 
     <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
         data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
         </td> 
         </tr>
+        
+        <script src="/js/requests/admin/request-adm-product-edit.js"></script>
 `);
 
   generarHTML.innerHTML = `<div class="item">${componenteHTML}<div>`;

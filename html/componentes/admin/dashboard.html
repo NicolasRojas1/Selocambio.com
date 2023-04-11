@@ -47,7 +47,10 @@
 	<script src="/html/componentes/componentes.js"></script>
 	<!-- Lista de productos y productos -->
 	<script src="/js/requests/products/request-adm-products.js"></script>
+
 	<script src="/js/requests/admin/request-adm-product-create.js"></script>
+	<script src="/js/requests/admin/request-adm-product-edit.js"></script>
+	<script src="/js/requests/admin/request-adm-product-delete.js"></script>
 
 </head>
 
@@ -179,46 +182,46 @@
 
 						<div class="form-group">
 							<label>ID</label>
-							<input id="idOferta" type="text" class="form-control" required>
+							<input id="idOfertaE" type="text" class="form-control" required>
 						</div>
 
 						<div class="form-group">
 							<label>Nombre del cliente</label>
-							<input id="nombreCli" type="text" class="form-control" required>
+							<input id="nombreCliE" type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Teléfono del cliente</label>
-							<input id="telefonoCli" type="text" class="form-control" required>
+							<input id="telefonoCliE" type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Correo del cliente</label>
-							<input id="correoCli" type="email" class="form-control" required>
+							<input id="correoCliE" type="email" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Intereses del cliente</label>
-							<input id="interesCli" type="text" class="form-control" required>
+							<input id="interesCliE" type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Nombre del producto</label>
-							<input id="nombreProd" type="text" class="form-control" required>
+							<input id="nombreProdE" type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Categoria del producto</label>
-							<input id="categoriaProd" type="text" class="form-control" required>
+							<input id="categoriaProdE" type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>Descripción del producto</label>
-							<input id="descripcionProd" type="text" class="form-control" required>
+							<input id="descripcionProdE" type="text" class="form-control" required>
 						</div>
 						<div class="form-group">
 							<label>URL de la imagen</label>
-							<input id="imagenProd" type="text" class="form-control" required>
+							<input id="imagenProdE" type="text" class="form-control" required>
 						</div>
 
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-						<input onclick="editarOferta(id)" type="button" class="btn btn-info" value="Guardar Cambios">
+						<input onclick="editarOferta()" type="button" class="btn btn-info" value="Guardar Cambios">
 					</div>
 				</form>
 			</div>
@@ -235,12 +238,14 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">
-						<p>¿Estás seguro de que quieres eliminar este poducto?</p>
+						<p>¿Estás seguro de que quieres eliminar este producto?</p>
+						<label>ID</label>
+						<input id="idOfertaD" type="text" class="form-control" required>
 						<p class="text-warning"><small>Esta accion no se podra revertir.</small></p>
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-						<input type="submit" class="btn btn-danger" value="Eliminar">
+						<input onclick="eliminarOferta()" type="button" class="btn btn-danger" value="Eliminar">
 					</div>
 				</form>
 			</div>
