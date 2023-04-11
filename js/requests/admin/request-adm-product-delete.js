@@ -1,14 +1,16 @@
 function eliminarOferta() {
-    
 
-  //EN CONSTRUCCIÓN
-  
+  //event.preventDefault(event);
+
   const idOferta = document.getElementById("idOfertaD").value;
 
   const API_URL = "https://backend-selocambio-production.up.railway.app";
 
+    // Solicitar dato de ID del objeto oferta
+    const oferta = { idOferta };
+
   fetch(`${API_URL}/oferta/eliminar/${idOferta}`, {
-    method: "POST",
+    method: "DELETE",
     body: JSON.stringify(oferta),
     headers: { "Content-type": "application/json; charset=UTF-8" }
   })
