@@ -14,15 +14,16 @@ function cleanForm() {
 }
 
 function signUpFunc() {
+  const idAdministrador ="";
   const nombre = document.getElementById("nombre").value;
   const apellido = document.getElementById("apellido").value;
   const dni = document.getElementById("dni").value;
   const edad = document.getElementById("edad").value;
   const telefono = document.getElementById("telefono").value;
   const correo = document.getElementById("correo").value;
-  const contraseña = document.getElementById("contraseña").value;
+  const password = document.getElementById("contraseña").value;
   const contraseñaConfirmacion = document.getElementById("contraseña-confirmacion").value;
-  const codigoAcceso = document.getElementById("codigo-acceso").value;
+  const codigo = document.getElementById("codigo-acceso").value;
 
   // Expresiones regulares para validar los datos
   const nombreRegEx = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+$/;
@@ -39,26 +40,25 @@ function signUpFunc() {
   if (edad < 18) {alert("Ingresa una edad que afirme que eres mayor de edad.");return;}
   if (!telefonoRegEx.test(telefono)) {alert("Ingresa un número de teléfono válido.");return;}
   if (!correoRegEx.test(correo)) {alert("Ingresa una dirección de e-mail válida.");return;}
-  if (!contraseñaRegEx.test(contraseña)) {alert("La contraseña ingresada no es válida. Debe tener al menos \n 8 caracteres \n una letra mayúscula \n una letra minúscula \n un número \n \n Ejemplo: ProbarContraseña1");return;}
-  if (contraseña !== contraseñaConfirmacion) {alert("Las contraseñas ingresadas no coinciden.");return;}
-  if (codigoAcceso !== "ahimiramos23") {alert("Necesitas un código Selocambio valido para registrarte");return;}
+  if (!contraseñaRegEx.test(password)) {alert("La contraseña ingresada no es válida. Debe tener al menos \n 8 caracteres \n una letra mayúscula \n una letra minúscula \n un número \n \n Ejemplo: ProbarContraseña1");return;}
+  if (password !== contraseñaConfirmacion) {alert("Las contraseñas ingresadas no coinciden.");return;}
+  if (codigo !== "ahimiramos23") {alert("Necesitas un código Selocambio valido para registrarte");return;}
 
   // Almacenamiento de los datos en el LocalStorage
-  const usuario = {nombre,apellido,dni,edad,telefono,correo,contraseña};
+  const usuario = {idAdministrador,nombre,apellido,dni,edad,telefono,correo,password,codigo};
   //localStorage.setItem(dni, JSON.stringify(usuario));
 
   const API_URL = "https://backend-selocambio-production.up.railway.app";
 
-  fetch (API_URL+"/admin/guardar-admin", {
+  console.log("Petición para registrar Admin");
+
+  let adminSave = fetch (`${API_URL}/admin/guardar`,{
     method:"POST",
     body: JSON.stringify(usuario),
+    headers: { "Content-type": "application/json; charset=UTF-8"}
   })
 
-  .then(response => {
-    //handle response            
-    console.log(response);
-  })
-
+  console.log("Usuario:" + usuario)
   console.log("Cuenta registrada!");
   cleanForm();
 
@@ -68,8 +68,8 @@ function signUpFunc() {
 function loginFunc() {
 
   const dni = document.getElementById("login-dni").value;
-  const contraseña = document.getElementById("login-contraseña").value;
-  const codigoAcceso = document.getElementById("login-codigo-acceso").value;
+  const password = document.getElementById("login-contraseña").value;
+  const codigo = document.getElementById("login-codigo-acceso").value;
 
   // Expresiones regulares para validar los datos
   const correoRegEx = /^\S+@\S+\.\S+$/;
@@ -84,7 +84,7 @@ function loginFunc() {
     alert("La contraseña ingresada no es válida. Debe tener al menos \n 8 caracteres \n una letra mayúscula \n una letra minúscula \n un número \n \n Ejemplo: ProbarContraseña1");
     return;
   }
-  if (codigoAcceso !== "ahimiramos23") {
+  if (codigo !== "ahimiramos23") {
     alert("Necesitas un código Selocambio para valido iniciar sesion");
     return;
   }

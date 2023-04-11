@@ -2,9 +2,12 @@ const API_URL = "https://backend-selocambio-production.up.railway.app";
 
 function manejoDePeticiones(datos) {
 
+  console.log(JSON.stringify(datos));
+
   const generarHTML = document.querySelector("#productos");
 
   const componenteHTML = datos.map(oferta => `
+  
 
   <style>
   img.img_prod" {
