@@ -19,8 +19,11 @@ function manejoDePeticiones(datos) {
   <td>${oferta.correoCli}</td>
   <td>${oferta.categoriaProd}</td>
   <td>
-    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-        data-toggle="tooltip" title="Editar">&#xE254;</i></a>
+
+  <p>${oferta.idOferta}
+    <a id="identi" href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
+        data-toggle="tooltip" title="Editar">&#xE254;</i></a></p>
+
     <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
         data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
         </td> 
