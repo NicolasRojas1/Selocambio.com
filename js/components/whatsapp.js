@@ -29,7 +29,7 @@ fgp_wa.innerHTML =
       }
     </style>
 
-    <a href="http://wa.me/573184706394?text=Bienvenido Selocambio.com" target="_blank">
+    <a href="http://wa.me/573184706394?text=Hola, vengo de la página web de Selocambio y necesito ayuda o asistencia para mi oferta. ¿Podrías brindarme alguna orientación al respecto, por favor?" target="_blank">
 
     <img src="../../assets/img/publica/whatsapp.svg" alt="Icono de Whatsapp">
     </a>

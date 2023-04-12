@@ -128,7 +128,7 @@ body {
   flex-direction: column;
   gap: 0.4em;
   align-items: center;
-  margin-top: 0.8em;
+  margin-top: 1em;
 }
 
 .titulo--parte-1 {
@@ -247,7 +247,7 @@ p {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1);
   width: 220px;
   height: 405px;
-  padding: 50px 20px 50px 20px;
+  padding: 60px 20px 40px 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 

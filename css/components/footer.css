@@ -6,6 +6,7 @@ footer.aboutFooter {
   justify-content: space-between;
   padding: 20px;
   background: linear-gradient(90deg, rgba(0,147,216,1) 0%, rgba(3,173,238,1) 100%);
+  min-width: 200px;
 }
 .footerImages {
   width: 50ox;
@@ -34,7 +35,6 @@ footer.aboutFooter {
   color: #fff;
   background: (rgba(3,173,238,1) 100%);
   margin: 0%;
-  padding: 0 10px 0 10px;
   font-family: 'Sora', sans-serif;
   font-size: smaller;
   width: 100%;
@@ -76,9 +76,7 @@ footer.aboutFooter {
       width: 100%;
  }
   .footerContent div {
-      margin-right: 0;
-      margin-bottom: 20px;
-      width: auto;
+      width: 100%;
       transition-duration: 1s;
  }
   .aboutFooter {
@@ -88,8 +86,10 @@ footer.aboutFooter {
  }
   .aboutFooter p {
       width: 100%;
-      padding: 0px 20px;
       transition-duration: 1s;
       margin: 10px 0;
+   .copyrights{
+      width: 100%;
+   }
  }
 }

@@ -57,42 +57,54 @@
 <body class="borderpage">
 	<div id="encabezadoadm"></div>
 
-	<div class="search-box">
-		<i class="material-icons">&#xE8B6;</i>
-		<input type="text" class="form-control" placeholder="Buscar&hellip;">
-	</div>
+
 
 	<div>
 		<div class="table-responsive">
 			<div class="table-wrapper">
 				<div class="table-title">
+
+
 					<div class="row">
-						<div class="col-sm-6">
+						<!-- <div class="col-sm-12">
 							<h2>Perfil <b>Administrativo</b></h2>
-						</div>
-						<div class="col-sm-6">
-							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i
-									class="material-icons">&#xE147;</i> <span>Agregar nuevo producto</span></a>
+						</div>  -->
+		
+
+						<div class="col">
+										<div class="metodos">
+
+											<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip" title="Añadir oferta">&#xE147;</i><span> Añadir </span></a>
+											<a href="#editEmployeeModal" class="btn btn-warning" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip" title="Editar oferta">&#xE254;</i><span>  Editar  </span></a>
+											<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
+												<i class="material-icons" data-toggle="tooltip" title="Eliminar oferta">&#xE872;</i><span>Eliminar</span></a>
+
+											</div>
+
+										<br>
 						</div>
 					</div>
+
 				</div>
 				<table class="table table-striped table-hover">
 					<thead>
 						<tr>
 							<th>
 								<span class="custom-checkbox">
-									<input type="checkbox" id="selectAll">
-									<label for="selectAll"></label>
+									<!--  <input type="checkbox" id="selectAll">
+									<label for="selectAll"></label> -->
 								</span>
 							</th>
+							<th>ID</th>
 							<th>Imagen</th>
-							<th>Nombre del Producto</th>
+							<th>Oferta</th>
 							<th>Descripción</th>
-							<th>Nombre del Cliente</th>
+							<th>Cliente</th>
+							<th>Interes</th>
 							<th>Teléfono</th>
 							<th>Correo</th>
-							<th>Intereses</th>
-							<th>Acciones</th>
 						</tr>
 					</thead>
 					<tbody id="productosadm">
@@ -126,6 +138,7 @@
 					</div>
 
 					<div class="modal-body">
+						<p>Ten en cuenta que necesitas diligenciar todos los datos</p>
 						<div class="form-group">
 							<label>Nombre del cliente</label>
 							<input id="nombreCli" type="text" class="form-control" required>
@@ -162,7 +175,7 @@
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-						<input onclick="crearOferta()" type="button" class="btn btn-success" value="Agregar">
+						<input onclick="crearOferta()" type="button" data-dismiss="modal" class="btn btn-success" value="Agregar">
 					</div>
 				</form>
 			</div>
@@ -176,10 +189,12 @@
 				<form>
 					<div class="modal-header">
 						<h4 class="modal-title">Editar Producto</h4>
+						
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
 					</div>
 					<div class="modal-body">
-
+						<p>Ten en cuenta que necesitas diligenciar todos los datos</p>
 						<div class="form-group">
 							<label>ID</label>
 							<input id="idOfertaE" type="text" class="form-control" required>
@@ -221,7 +236,7 @@
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-						<input onclick="editarOferta()" type="button" class="btn btn-info" value="Guardar Cambios">
+						<input onclick="editarOferta()" type="button" class="btn btn-info" data-dismiss="modal" value="Guardar Cambios">
 					</div>
 				</form>
 			</div>
@@ -238,10 +253,10 @@
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
 					<div class="modal-body">
-						<p>¿Estás seguro de que quieres eliminar este producto?</p>
+						<p>¿Estás seguro de que quieres eliminar el producto?</p>
 						<label>ID</label>
 						<input id="idOfertaD" type="text" class="form-control" required>
-						<p class="text-warning"><small>Esta accion no se podra revertir.</small></p>
+						<p class="text-danger"><small>Esta accion no se podra revertir.</small></p>
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
