@@ -1,12 +1,7 @@
 function editarOferta() {
 
- const idOferta = document.getElementById("idOfertaE").value;
-
-
+  const idOferta = document.getElementById("idOfertaE").value;
   const nombreCli = document.getElementById("nombreCliE").value;
-
-  //const nombreCli = "Don Ramon";
-
   const telefonoCli = document.getElementById("telefonoCliE").value;
   const correoCli = document.getElementById("correoCliE").value;
   const interesCli = document.getElementById("interesCliE").value;
@@ -14,21 +9,21 @@ function editarOferta() {
   const categoriaProd = document.getElementById("categoriaProdE").value;
   const descripcionProd = document.getElementById("descripcionProdE").value;
   const imagenProd = document.getElementById("imagenProdE").value;
-  
   const API_URL = "https://backend-selocambio-production.up.railway.app";
 
-
+  console.log("Petición para editar una oferta");
 
   // Almacenamiento de los datos en la Base de datos
   const oferta = { 
     idOferta, nombreCli, telefonoCli, correoCli, interesCli, nombreProd, categoriaProd, descripcionProd, imagenProd 
   };
   
-  // Función que maneja la respuesta de la petición para editar la oferta
+  // Función para pruebas
   function editarOferta(data) {
-    // Realizar las acciones necesarias con los datos de la respuesta
+
     console.log(data);
     console.log(oferta);
+
   }
   
   // Realizar la petición 1 para obtener las ofertas
@@ -66,4 +61,7 @@ function editarOferta() {
       generarHTML.innerHTML = `<center><br><p>No se pudo obtener la información de la API.</p></center>`;
     });
 
+    console.log("Se ha editado la oferta en la base de datos!");
+    alert("Se ha editado la oferta en la base de datos!");
+    location.reload();
 }

@@ -13,9 +13,9 @@ function crearOferta() {
     // Almacenamiento de los datos en la Base de datos
     const oferta = { idOferta, nombreCli, telefonoCli, correoCli, interesCli, nombreProd, categoriaProd, descripcionProd, imagenProd };
   
-    console.log(idOferta);
+    /*console.log(idOferta);
     console.log(" ");
-    console.log(oferta.idOferta);
+    console.log(oferta.idOferta);*/
 
     console.log("Petición para crear una oferta");
   
@@ -28,5 +28,6 @@ function crearOferta() {
   
     console.log("Se ha creado la oferta en la base de datos!");
     alert("Se ha creado la oferta en la base de datos!");
+    location.reload();
   
   }

@@ -11,22 +11,17 @@ function manejoDePeticiones(datos) {
       <label for="checkbox1"></label>
     </span>
   </td>
+  <td>${oferta.idOferta}</td>
   <td><img src="${oferta.imagenProd}" class="avatar" alt="Avatar" style="width: 100px; height: 100px; object-fit: cover; border-radius: 5px;"></td>
   <td>${oferta.nombreProd}</td>
   <td>${oferta.descripcionProd}</td>
+  <td>${oferta.categoriaProd}</td>
   <td>${oferta.nombreCli}</td>
   <td>${oferta.telefonoCli}</td>
   <td>${oferta.correoCli}</td>
-  <td>${oferta.categoriaProd}</td>
+
   <td>
 
-  <p data-id-oferta=${oferta.idOferta} id="editarELpepe">${oferta.idOferta}</p>
-
-    <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons"
-        data-toggle="tooltip" title="Editar">&#xE254;</i></a>
-
-    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons"
-        data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
         </td> 
         </tr>
         

@@ -1,13 +1,12 @@
 function eliminarOferta() {
 
-  //event.preventDefault(event);
-
   const idOferta = document.getElementById("idOfertaD").value;
-
   const API_URL = "https://backend-selocambio-production.up.railway.app";
 
-    // Solicitar dato de ID del objeto oferta
-    const oferta = { idOferta };
+  // Solicitar dato de ID del objeto oferta
+  const oferta = { idOferta };
+
+  console.log("Petición para eliminar una oferta");
 
   fetch(`${API_URL}/oferta/eliminar/${idOferta}`, {
     method: "DELETE",
@@ -27,7 +26,8 @@ function eliminarOferta() {
       generarHTML.innerHTML = `<center><br><p>No se pudo editar la oferta.</p></center>`;
     });
 
-    console.log("Se ha intentado eliminar la oferta!");
-    alert("Se ha intentado eliminar la oferta!");
+    console.log("Se ha eliminado la oferta en la base de datos!");
+    alert("Se ha eliminado la oferta en la base de datos!");
+    location.reload();
   
 }

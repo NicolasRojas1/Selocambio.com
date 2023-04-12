@@ -48,7 +48,7 @@ function signUpFunc() {
 
   //localStorage.setItem(dni, JSON.stringify(usuario));
 
-  console.log("Petición para registrar Admin");
+  console.log("Petición para registrar admin");
 
   const API_URL = "https://backend-selocambio-production.up.railway.app";
   let adminSave = fetch(`${API_URL}/admin/guardar`, {
@@ -57,7 +57,7 @@ function signUpFunc() {
     headers: { "Content-type": "application/json; charset=UTF-8" }
   })
 
-  console.log("Cuenta registrada!");
+  console.log("Cuenta registrada correctamente!");
   cleanForm();
   alert("¡Has registrado tu cuenta correctamente!, ahora puedes iniciar sesion");
 
@@ -73,20 +73,19 @@ function loginFunc() {
   const correoRegEx = /^\S+@\S+\.\S+$/;
   const contraseñaRegEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
 
+  console.log("Petición para loguear admin");
 
-
-
-  // Obtener el valor actual de ultimaSesion del localStorage
-  let dniAnterior = localStorage.getItem('ultimaSesion');
-
-  // Verificar si el valor actual de ultimaSesion es diferente al nuevo valor de dni
+  // SESION TEMPORAL
+  // Obtener el valor actual de session del localStorage
+  let dniAnterior = localStorage.getItem('session');
+  // Verificar si el valor actual de session es diferente al nuevo valor de dni
   if (dniAnterior !== dni) {
     // Buscar en el localStorage el objeto de usuario con la misma DNI
     let usuarioEncontrado = null;
     const usuarios = Object.keys(localStorage);
     for (let i = 0; i < usuarios.length; i++) {
       const clave = usuarios[i];
-      if (clave !== 'ultimaSesion') {
+      if (clave !== 'session') {
         const usuario = JSON.parse(localStorage.getItem(clave));
         if (usuario.dni === dni) {
           usuarioEncontrado = usuario;
@@ -94,15 +93,16 @@ function loginFunc() {
         }
       }
     }
-    // Si no se encuentra el usuario, actualizar ultimaSesion con el valor actual de dni
+    // Si no se encuentra el usuario, actualizar session con el valor actual de dni
     if (!usuarioEncontrado) {
-      localStorage.setItem('ultimaSesion', dni);
+      localStorage.setItem('session', dni);
     } else {
-      // Actualizar el valor de ultimaSesion en el localStorage con el nuevo valor de dni del usuario encontrado
+      // Actualizar el valor de session en el localStorage con el nuevo valor de dni del usuario encontrado
       dniAnterior = usuarioEncontrado.dni;
-      localStorage.setItem('ultimaSesion', dniAnterior);
+      localStorage.setItem('session', dniAnterior);
     }
   }
+
 
   // Almacenamiento de los datos en la Base de datos
   const usuario = { dni, password, codigo };
@@ -114,11 +114,7 @@ function loginFunc() {
     headers: { "Content-type": "application/json; charset=UTF-8" }
   })
 
-
-
-
-
-  // Validación del correo electrónico
+  // Validación de cuenta con base de datos!
   if (!usuario.dni) {
     alert("La cuenta ingresada no está registrada");
     return;
@@ -131,14 +127,11 @@ function loginFunc() {
     alert("Necesitas un código Selocambio para valido iniciar sesion");
     return;
   }
+  
+  console.log("Cuenta logueada correctamente!");
+  
+  //console.log(usuario);
 
-
-
-
-
-
-
-  console.log(usuario);
   window.location.href = "/html/admin.html";
 
 }

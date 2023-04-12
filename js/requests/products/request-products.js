@@ -2,13 +2,14 @@ const API_URL = "https://backend-selocambio-production.up.railway.app";
 
 function manejoDePeticiones(datos) {
 
-  console.log(JSON.stringify(datos));
-
+  //console.log(JSON.stringify(datos));
+  
+  console.log("Se han traido las ofertas de la base de datos!");
+  
   const generarHTML = document.querySelector("#productos");
 
   const componenteHTML = datos.map(oferta => `
   
-
   <style>
   img.img_prod {
     min-height: 200px;
@@ -33,7 +34,7 @@ function manejoDePeticiones(datos) {
   " target="_blank">Selocambio</a>
   
   </div>
-  </div>`);
+  </div><p class="invisible">`);
 
   generarHTML.innerHTML = `${componenteHTML}`;
 
