@@ -25,8 +25,7 @@ function manejoDePeticiones(datos) {
         </td> 
         </tr>
         
-        <script src="/js/requests/admin/request-adm-product-edit.js"></script>
-`);
+        <script src="/js/requests/admin/request-adm-product-edit.js"></script><div class="invisible"`);
 
   generarHTML.innerHTML = `<div class="item">${componenteHTML}<div>`;
 
