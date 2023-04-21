@@ -6,5 +6,6 @@ $(function() {  $("#publica").load("/html/componentes/post.html");   });
 $(function() {  $("#tarjetas").load("/html/componentes/cards.html");   });
 $(function() {  $("#formulario-nosotros").load("/html/componentes/form-about.html");   });
 $(function() {  $("#formulario-publica").load("/html/componentes/form-post.html");   });
+$(function() {  $("#borde-circular").load("/html/componentes/circleborder.html");   });
 $(function() {  $("#circulos").load("/html/componentes/circles.html");   });
 $(function() {  $("#footer").load("/html/componentes/footer.html");   });
