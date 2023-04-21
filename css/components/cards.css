@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
 /* TARJETAS */
 
 /* Responsive telefonos */
@@ -7,20 +10,23 @@
   align-items: center;
   justify-content: center;
   min-height: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: #f5f5f5;
   padding: 1em 0px;
 }
+
 .card-titulo {
   padding: 1em;
   color: rgb(230, 169, 26);
-  background-color: rgb(255, 255, 255);
+  background-color: #f5f5f5;
   margin: 0px;
   font-size: 25px;
   text-align: center;
 }
+
 .card-titulo span {
   color: rgb(58, 207, 192);
 }
+
 .card {
   display: flex;
   flex-wrap: wrap;
@@ -31,10 +37,12 @@
   box-shadow: rgb(73, 69, 52) 2px 2px 4px;
   transition: all 0.5s ease 0s;
 }
+
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.694) 0px 5px 15px;
   transform: translateY(-15px);
 }
+
 .card .content {
   position: relative;
   z-index: 100;
@@ -46,12 +54,14 @@
   overflow: hidden;
   text-align: center;
   padding: 10px;
-  background: rgb(255, 255, 255);
+  background: #f5f5f5;
 }
+
 .card .content .img {
   height: 50%;
   margin-bottom: 20px;
 }
+
 .card .content .img img {
   position: relative;
   width: 150px;
@@ -60,6 +70,7 @@
   object-fit: cover;
   box-shadow: rgb(73, 69, 52) 2px 2px 2px;
 }
+
 .card .content span {
   position: absolute;
   width: 350px;
@@ -69,6 +80,7 @@
   top: -80px;
   left: -100px;
 }
+
 .card .content h2 {
   font-size: 20px;
   color: rgb(230, 169, 26);
@@ -76,10 +88,12 @@
   margin-bottom: 5px;
   z-index: 1;
 }
+
 .card .content h5 {
   font-size: 15px;
   margin-top: 10px;
 }
+
 .card .links {
   position: absolute;
   z-index: 90;
@@ -95,21 +109,26 @@
   top: 8px;
   transition: all 0.5s ease 0s;
 }
+
 .card:hover .links {
   right: -50px;
   border-radius: 0px 10px 10px 0px;
 }
+
 .card .links a {
   font-size: 25px;
   color: rgb(100, 96, 105);
   margin: -2px;
 }
+
 .card .links a:nth-child(1):hover {
   color: rgb(238, 32, 52);
 }
+
 .card .links a:nth-child(2):hover {
   color: rgb(14, 118, 168);
 }
+
 .card .links a:nth-child(3):hover {
   color: rgb(136, 16, 160);
 }
@@ -117,21 +136,23 @@
 /* Responsive tabletas */
 @media (min-width: 512px) {
   .div-tarjeta {
-      padding: 1em 6em;
- }
+    padding: 1em 6em;
+  }
+
   .card {
-      margin: 2.1em;
-      width: 220px;
- }
+    margin: 2.1em;
+    width: 220px;
+  }
 }
 
 /* Responsive escritorio */
 @media (min-width: 768px) {
   .div-tarjeta {
-      padding: 1em;
- }
+    padding: 1em;
+  }
+
   .card {
-      margin: 2.1em;
-      width: 220px;
- }
+    margin: 2.1em;
+    width: 220px;
+  }
 }
